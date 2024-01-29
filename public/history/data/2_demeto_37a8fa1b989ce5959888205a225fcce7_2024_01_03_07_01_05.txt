@@ -1,0 +1,2 @@
+
+2;demeto;admin;2024-01-03 07-01-05;Authentification;Réussite;Utilisateur;127.0.0.1;Default Browser;Nouvelle session initialisée;EOF;

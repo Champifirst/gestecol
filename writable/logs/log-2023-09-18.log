@@ -1,0 +1,377 @@
+INFO - 2023-09-18 07:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-18 07:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-18 07:40:54 --> syntax error, unexpected token ";"
+in APPPATH\Controllers\TeacherController.php on line 99.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\TeacherController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TeacherController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TeacherController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\TeacherController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-18 07:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-18 07:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-18 08:31:28 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: teacher in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('dsdsd', 'matricule', Array, NULL, 'matricule')
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('matricule', 'matricule', 'dsdsd', Array, Array)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\TeacherController.php(68): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-18 08:31:28 --> SQLite3::query(): Unable to prepare statement: 1, no such table: teacher
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such table: teacher', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT 1
+FROM `teacher`
+WHERE `matricule` = \'dsdsd\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT 1
+FROM `teacher`
+WHERE `matricule` = \'dsdsd\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `teacher`
+WHERE `matricule` = \'dsdsd\'
+ LIMIT 1')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `teacher`
+WHERE `matricule` = :matricule:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('dsdsd', 'matricule', [...], null, 'matricule')
+ 8 SYSTEMPATH\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('matricule', 'matricule', 'dsdsd', [...], [...])
+ 9 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\TeacherController.php(68): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-18 08:46:04 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: teacher in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('sdsd', 'matricule', Array, NULL, 'matricule')
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('matricule', 'matricule', 'sdsd', Array, Array)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\TeacherController.php(68): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-18 08:46:04 --> SQLite3::query(): Unable to prepare statement: 1, no such table: teacher
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such table: teacher', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT 1
+FROM `teacher`
+WHERE `matricule` = \'sdsd\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT 1
+FROM `teacher`
+WHERE `matricule` = \'sdsd\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `teacher`
+WHERE `matricule` = \'sdsd\'
+ LIMIT 1')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `teacher`
+WHERE `matricule` = :matricule:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('sdsd', 'matricule', [...], null, 'matricule')
+ 8 SYSTEMPATH\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('matricule', 'matricule', 'sdsd', [...], [...])
+ 9 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\TeacherController.php(68): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-18 08:47:54 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: matricule in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('sdsd', 'matricule', Array, NULL, 'matricule')
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('matricule', 'matricule', 'sdsd', Array, Array)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\TeacherController.php(68): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-18 08:47:54 --> SQLite3::query(): Unable to prepare statement: 1, no such column: matricule
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: matricule', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT 1
+FROM `teacher`
+WHERE `matricule` = \'sdsd\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT 1
+FROM `teacher`
+WHERE `matricule` = \'sdsd\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `teacher`
+WHERE `matricule` = \'sdsd\'
+ LIMIT 1')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `teacher`
+WHERE `matricule` = :matricule:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('sdsd', 'matricule', [...], null, 'matricule')
+ 8 SYSTEMPATH\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('matricule', 'matricule', 'sdsd', [...], [...])
+ 9 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\TeacherController.php(68): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-18 08:49:41 --> Class "App\Controllers\YearModel" not found
+in APPPATH\Controllers\TeacherController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-18 08:50:15 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: student.matricule in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\TeacherModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\TeacherController.php(88): App\Models\TeacherModel->getTeacherExists('2', 9, 'sdsd')
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-18 08:50:15 --> SQLite3::query(): Unable to prepare statement: 1, no such column: student.matricule
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: student.matricule', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *
+FROM `teacher`
+INNER JOIN `teacher_school` ON `teacher_school`.`teacher_id`=`teacher`.`teacher_id`
+WHERE `teacher_school`.`year_id` = 9
+AND `teacher_school`.`school_id` = \'2\'
+AND `student`.`matricule` = \'sdsd\'
+AND `status_teacher` = 0
+AND `etat_teacher` = \'actif\'
+AND `teacher_school`.`status_teacher_school` = 0
+AND `teacher_school`.`etat_teacher_school` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `teacher`
+INNER JOIN `teacher_school` ON `teacher_school`.`teacher_id`=`teacher`.`teacher_id`
+WHERE `teacher_school`.`year_id` = 9
+AND `teacher_school`.`school_id` = \'2\'
+AND `student`.`matricule` = \'sdsd\'
+AND `status_teacher` = 0
+AND `etat_teacher` = \'actif\'
+AND `teacher_school`.`status_teacher_school` = 0
+AND `teacher_school`.`etat_teacher_school` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `teacher`
+INNER JOIN `teacher_school` ON `teacher_school`.`teacher_id`=`teacher`.`teacher_id`
+WHERE `teacher_school`.`year_id` = 9
+AND `teacher_school`.`school_id` = \'2\'
+AND `student`.`matricule` = \'sdsd\'
+AND `status_teacher` = 0
+AND `etat_teacher` = \'actif\'
+AND `teacher_school`.`status_teacher_school` = 0
+AND `teacher_school`.`etat_teacher_school` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `teacher`
+INNER JOIN `teacher_school` ON `teacher_school`.`teacher_id`=`teacher`.`teacher_id`
+WHERE `teacher_school`.`year_id` = :teacher_school.year_id:
+AND `teacher_school`.`school_id` = :teacher_school.school_id:
+AND `student`.`matricule` = :student.matricule:
+AND `status_teacher` = :status_teacher:
+AND `etat_teacher` = :etat_teacher:
+AND `teacher_school`.`status_teacher_school` = :teacher_school.status_teacher_school:
+AND `teacher_school`.`etat_teacher_school` = :teacher_school.etat_teacher_school:', [...], false)
+ 6 APPPATH\Models\TeacherModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\TeacherController.php(88): App\Models\TeacherModel->getTeacherExists('2', 9, 'sdsd')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-18 08:51:21 --> Undefined variable $logo
+in APPPATH\Controllers\TeacherController.php on line 107.
+ 1 APPPATH\Controllers\TeacherController.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\TeacherController.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-18 08:54:26 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NTAyMzQ5MywiZXhwIjoxNjk1MDI3MDkzLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.wR9YJuNjUDdjp-KH53wzy8BU-IeOyMx0lwcp_L4T-Vw', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('teacher/insert', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-18 08:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-18 08:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-18 08:55:41 --> Undefined variable $logo
+in APPPATH\Controllers\TeacherController.php on line 107.
+ 1 APPPATH\Controllers\TeacherController.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\TeacherController.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-18 08:56:30 --> ErrorException: SQLite3::exec(): table teacher has no column named create_at in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `te...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `te...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\TeacherController.php(138): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-18 08:56:30 --> SQLite3::exec(): table teacher has no column named create_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): table teacher has no column named create_at', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `teacher` (`name`, `surname`, `diplome`, `email`, `tel`, `photo`, `login`, `password`, `id_user`, `year_id`, `status_teacher`, `etat_teacher`, `create_at`, `update_at`, `created_at`, `updated_at`) VALUES (\'dsd\', \'dsdsd\', \'dsd\', \'\', \'485-262-362\', \'1695027391.jpg\', \'user\', \'ee11cbb19052e40b07aac0ca060c23ee\', \'1\', 9, 0, \'actif\', \'2023-09-18 08:09:30\', \'2023-09-18 08:09:30\', \'2023-09-18 08:56:30\', \'2023-09-18 08:56:30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `teacher` (`name`, `surname`, `diplome`, `email`, `tel`, `photo`, `login`, `password`, `id_user`, `year_id`, `status_teacher`, `etat_teacher`, `create_at`, `update_at`, `created_at`, `updated_at`) VALUES (\'dsd\', \'dsdsd\', \'dsd\', \'\', \'485-262-362\', \'1695027391.jpg\', \'user\', \'ee11cbb19052e40b07aac0ca060c23ee\', \'1\', 9, 0, \'actif\', \'2023-09-18 08:09:30\', \'2023-09-18 08:09:30\', \'2023-09-18 08:56:30\', \'2023-09-18 08:56:30\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `teacher` (`name`, `surname`, `diplome`, `email`, `tel`, `photo`, `login`, `password`, `id_user`, `year_id`, `status_teacher`, `etat_teacher`, `create_at`, `update_at`, `created_at`, `updated_at`) VALUES (\'dsd\', \'dsdsd\', \'dsd\', \'\', \'485-262-362\', \'1695027391.jpg\', \'user\', \'ee11cbb19052e40b07aac0ca060c23ee\', \'1\', 9, 0, \'actif\', \'2023-09-18 08:09:30\', \'2023-09-18 08:09:30\', \'2023-09-18 08:56:30\', \'2023-09-18 08:56:30\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `teacher` (`name`, `surname`, `diplome`, `email`, `tel`, `photo`, `login`, `password`, `id_user`, `year_id`, `status_teacher`, `etat_teacher`, `create_at`, `update_at`, `created_at`, `updated_at`) VALUES (:name:, :surname:, :diplome:, :email:, :tel:, :photo:, :login:, :password:, :id_user:, :year_id:, :status_teacher:, :etat_teacher:, :create_at:, :update_at:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\TeacherController.php(138): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-18 08:56:57 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher.matricule in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `te...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `te...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\TeacherController.php(138): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-18 08:56:57 --> SQLite3::exec(): NOT NULL constraint failed: teacher.matricule
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: teacher.matricule', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `teacher` (`name`, `surname`, `diplome`, `email`, `tel`, `photo`, `login`, `password`, `id_user`, `year_id`, `status_teacher`, `etat_teacher`, `created_at`, `updated_at`) VALUES (\'dsd\', \'dsdsd\', \'dsd\', \'\', \'485-262-362\', \'1695027417.jpg\', \'user\', \'ee11cbb19052e40b07aac0ca060c23ee\', \'1\', 9, 0, \'actif\', \'2023-09-18 08:56:57\', \'2023-09-18 08:56:57\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `teacher` (`name`, `surname`, `diplome`, `email`, `tel`, `photo`, `login`, `password`, `id_user`, `year_id`, `status_teacher`, `etat_teacher`, `created_at`, `updated_at`) VALUES (\'dsd\', \'dsdsd\', \'dsd\', \'\', \'485-262-362\', \'1695027417.jpg\', \'user\', \'ee11cbb19052e40b07aac0ca060c23ee\', \'1\', 9, 0, \'actif\', \'2023-09-18 08:56:57\', \'2023-09-18 08:56:57\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `teacher` (`name`, `surname`, `diplome`, `email`, `tel`, `photo`, `login`, `password`, `id_user`, `year_id`, `status_teacher`, `etat_teacher`, `created_at`, `updated_at`) VALUES (\'dsd\', \'dsdsd\', \'dsd\', \'\', \'485-262-362\', \'1695027417.jpg\', \'user\', \'ee11cbb19052e40b07aac0ca060c23ee\', \'1\', 9, 0, \'actif\', \'2023-09-18 08:56:57\', \'2023-09-18 08:56:57\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `teacher` (`name`, `surname`, `diplome`, `email`, `tel`, `photo`, `login`, `password`, `id_user`, `year_id`, `status_teacher`, `etat_teacher`, `created_at`, `updated_at`) VALUES (:name:, :surname:, :diplome:, :email:, :tel:, :photo:, :login:, :password:, :id_user:, :year_id:, :status_teacher:, :etat_teacher:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\TeacherController.php(138): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-18 10:04:52 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NTAyNzI4OSwiZXhwIjoxNjk1MDMwODg5LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.wjp477A2wnbtrOtsrGgtMxkAbd4GsETrpQU8Eg5E3VM', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-18 10:04:53 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NTAyNzI4OSwiZXhwIjoxNjk1MDMwODg5LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.wjp477A2wnbtrOtsrGgtMxkAbd4GsETrpQU8Eg5E3VM', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-18 10:04:54 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NTAyNzI4OSwiZXhwIjoxNjk1MDMwODg5LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.wjp477A2wnbtrOtsrGgtMxkAbd4GsETrpQU8Eg5E3VM', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-18 10:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-18 10:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-18 10:24:17 --> Undefined variable $id_school
+in APPPATH\Controllers\TeacherController.php on line 150.
+ 1 APPPATH\Controllers\TeacherController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_school', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\TeacherController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->insertteacher()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-18 11:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-18 12:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-18 12:37:28 --> Undefined variable $school_id
+in APPPATH\Models\TeacherModel.php on line 90.
+ 1 APPPATH\Models\TeacherModel.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $school_id', 'C:\\xampp\\htdocs\\secondary-back\\app\\Models\\TeacherModel.php', 90)
+ 2 APPPATH\Controllers\TeacherController.php(226): App\Models\TeacherModel->getClassTeacher('2', '[object HTMLSelectElement]', '[object HTMLSelectElement]', 9)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->GetTeacherSchoolClass('2', '[object HTMLSelectElement]', '[object HTMLSelectElement]')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-18 12:38:17 --> Undefined variable $matricule
+in APPPATH\Models\TeacherModel.php on line 91.
+ 1 APPPATH\Models\TeacherModel.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $matricule', 'C:\\xampp\\htdocs\\secondary-back\\app\\Models\\TeacherModel.php', 91)
+ 2 APPPATH\Controllers\TeacherController.php(226): App\Models\TeacherModel->getClassTeacher('2', '[object HTMLSelectElement]', '[object HTMLSelectElement]', 9)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->GetTeacherSchoolClass('2', '[object HTMLSelectElement]', '[object HTMLSelectElement]')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')

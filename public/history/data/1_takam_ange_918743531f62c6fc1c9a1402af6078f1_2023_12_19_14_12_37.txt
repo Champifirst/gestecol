@@ -1,0 +1,14 @@
+
+1;takam_ange;admin;2023-12-19 14-12-37;Authentification;Réussite;Utilisateur;::1;Default Browser;Nouvelle session initialisée;EOF;
+1;takam ange;admin;2023-12-19 14-12-23;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 14-12-02;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 14-12-50;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 14-12-58;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 14-12-13;Selection;Echec;Classe;::1;Default Browser;Opération reussir;EOF;
+1;takam ange;admin;2023-12-19 14-12-28;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 14-12-34;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 14-12-15;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 14-12-24;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 15-12-59;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 15-12-37;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-19 15-12-02;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;

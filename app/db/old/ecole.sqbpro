@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/xampp/htdocs/DEMETO/secondary-back/app/db/ecole.db" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="8076"/><column_width id="4" width="0"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE `salaire` (
+	`id_salaire` INTEGER PRIMARY KEY AUTOINCREMENT,
+	`montant` TEXT NOT NULL,
+	`mode_payment` TEXT NOT NULL,
+	`code_payement` TEXT NOT NULL,
+	`id_user` INT NOT NULL,
+	`year_id` INT NOT NULL,
+	`teacher_id` INT NOT NULL,
+	`status_salaire` INT NOT NULL,
+	`etat_salaire` TEXT NOT NULL,
+	`created_at` TIMESTAMP NULL,
+	`updated_at` TIMESTAMP NULL,
+	`deleted_at` TIMESTAMP NULL,
+	CONSTRAINT `payment_id_user_foreign` FOREIGN KEY (`id_user`) REFERENCES `user`(`id_user`),
+	CONSTRAINT `payment_year_id_foreign` FOREIGN KEY (`year_id`) REFERENCES `year`(`year_id`),
+	CONSTRAINT `payment_teacher_id_foreign` FOREIGN KEY (`teacher_id`) REFERENCES `teacher`(`teacher_id`)
+);
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

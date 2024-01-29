@@ -1,0 +1,1109 @@
+INFO - 2023-11-13 08:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 08:41:00 --> Undefined array key "school_id"
+in APPPATH\Controllers\StudentController.php on line 113.
+ 1 APPPATH\Controllers\StudentController.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "school_id"', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\app\\Controllers\\StudentController.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->get_one_student('196', '1', '1', '4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 08:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 08:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 09:16:47 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg2MjY5NCwiZXhwIjoxNjk5ODY2Mjk0LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.qZW_agFqmhI1FMtnnYaF-ljo7a7z87MXA8H5OKsVfmE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+CRITICAL - 2023-11-13 09:16:47 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg2MjY5NCwiZXhwIjoxNjk5ODY2Mjk0LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.qZW_agFqmhI1FMtnnYaF-ljo7a7z87MXA8H5OKsVfmE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+CRITICAL - 2023-11-13 09:16:49 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg2MjY5NCwiZXhwIjoxNjk5ODY2Mjk0LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.qZW_agFqmhI1FMtnnYaF-ljo7a7z87MXA8H5OKsVfmE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 09:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 09:37:09 --> Undefined variable $HistorySession
+in APPPATH\Controllers\StudentController.php on line 1329.
+ 1 APPPATH\Controllers\StudentController.php(1329): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $HistorySession', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\app\\Controllers\\StudentController.php', 1329)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->updatestudent()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 10:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 11:20:15 --> Undefined variable $id_user
+in APPPATH\Controllers\StudentController.php on line 1323.
+ 1 APPPATH\Controllers\StudentController.php(1323): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_user', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\app\\Controllers\\StudentController.php', 1323)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->updatestudent()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 11:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 11:36:04 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: parent.contactParent in C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('UPDATE `parent`...')
+#2 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `parent`...')
+#3 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `parent`...')
+#4 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `parent`...', Array, false)
+#5 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#7 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#8 C:\xampp\htdocs\DEMETO\secondary-back\app\Controllers\StudentController.php(1161): CodeIgniter\Model->update()
+#9 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->updatestudent()
+#10 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#11 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\DEMETO\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-11-13 11:36:04 --> SQLite3::exec(): NOT NULL constraint failed: parent.contactParent
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: parent.contactParent', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('UPDATE `parent` SET `name_parent` = \'ddsdsd\', `surnameParent` = \'dsdsdsd\', `emailParent` = \'\', `professionParent` = \'qsqsqs\', `contactParent` = NULL, `adresseParent` = \'sdfddsfdsf\', `updated_at` = \'2023-11-13 11:11:04\'
+WHERE `parent_id` = \'196\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `parent` SET `name_parent` = \'ddsdsd\', `surnameParent` = \'dsdsdsd\', `emailParent` = \'\', `professionParent` = \'qsqsqs\', `contactParent` = NULL, `adresseParent` = \'sdfddsfdsf\', `updated_at` = \'2023-11-13 11:11:04\'
+WHERE `parent_id` = \'196\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `parent` SET `name_parent` = \'ddsdsd\', `surnameParent` = \'dsdsdsd\', `emailParent` = \'\', `professionParent` = \'qsqsqs\', `contactParent` = NULL, `adresseParent` = \'sdfddsfdsf\', `updated_at` = \'2023-11-13 11:11:04\'
+WHERE `parent_id` = \'196\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `parent` SET `name_parent` = :name_parent:, `surnameParent` = :surnameParent:, `emailParent` = :emailParent:, `professionParent` = :professionParent:, `contactParent` = :contactParent:, `adresseParent` = :adresseParent:, `updated_at` = :updated_at:
+WHERE `parent_id` = :parent_id:', [...], false)
+ 6 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 8 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 9 APPPATH\Controllers\StudentController.php(1161): CodeIgniter\Model->update()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->updatestudent()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 11:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 11:49:14 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg3MjQ2MSwiZXhwIjoxNjk5ODc2MDYxLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.CrPs0DhVcDjDK89lOjipoOkbBytVdKKnVp7ROXSzgWA', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('session/all/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 11:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 11:50:15 --> Undefined variable $class
+in APPPATH\Controllers\StudentController.php on line 1280.
+ 1 APPPATH\Controllers\StudentController.php(1280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $class', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\app\\Controllers\\StudentController.php', 1280)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->updatestudent()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 11:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 11:50:55 --> Undefined variable $class
+in APPPATH\Controllers\StudentController.php on line 1295.
+ 1 APPPATH\Controllers\StudentController.php(1295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $class', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\app\\Controllers\\StudentController.php', 1295)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->updatestudent()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 11:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 12:55:14 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg3NjE2MywiZXhwIjoxNjk5ODc5NzYzLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.28tRYzRsbrpjVinsHlJFCdywVMdevbbpmGzCz2syV2o', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+CRITICAL - 2023-11-13 12:55:14 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg3NjE2MywiZXhwIjoxNjk5ODc5NzYzLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.28tRYzRsbrpjVinsHlJFCdywVMdevbbpmGzCz2syV2o', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+CRITICAL - 2023-11-13 12:55:15 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg3NjE2MywiZXhwIjoxNjk5ODc5NzYzLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.28tRYzRsbrpjVinsHlJFCdywVMdevbbpmGzCz2syV2o', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 12:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 12:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:36:34 --> Declaration of App\Controllers\StudentController::delete($id_student) must be compatible with CodeIgniter\RESTful\ResourcePresenter::delete($id = null)
+in APPPATH\Controllers\StudentController.php on line 1102.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-13 13:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 55.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 57.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 59.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 61.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 63.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 65.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 67.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 69.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 71.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 73.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 75.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 77.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 80.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 83.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 85.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 90.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 93.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 96.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 99.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 104.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 106.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 108.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 110.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 112.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 114.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 116.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 118.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 120.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 122.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 124.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 126.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 129.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 132.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 134.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 237.
+ 1 APPPATH\Controllers\CertificatController.php(224): App\Controllers\FPDF_CERT->body_certifica([...], '2023_2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', 'TAGNE ZAC')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 256.
+ 1 APPPATH\Controllers\CertificatController.php(224): App\Controllers\FPDF_CERT->body_certifica([...], '2023_2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', 'TAGNE ZAC')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 277.
+ 1 APPPATH\Controllers\CertificatController.php(224): App\Controllers\FPDF_CERT->body_certifica([...], '2023_2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', 'TAGNE ZAC')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:38 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 284.
+ 1 APPPATH\Controllers\CertificatController.php(224): App\Controllers\FPDF_CERT->body_certifica([...], '2023_2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', 'TAGNE ZAC')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 521.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 524.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 527.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 539.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 542.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 546.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 549.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 556.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 559.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 562.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 565.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 568.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 571.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:37:52 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\PrintCarteControl.php on line 574.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrintCarteControl->print_carte_class_one('763', '1', '1', '1', '4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrintCarteControl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 55.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 57.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 59.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 61.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 63.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 65.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 67.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 69.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 71.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 73.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 75.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 77.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 80.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 83.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 85.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 90.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 93.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 96.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 99.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 104.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 106.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 108.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 110.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 112.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 114.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 116.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 118.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 120.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 122.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 124.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 126.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 129.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 132.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 134.
+ 1 APPPATH\Controllers\CertificatController.php(203): App\Controllers\FPDF_CERT->header_portrait('2023 / 2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', '699-209-063,683-091-381', 'CMAUTH2021')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 237.
+ 1 APPPATH\Controllers\CertificatController.php(224): App\Controllers\FPDF_CERT->body_certifica([...], '2023_2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', 'TAGNE ZAC')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 256.
+ 1 APPPATH\Controllers\CertificatController.php(224): App\Controllers\FPDF_CERT->body_certifica([...], '2023_2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', 'TAGNE ZAC')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 277.
+ 1 APPPATH\Controllers\CertificatController.php(224): App\Controllers\FPDF_CERT->body_certifica([...], '2023_2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', 'TAGNE ZAC')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+WARNING - 2023-11-13 13:40:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\report\FPDF_CERT.php on line 284.
+ 1 APPPATH\Controllers\CertificatController.php(224): App\Controllers\FPDF_CERT->body_certifica([...], '2023_2024', 'GROUPE SCOLAIRE BILINGUE DEMETO', 'TAGNE ZAC')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CertificatController->print_certificat_class_one('763', '1', '1', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CertificatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 13:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 14:01:23 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg4MDE3MywiZXhwIjoxNjk5ODgzNzczLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.hztLZ5e4dbm-C72xnuf5O9N_45Sa4tyWCx8MvG3w0Fk', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+CRITICAL - 2023-11-13 14:01:24 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg4MDE3MywiZXhwIjoxNjk5ODgzNzczLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.hztLZ5e4dbm-C72xnuf5O9N_45Sa4tyWCx8MvG3w0Fk', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+CRITICAL - 2023-11-13 14:01:26 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg4MDE3MywiZXhwIjoxNjk5ODgzNzczLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.hztLZ5e4dbm-C72xnuf5O9N_45Sa4tyWCx8MvG3w0Fk', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 14:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 15:05:35 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5OTg4NDI0NywiZXhwIjoxNjk5ODg3ODQ3LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.PVm7xchqt63JSHVUnO1rLubmL-yX1Q46I5Az_eY5PDM', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('student/AllStudentSchool/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 15:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 15:17:30 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: parent.name_parent in C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `student...')
+#2 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `student...')
+#3 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student...')
+#4 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `student...', Array, false)
+#5 C:\xampp\htdocs\DEMETO\secondary-back\app\Models\StudentModel.php(300): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\DEMETO\secondary-back\app\Controllers\StudentController.php(68): App\Models\StudentModel->getStudentBySchoolYear('1', 1)
+#7 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->liste_student_school('1')
+#8 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DEMETO\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-11-13 15:17:30 --> SQLite3::query(): Unable to prepare statement: 1, no such column: parent.name_parent
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: parent.name_parent', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`, `parent`.`name_parent`, `parent`.`surnameParent`, `parent`.`contactParent`, `student_class`.`redouble`
+FROM `student`
+INNER JOIN `student_school` ON `student_school`.`student_id` = `student`.`student_id`
+INNER JOIN `school` ON `school`.`school_id` = `student_school`.`school_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_school`.`year_id`
+WHERE `student_school`.`year_id` = 1
+AND `student_school`.`school_id` = \'1\'
+AND `student_school`.`status_stu_scho` = 0
+AND `student_school`.`etat_stu_scho` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `student`.`name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`, `parent`.`name_parent`, `parent`.`surnameParent`, `parent`.`contactParent`, `student_class`.`redouble`
+FROM `student`
+INNER JOIN `student_school` ON `student_school`.`student_id` = `student`.`student_id`
+INNER JOIN `school` ON `school`.`school_id` = `student_school`.`school_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_school`.`year_id`
+WHERE `student_school`.`year_id` = 1
+AND `student_school`.`school_id` = \'1\'
+AND `student_school`.`status_stu_scho` = 0
+AND `student_school`.`etat_stu_scho` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `student`.`name` ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`, `parent`.`name_parent`, `parent`.`surnameParent`, `parent`.`contactParent`, `student_class`.`redouble`
+FROM `student`
+INNER JOIN `student_school` ON `student_school`.`student_id` = `student`.`student_id`
+INNER JOIN `school` ON `school`.`school_id` = `student_school`.`school_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_school`.`year_id`
+WHERE `student_school`.`year_id` = 1
+AND `student_school`.`school_id` = \'1\'
+AND `student_school`.`status_stu_scho` = 0
+AND `student_school`.`etat_stu_scho` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `student`.`name` ASC')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`, `parent`.`name_parent`, `parent`.`surnameParent`, `parent`.`contactParent`, `student_class`.`redouble`
+FROM `student`
+INNER JOIN `student_school` ON `student_school`.`student_id` = `student`.`student_id`
+INNER JOIN `school` ON `school`.`school_id` = `student_school`.`school_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_school`.`year_id`
+WHERE `student_school`.`year_id` = :student_school.year_id:
+AND `student_school`.`school_id` = :student_school.school_id:
+AND `student_school`.`status_stu_scho` = :student_school.status_stu_scho:
+AND `student_school`.`etat_stu_scho` = :student_school.etat_stu_scho:
+AND `student`.`status_student` = :student.status_student:
+AND `student`.`etat_student` = :student.etat_student:
+AND `school`.`status_school` = :school.status_school:
+AND `school`.`etat_school` = :school.etat_school:
+ORDER BY `student`.`name` ASC', [...], false)
+ 6 APPPATH\Models\StudentModel.php(300): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\StudentController.php(68): App\Models\StudentModel->getStudentBySchoolYear('1', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->liste_student_school('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+ERROR - 2023-11-13 15:18:00 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: student_class.redouble in C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `student...')
+#2 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `student...')
+#3 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student...')
+#4 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `student...', Array, false)
+#5 C:\xampp\htdocs\DEMETO\secondary-back\app\Models\StudentModel.php(300): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\DEMETO\secondary-back\app\Controllers\StudentController.php(68): App\Models\StudentModel->getStudentBySchoolYear('1', 1)
+#7 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->liste_student_school('1')
+#8 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DEMETO\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-11-13 15:18:00 --> SQLite3::query(): Unable to prepare statement: 1, no such column: student_class.redouble
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: student_class.redouble', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`, `student_class`.`redouble`
+FROM `student`
+INNER JOIN `student_school` ON `student_school`.`student_id` = `student`.`student_id`
+INNER JOIN `school` ON `school`.`school_id` = `student_school`.`school_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_school`.`year_id`
+WHERE `student_school`.`year_id` = 1
+AND `student_school`.`school_id` = \'1\'
+AND `student_school`.`status_stu_scho` = 0
+AND `student_school`.`etat_stu_scho` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `student`.`name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`, `student_class`.`redouble`
+FROM `student`
+INNER JOIN `student_school` ON `student_school`.`student_id` = `student`.`student_id`
+INNER JOIN `school` ON `school`.`school_id` = `student_school`.`school_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_school`.`year_id`
+WHERE `student_school`.`year_id` = 1
+AND `student_school`.`school_id` = \'1\'
+AND `student_school`.`status_stu_scho` = 0
+AND `student_school`.`etat_stu_scho` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `student`.`name` ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`, `student_class`.`redouble`
+FROM `student`
+INNER JOIN `student_school` ON `student_school`.`student_id` = `student`.`student_id`
+INNER JOIN `school` ON `school`.`school_id` = `student_school`.`school_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_school`.`year_id`
+WHERE `student_school`.`year_id` = 1
+AND `student_school`.`school_id` = \'1\'
+AND `student_school`.`status_stu_scho` = 0
+AND `student_school`.`etat_stu_scho` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `student`.`name` ASC')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`, `student_class`.`redouble`
+FROM `student`
+INNER JOIN `student_school` ON `student_school`.`student_id` = `student`.`student_id`
+INNER JOIN `school` ON `school`.`school_id` = `student_school`.`school_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_school`.`year_id`
+WHERE `student_school`.`year_id` = :student_school.year_id:
+AND `student_school`.`school_id` = :student_school.school_id:
+AND `student_school`.`status_stu_scho` = :student_school.status_stu_scho:
+AND `student_school`.`etat_stu_scho` = :student_school.etat_stu_scho:
+AND `student`.`status_student` = :student.status_student:
+AND `student`.`etat_student` = :student.etat_student:
+AND `school`.`status_school` = :school.status_school:
+AND `school`.`etat_school` = :school.etat_school:
+ORDER BY `student`.`name` ASC', [...], false)
+ 6 APPPATH\Models\StudentModel.php(300): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\StudentController.php(68): App\Models\StudentModel->getStudentBySchoolYear('1', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->liste_student_school('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 15:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 16:05:07 --> syntax error, unexpected token ","
+in APPPATH\Controllers\ScolariteController.php on line 75.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\app\\Controllers\\ScolariteController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ScolariteController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ScolariteController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\ScolariteController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-13 16:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

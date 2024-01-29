@@ -1,0 +1,32 @@
+ERROR - 2023-08-23 14:29:11 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `documen...', Array, false)
+#4 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\secondary\secondary-back\app\Controllers\DocumentController.php(212): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\DocumentController->deletedocument('1')
+#9 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentController))
+#10 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-23 14:29:11 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `document` SET `status_document` = :status_document:, `etat_document` = :etat_document:, `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `document_id` = :document_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 6 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 7 APPPATH\Controllers\DocumentController.php(212): CodeIgniter\Model->update()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocumentController->deletedocument('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')

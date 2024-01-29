@@ -1,0 +1,892 @@
+INFO - 2023-08-27 12:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 12:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 12:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 12:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 12:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 12:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 12:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 12:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 12:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-27 12:51:17 --> getdate(): Argument #1 ($timestamp) must be of type ?int, string given
+in APPPATH/Controllers/helpers/DateOperation.php on line 12.
+ 1 APPPATH/Controllers/helpers/DateOperation.php(12): getdate()
+ 2 APPPATH/Controllers/LicenceController.php(29): App\Controllers\DateOperation->DateAtNumber()
+ 3 APPPATH/Controllers/AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Vidéos/secondary-back/public/index.php')
+INFO - 2023-08-27 12:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-27 12:52:04 --> getdate(): Argument #1 ($timestamp) must be of type ?int, string given
+in APPPATH/Controllers/helpers/DateOperation.php on line 12.
+ 1 APPPATH/Controllers/helpers/DateOperation.php(12): getdate()
+ 2 APPPATH/Controllers/LicenceController.php(29): App\Controllers\DateOperation->DateAtNumber()
+ 3 APPPATH/Controllers/AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Vidéos/secondary-back/public/index.php')
+INFO - 2023-08-27 16:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 17:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 17:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 17:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 17:31:08 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(84): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(89): App\Models\FonctionnalityUserModel->getFonctUser(3)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 17:31:08 --> SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `etat_user` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `etat_user` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `etat_user` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `etat_user` = :etat_user:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(84): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(89): App\Models\FonctionnalityUserModel->getFonctUser(3)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 17:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 17:34:47 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(90): App\Models\FonctionnalityUserModel->getFonctUser(3)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 17:34:47 --> SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `etat_user` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `etat_user` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `etat_user` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `etat_user` = :etat_user:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(90): App\Models\FonctionnalityUserModel->getFonctUser(3)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 17:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 17:36:30 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(3)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 17:36:30 --> SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `status_fonc` = :status_fonc:
+AND `etat_user` = :etat_user:
+AND `etat_fonc` = :etat_fonc:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(3)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 17:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 17:37:55 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(3)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 17:37:55 --> SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `status_fonc` = :status_fonc:
+AND `etat_user` = :etat_user:
+AND `etat_fonc` = :etat_fonc:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(3)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 17:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 17:47:01 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: fonctionnality.id_fonctionnality in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(3)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 17:47:01 --> SQLite3::query(): Unable to prepare statement: 1, no such column: fonctionnality.id_fonctionnality
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: fonctionnality.id_fonctionnality', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user`=`fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality`=`fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `status_fonc` = :status_fonc:
+AND `etat_user` = :etat_user:
+AND `etat_fonc` = :etat_fonc:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(3)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 17:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 17:48:47 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(3)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 17:48:47 --> SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 3
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `status_fonc` = :status_fonc:
+AND `etat_user` = :etat_user:
+AND `etat_fonc` = :etat_fonc:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(3)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(3)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 17:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 17:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 17:55:52 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 17:55:52 --> SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `status_fonc` = :status_fonc:
+AND `etat_user` = :etat_user:
+AND `etat_fonc` = :etat_fonc:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 17:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 17:59:25 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(94): App\Models\FonctionnalityUserModel->getFonctUser(1)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 17:59:25 --> SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `status_fonc` = :status_fonc:
+AND `etat_user` = :etat_user:
+AND `etat_fonc` = :etat_fonc:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(94): App\Models\FonctionnalityUserModel->getFonctUser(1)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-27 18:02:29 --> Call to undefined method CodeIgniter\Session\Session::setExpiration()
+in APPPATH\Controllers\AuthController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 18:02:40 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 18:02:40 --> SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_user`, `fonctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user;` `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`', [], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 18:04:01 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: onctionnalityuser.status_fonct_user in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 18:04:01 --> SQLite3::query(): Unable to prepare statement: 1, no such column: onctionnalityuser.status_fonct_user
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: onctionnalityuser.status_fonct_user', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `status_fonc` = :status_fonc:
+AND `etat_user` = :etat_user:
+AND `etat_fonc` = :etat_fonc:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 18:04:05 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: onctionnalityuser.status_fonct_user in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 18:04:05 --> SQLite3::query(): Unable to prepare statement: 1, no such column: onctionnalityuser.status_fonct_user
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: onctionnalityuser.status_fonct_user', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = 1
+AND `status_fonct_user` = 0
+AND `etat_fonct_user` = \'actif\'
+AND `status_user` = 0
+AND `status_fonc` = 0
+AND `etat_user` = \'actif\'
+AND `etat_fonc` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`
+INNER JOIN `user` ON `user`.`id_user` = `fonctionnalityuser`.`id_user`
+INNER JOIN `fonctionnality` ON `fonctionnality`.`id_fonctionnality` = `fonctionnalityuser`.`id_fonctionnality`
+WHERE `fonctionnalityuser`.`id_user` = :fonctionnalityuser.id_user:
+AND `status_fonct_user` = :status_fonct_user:
+AND `etat_fonct_user` = :etat_fonct_user:
+AND `status_user` = :status_user:
+AND `status_fonc` = :status_fonc:
+AND `etat_user` = :etat_user:
+AND `etat_fonc` = :etat_fonc:', [...], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-27 18:04:15 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: onctionnalityuser.status_fonct_user in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctio...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctio...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctio...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctio...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-27 18:04:15 --> SQLite3::query(): Unable to prepare statement: 1, no such column: onctionnalityuser.status_fonct_user
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: onctionnalityuser.status_fonct_user', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fonctionnalityuser`.`id_fonctionnalityuser`, `fonctionnalityuser`.`id_user`, `onctionnalityuser`.`status_fonct_user`, `fonctionnalityuser`.`etat_fonct_user`, `fonctionnalityuser`.`created_at`, `fonctionnalityuser`.`updated_at`, `fonctionnalityuser`.`deleted_at`
+FROM `fonctionnalityuser`', [], false)
+ 6 APPPATH\Models\FonctionnalityUserModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Models\FonctionnalityUserModel.php(93): App\Models\FonctionnalityUserModel->getFonctUser(1)
+ 8 APPPATH\Controllers\AuthController.php(112): App\Models\FonctionnalityUserModel->getParentChild(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-27 18:04:57 --> Call to undefined method CodeIgniter\Session\Session::setExpiration()
+in APPPATH\Controllers\AuthController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-27 18:05:05 --> Call to undefined method CodeIgniter\Session\Session::setExpiration()
+in APPPATH\Controllers\AuthController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-27 18:06:02 --> Call to undefined method CodeIgniter\Session\Session::setExpiration()
+in APPPATH\Controllers\AuthController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-27 18:06:17 --> Call to undefined method CodeIgniter\Session\Session::setExpiration()
+in APPPATH\Controllers\AuthController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-27 18:43:19 --> Undefined array key "autorisation"
+in APPPATH\Views\index.php on line 4.
+ 1 APPPATH\Views\index.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "autorisation"', 'C:\\xampp\\htdocs\\secondary-back\\app\\Views\\index.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\secondary-back\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index.php', [], true)
+ 5 APPPATH\Controllers\Home.php(19): view('index.php')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->home()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-08-27 18:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-27 18:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

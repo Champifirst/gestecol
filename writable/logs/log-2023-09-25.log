@@ -1,0 +1,111 @@
+INFO - 2023-09-25 04:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-25 04:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-25 04:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-25 04:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-25 04:55:06 --> Undefined variable $id_school
+in APPPATH\Controllers\TeacherController.php on line 251.
+ 1 APPPATH\Controllers\TeacherController.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_school', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\TeacherController.php', 251)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->allTeacher('2')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-25 04:55:28 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, ambiguous column name: class_id in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `class_i...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `class_i...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `class_i...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `class_i...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\TeacherClassModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\TeacherController.php(267): App\Models\TeacherClassModel->getClassOneTeacher(3, 9)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeacherController->allTeacher('2')
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-25 04:55:28 --> SQLite3::query(): Unable to prepare statement: 1, ambiguous column name: class_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, ambiguous column name: class_id', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `class_id`, `class`.`name`
+FROM `teacher_class`
+JOIN `class` ON `class`.`class_id`=`teacher_class`.`class_id`
+JOIN `teacher` ON `teacher`.`teacher_id`=`teacher_class`.`teacher_id`
+WHERE `teacher_class`.`teacher_id` = 3
+AND `teacher_class`.`year_id` = 9
+AND `teacher_class`.`etat_teacher_class` = 0
+AND `teacher_class`.`status_teacher_class` = \'actif\'
+AND `class`.`status_class` = 0
+AND `class`.`etat_class` = \'actif\'
+AND `teacher`.`status_teacher` = 0
+AND `teacher`.`etat_teacher` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `class_id`, `class`.`name`
+FROM `teacher_class`
+JOIN `class` ON `class`.`class_id`=`teacher_class`.`class_id`
+JOIN `teacher` ON `teacher`.`teacher_id`=`teacher_class`.`teacher_id`
+WHERE `teacher_class`.`teacher_id` = 3
+AND `teacher_class`.`year_id` = 9
+AND `teacher_class`.`etat_teacher_class` = 0
+AND `teacher_class`.`status_teacher_class` = \'actif\'
+AND `class`.`status_class` = 0
+AND `class`.`etat_class` = \'actif\'
+AND `teacher`.`status_teacher` = 0
+AND `teacher`.`etat_teacher` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `class_id`, `class`.`name`
+FROM `teacher_class`
+JOIN `class` ON `class`.`class_id`=`teacher_class`.`class_id`
+JOIN `teacher` ON `teacher`.`teacher_id`=`teacher_class`.`teacher_id`
+WHERE `teacher_class`.`teacher_id` = 3
+AND `teacher_class`.`year_id` = 9
+AND `teacher_class`.`etat_teacher_class` = 0
+AND `teacher_class`.`status_teacher_class` = \'actif\'
+AND `class`.`status_class` = 0
+AND `class`.`etat_class` = \'actif\'
+AND `teacher`.`status_teacher` = 0
+AND `teacher`.`etat_teacher` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `class_id`, `class`.`name`
+FROM `teacher_class`
+JOIN `class` ON `class`.`class_id`=`teacher_class`.`class_id`
+JOIN `teacher` ON `teacher`.`teacher_id`=`teacher_class`.`teacher_id`
+WHERE `teacher_class`.`teacher_id` = :teacher_class.teacher_id:
+AND `teacher_class`.`year_id` = :teacher_class.year_id:
+AND `teacher_class`.`etat_teacher_class` = :teacher_class.etat_teacher_class:
+AND `teacher_class`.`status_teacher_class` = :teacher_class.status_teacher_class:
+AND `class`.`status_class` = :class.status_class:
+AND `class`.`etat_class` = :class.etat_class:
+AND `teacher`.`status_teacher` = :teacher.status_teacher:
+AND `teacher`.`etat_teacher` = :teacher.etat_teacher:', [...], false)
+ 6 APPPATH\Models\TeacherClassModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\TeacherController.php(267): App\Models\TeacherClassModel->getClassOneTeacher(3, 9)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->allTeacher('2')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-25 04:56:16 --> Undefined array key "contact"
+in APPPATH\Controllers\TeacherController.php on line 281.
+ 1 APPPATH\Controllers\TeacherController.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact"', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\TeacherController.php', 281)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->allTeacher('2')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-25 04:56:37 --> Undefined array key "type_ens"
+in APPPATH\Controllers\TeacherController.php on line 282.
+ 1 APPPATH\Controllers\TeacherController.php(282): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "type_ens"', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\TeacherController.php', 282)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeacherController->allTeacher('2')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeacherController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-25 05:03:12 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NTYxNDUwOSwiZXhwIjoxNjk1NjE4MTA5LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.Gnp6BGkrroDQGur-AbQMxf6viySUl1hvjbAqcoAJ0Ik', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('teacher/all/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-25 05:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-25 05:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

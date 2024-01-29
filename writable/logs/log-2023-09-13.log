@@ -1,0 +1,459 @@
+INFO - 2023-09-13 02:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 02:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 03:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 03:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 03:28:23 --> Call to undefined method App\Models\StudentSessionModel::getStudentSessionExist
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\StudentController.php(357): CodeIgniter\Model->__call('getStudentSessionExist', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-13 03:29:05 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: student_session.school_id in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\StudentSessionModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(357): App\Models\StudentSessionModel->getStudentSessionExist(3, '1', 9)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-13 03:29:05 --> SQLite3::query(): Unable to prepare statement: 1, no such column: student_session.school_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: student_session.school_id', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *
+FROM `student_session`
+JOIN `student` ON `student`.`student_id`=`student_session`.`student_id`
+JOIN `session` ON `session`.`session_id`=`student_session`.`session_id`
+JOIN `year` ON `year`.`year_id`=`student_session`.`year_id`
+WHERE `student_session`.`school_id` = \'1\'
+AND `student_session`.`student_id` = 3
+AND `student_session`.`year_id` = 9
+AND `student_session`.`status_stu_sess` = 0
+AND `student_session`.`etat_stu_sess` = \'actif\'
+AND `year`.`status_year` = 0
+AND `year`.`etat_year` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `session`.`status_session` = 0
+AND `session`.`etat_session` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `student_session`
+JOIN `student` ON `student`.`student_id`=`student_session`.`student_id`
+JOIN `session` ON `session`.`session_id`=`student_session`.`session_id`
+JOIN `year` ON `year`.`year_id`=`student_session`.`year_id`
+WHERE `student_session`.`school_id` = \'1\'
+AND `student_session`.`student_id` = 3
+AND `student_session`.`year_id` = 9
+AND `student_session`.`status_stu_sess` = 0
+AND `student_session`.`etat_stu_sess` = \'actif\'
+AND `year`.`status_year` = 0
+AND `year`.`etat_year` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `session`.`status_session` = 0
+AND `session`.`etat_session` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `student_session`
+JOIN `student` ON `student`.`student_id`=`student_session`.`student_id`
+JOIN `session` ON `session`.`session_id`=`student_session`.`session_id`
+JOIN `year` ON `year`.`year_id`=`student_session`.`year_id`
+WHERE `student_session`.`school_id` = \'1\'
+AND `student_session`.`student_id` = 3
+AND `student_session`.`year_id` = 9
+AND `student_session`.`status_stu_sess` = 0
+AND `student_session`.`etat_stu_sess` = \'actif\'
+AND `year`.`status_year` = 0
+AND `year`.`etat_year` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `session`.`status_session` = 0
+AND `session`.`etat_session` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `student_session`
+JOIN `student` ON `student`.`student_id`=`student_session`.`student_id`
+JOIN `session` ON `session`.`session_id`=`student_session`.`session_id`
+JOIN `year` ON `year`.`year_id`=`student_session`.`year_id`
+WHERE `student_session`.`school_id` = :student_session.school_id:
+AND `student_session`.`student_id` = :student_session.student_id:
+AND `student_session`.`year_id` = :student_session.year_id:
+AND `student_session`.`status_stu_sess` = :student_session.status_stu_sess:
+AND `student_session`.`etat_stu_sess` = :student_session.etat_stu_sess:
+AND `year`.`status_year` = :year.status_year:
+AND `year`.`etat_year` = :year.etat_year:
+AND `student`.`status_student` = :student.status_student:
+AND `student`.`etat_student` = :student.etat_student:
+AND `session`.`status_session` = :session.status_session:
+AND `session`.`etat_session` = :session.etat_session:', [...], false)
+ 6 APPPATH\Models\StudentSessionModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\StudentController.php(357): App\Models\StudentSessionModel->getStudentSessionExist(3, '1', 9)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-13 03:29:44 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: student_session.status_stu_sess in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\StudentSessionModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(357): App\Models\StudentSessionModel->getStudentSessionExist(4, '1', 9)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-13 03:29:44 --> SQLite3::query(): Unable to prepare statement: 1, no such column: student_session.status_stu_sess
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: student_session.status_stu_sess', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *
+FROM `student_session`
+JOIN `student` ON `student`.`student_id`=`student_session`.`student_id`
+JOIN `session` ON `session`.`session_id`=`student_session`.`session_id`
+JOIN `year` ON `year`.`year_id`=`student_session`.`year_id`
+WHERE `student_session`.`session_id` = \'1\'
+AND `student_session`.`student_id` = 4
+AND `student_session`.`year_id` = 9
+AND `student_session`.`status_stu_sess` = 0
+AND `student_session`.`etat_stu_sess` = \'actif\'
+AND `year`.`status_year` = 0
+AND `year`.`etat_year` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `session`.`status_session` = 0
+AND `session`.`etat_session` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `student_session`
+JOIN `student` ON `student`.`student_id`=`student_session`.`student_id`
+JOIN `session` ON `session`.`session_id`=`student_session`.`session_id`
+JOIN `year` ON `year`.`year_id`=`student_session`.`year_id`
+WHERE `student_session`.`session_id` = \'1\'
+AND `student_session`.`student_id` = 4
+AND `student_session`.`year_id` = 9
+AND `student_session`.`status_stu_sess` = 0
+AND `student_session`.`etat_stu_sess` = \'actif\'
+AND `year`.`status_year` = 0
+AND `year`.`etat_year` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `session`.`status_session` = 0
+AND `session`.`etat_session` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `student_session`
+JOIN `student` ON `student`.`student_id`=`student_session`.`student_id`
+JOIN `session` ON `session`.`session_id`=`student_session`.`session_id`
+JOIN `year` ON `year`.`year_id`=`student_session`.`year_id`
+WHERE `student_session`.`session_id` = \'1\'
+AND `student_session`.`student_id` = 4
+AND `student_session`.`year_id` = 9
+AND `student_session`.`status_stu_sess` = 0
+AND `student_session`.`etat_stu_sess` = \'actif\'
+AND `year`.`status_year` = 0
+AND `year`.`etat_year` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'
+AND `session`.`status_session` = 0
+AND `session`.`etat_session` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `student_session`
+JOIN `student` ON `student`.`student_id`=`student_session`.`student_id`
+JOIN `session` ON `session`.`session_id`=`student_session`.`session_id`
+JOIN `year` ON `year`.`year_id`=`student_session`.`year_id`
+WHERE `student_session`.`session_id` = :student_session.session_id:
+AND `student_session`.`student_id` = :student_session.student_id:
+AND `student_session`.`year_id` = :student_session.year_id:
+AND `student_session`.`status_stu_sess` = :student_session.status_stu_sess:
+AND `student_session`.`etat_stu_sess` = :student_session.etat_stu_sess:
+AND `year`.`status_year` = :year.status_year:
+AND `year`.`etat_year` = :year.etat_year:
+AND `student`.`status_student` = :student.status_student:
+AND `student`.`etat_student` = :student.etat_student:
+AND `session`.`status_session` = :session.status_session:
+AND `session`.`etat_session` = :session.etat_session:', [...], false)
+ 6 APPPATH\Models\StudentSessionModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\StudentController.php(357): App\Models\StudentSessionModel->getStudentSessionExist(4, '1', 9)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 03:31:31 --> Call to a member function getName() on null
+in APPPATH\Controllers\StudentController.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 03:58:15 --> Too few arguments to function App\Models\TrimestreModel::getTrimestreBySchoolSessionCycleName(), 0 passed in C:\xampp\htdocs\secondary-back\app\Controllers\TrimestreController.php on line 154 and exactly 4 expected
+in APPPATH\Models\TrimestreModel.php on line 160.
+ 1 APPPATH\Controllers\TrimestreController.php(154): App\Models\TrimestreModel->getTrimestreBySchoolSessionCycleName()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TrimestreController->alltrimestreFilter('2', '1', '4', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrimestreController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 04:32:03 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDU3NTU0MywiZXhwIjoxNjk0NTc5MTQzLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.yIzSmrtKNsH8MFCjhNreD-klaE-1bXGKaQOgq9Zn658', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 04:32:03 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDU3NTU0MywiZXhwIjoxNjk0NTc5MTQzLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.yIzSmrtKNsH8MFCjhNreD-klaE-1bXGKaQOgq9Zn658', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 04:32:04 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDU3NTU0MywiZXhwIjoxNjk0NTc5MTQzLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.yIzSmrtKNsH8MFCjhNreD-klaE-1bXGKaQOgq9Zn658', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-13 04:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 04:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 04:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 04:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 04:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-13 04:53:24 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: sequence.delete_at in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `sequenc...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `sequenc...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sequenc...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `sequenc...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\SequenceModel.php(95): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\SequenceController.php(167): App\Models\SequenceModel->getSequenceBySchool('2')
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\SequenceController->allsequence('2')
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SequenceController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-13 04:53:24 --> SQLite3::query(): Unable to prepare statement: 1, no such column: sequence.delete_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: sequence.delete_at', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `sequence`.`name`, `sequence`.`coded`, `sequence`.`id_user`, `sequence`.`session_id`, `sequence`.`cycle_id`, `sequence`.`class_id`, `sequence`.`school_id`, `sequence`.`trimestre_id`, `sequence`.`status_sequence`, `sequence`.`etat_sequence`, `sequence`.`created_at`, `sequence`.`updated_at`, `sequence`.`delete_at`
+FROM `sequence`
+JOIN `school` ON `school`.`school_id`=`sequence`.`school_id`
+WHERE `sequence`.`school_id` = \'2\'
+AND `sequence`.`status_sequence` = 0
+AND `sequence`.`etat_sequence` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `sequence`.`name`, `sequence`.`coded`, `sequence`.`id_user`, `sequence`.`session_id`, `sequence`.`cycle_id`, `sequence`.`class_id`, `sequence`.`school_id`, `sequence`.`trimestre_id`, `sequence`.`status_sequence`, `sequence`.`etat_sequence`, `sequence`.`created_at`, `sequence`.`updated_at`, `sequence`.`delete_at`
+FROM `sequence`
+JOIN `school` ON `school`.`school_id`=`sequence`.`school_id`
+WHERE `sequence`.`school_id` = \'2\'
+AND `sequence`.`status_sequence` = 0
+AND `sequence`.`etat_sequence` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sequence`.`name`, `sequence`.`coded`, `sequence`.`id_user`, `sequence`.`session_id`, `sequence`.`cycle_id`, `sequence`.`class_id`, `sequence`.`school_id`, `sequence`.`trimestre_id`, `sequence`.`status_sequence`, `sequence`.`etat_sequence`, `sequence`.`created_at`, `sequence`.`updated_at`, `sequence`.`delete_at`
+FROM `sequence`
+JOIN `school` ON `school`.`school_id`=`sequence`.`school_id`
+WHERE `sequence`.`school_id` = \'2\'
+AND `sequence`.`status_sequence` = 0
+AND `sequence`.`etat_sequence` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `sequence`.`name`, `sequence`.`coded`, `sequence`.`id_user`, `sequence`.`session_id`, `sequence`.`cycle_id`, `sequence`.`class_id`, `sequence`.`school_id`, `sequence`.`trimestre_id`, `sequence`.`status_sequence`, `sequence`.`etat_sequence`, `sequence`.`created_at`, `sequence`.`updated_at`, `sequence`.`delete_at`
+FROM `sequence`
+JOIN `school` ON `school`.`school_id`=`sequence`.`school_id`
+WHERE `sequence`.`school_id` = :sequence.school_id:
+AND `sequence`.`status_sequence` = :sequence.status_sequence:
+AND `sequence`.`etat_sequence` = :sequence.etat_sequence:
+AND `school`.`status_school` = :school.status_school:
+AND `school`.`etat_school` = :school.etat_school:', [...], false)
+ 6 APPPATH\Models\SequenceModel.php(95): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\SequenceController.php(167): App\Models\SequenceModel->getSequenceBySchool('2')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SequenceController->allsequence('2')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SequenceController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-13 04:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 04:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 05:18:19 --> Undefined array key "name"
+in APPPATH\Controllers\SequenceController.php on line 191.
+ 1 APPPATH\Controllers\SequenceController.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\SequenceController.php', 191)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SequenceController->allsequence('2')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SequenceController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-13 05:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 05:19:05 --> Undefined array key "name"
+in APPPATH\Controllers\SequenceController.php on line 192.
+ 1 APPPATH\Controllers\SequenceController.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\SequenceController.php', 192)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SequenceController->allsequence('2')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SequenceController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-13 05:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 05:19:50 --> Undefined array key "sequence_id"
+in APPPATH\Controllers\SequenceController.php on line 195.
+ 1 APPPATH\Controllers\SequenceController.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sequence_id"', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\SequenceController.php', 195)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SequenceController->allsequence('2')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SequenceController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-13 05:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 05:26:55 --> Undefined array key "name"
+in APPPATH\Controllers\SequenceController.php on line 193.
+ 1 APPPATH\Controllers\SequenceController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\SequenceController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SequenceController->allsequence('2')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SequenceController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-13 05:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 05:34:03 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDU3OTUzNCwiZXhwIjoxNjk0NTgzMTM0LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.9LJ0hp0SUViKtEsHF4XLVlAM9PnyfctLMo0Jbvexges', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 05:34:03 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDU3OTUzNCwiZXhwIjoxNjk0NTgzMTM0LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.9LJ0hp0SUViKtEsHF4XLVlAM9PnyfctLMo0Jbvexges', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 05:34:04 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDU3OTUzNCwiZXhwIjoxNjk0NTgzMTM0LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.9LJ0hp0SUViKtEsHF4XLVlAM9PnyfctLMo0Jbvexges', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('trimestre/all/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-13 05:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 05:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 11:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 11:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 14:04:50 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 14:04:50 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 14:09:13 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 14:09:14 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 14:10:49 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 14:10:49 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 14:10:50 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 14:13:13 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 14:13:13 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-13 14:13:14 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDYwODU1NiwiZXhwIjoxNjk0NjEyMTU2LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.IqjpTVFLGuIqGQ_bTvB6ynE1tdj53pzxpTI2l0BP5qE', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-13 14:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 14:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 14:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 14:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 14:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 16:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 17:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 17:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

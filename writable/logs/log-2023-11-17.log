@@ -1,0 +1,434 @@
+INFO - 2023-11-17 13:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-17 14:29:30 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: licence.school_id in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `licence...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `licence...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `licence...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `licence...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\LicenceModel.php(64): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\LicenceController.php(21): App\Models\LicenceModel->getLicenceDescBySchool(1)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\SchoolController.php(48): App\Controllers\LicenceController->verif_licence(1)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\SchoolController->liste_school('0')
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SchoolController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-11-17 14:29:30 --> SQLite3::query(): Unable to prepare statement: 1, no such column: licence.school_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: licence.school_id', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `licence`.`licence_id`, `licence`.`date_debut`, `licence`.`date_fin`, `licence`.`id_user`, `licence`.`school_id`, `licence`.`status_licence`, `licence`.`etat_licence`, `licence`.`created_at`, `licence`.`updated_at`, `licence`.`deleted_at`
+FROM `licence`
+INNER JOIN `school` ON `school`.`school_id`=`licence`.`school_id`
+WHERE `licence`.`school_id` = 1
+AND `licence`.`status_licence` = 0
+AND `licence`.`etat_licence` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `licence`.`licence_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `licence`.`licence_id`, `licence`.`date_debut`, `licence`.`date_fin`, `licence`.`id_user`, `licence`.`school_id`, `licence`.`status_licence`, `licence`.`etat_licence`, `licence`.`created_at`, `licence`.`updated_at`, `licence`.`deleted_at`
+FROM `licence`
+INNER JOIN `school` ON `school`.`school_id`=`licence`.`school_id`
+WHERE `licence`.`school_id` = 1
+AND `licence`.`status_licence` = 0
+AND `licence`.`etat_licence` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `licence`.`licence_id` DESC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `licence`.`licence_id`, `licence`.`date_debut`, `licence`.`date_fin`, `licence`.`id_user`, `licence`.`school_id`, `licence`.`status_licence`, `licence`.`etat_licence`, `licence`.`created_at`, `licence`.`updated_at`, `licence`.`deleted_at`
+FROM `licence`
+INNER JOIN `school` ON `school`.`school_id`=`licence`.`school_id`
+WHERE `licence`.`school_id` = 1
+AND `licence`.`status_licence` = 0
+AND `licence`.`etat_licence` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `licence`.`licence_id` DESC')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `licence`.`licence_id`, `licence`.`date_debut`, `licence`.`date_fin`, `licence`.`id_user`, `licence`.`school_id`, `licence`.`status_licence`, `licence`.`etat_licence`, `licence`.`created_at`, `licence`.`updated_at`, `licence`.`deleted_at`
+FROM `licence`
+INNER JOIN `school` ON `school`.`school_id`=`licence`.`school_id`
+WHERE `licence`.`school_id` = :licence.school_id:
+AND `licence`.`status_licence` = :licence.status_licence:
+AND `licence`.`etat_licence` = :licence.etat_licence:
+AND `school`.`status_school` = :school.status_school:
+AND `school`.`etat_school` = :school.etat_school:
+ORDER BY `licence`.`licence_id` DESC', [...], false)
+ 6 APPPATH\Models\LicenceModel.php(64): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\LicenceController.php(21): App\Models\LicenceModel->getLicenceDescBySchool(1)
+ 8 APPPATH\Controllers\SchoolController.php(48): App\Controllers\LicenceController->verif_licence(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SchoolController->liste_school('0')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SchoolController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-11-17 14:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-17 14:50:28 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: licence.school_id in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `licence...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `licence...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `licence...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `licence...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\LicenceModel.php(64): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\LicenceController.php(21): App\Models\LicenceModel->getLicenceDescBySchool(1)
+#7 C:\xampp\htdocs\secondary-back\app\Controllers\SchoolController.php(48): App\Controllers\LicenceController->verif_licence(1)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\SchoolController->liste_school('0')
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SchoolController))
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-11-17 14:50:28 --> SQLite3::query(): Unable to prepare statement: 1, no such column: licence.school_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: licence.school_id', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `licence`.`licence_id`, `licence`.`date_debut`, `licence`.`date_fin`, `licence`.`id_user`, `licence`.`school_id`, `licence`.`status_licence`, `licence`.`etat_licence`, `licence`.`created_at`, `licence`.`updated_at`, `licence`.`deleted_at`
+FROM `licence`
+INNER JOIN `school` ON `school`.`school_id`=`licence`.`school_id`
+WHERE `licence`.`school_id` = 1
+AND `licence`.`status_licence` = 0
+AND `licence`.`etat_licence` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `licence`.`licence_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `licence`.`licence_id`, `licence`.`date_debut`, `licence`.`date_fin`, `licence`.`id_user`, `licence`.`school_id`, `licence`.`status_licence`, `licence`.`etat_licence`, `licence`.`created_at`, `licence`.`updated_at`, `licence`.`deleted_at`
+FROM `licence`
+INNER JOIN `school` ON `school`.`school_id`=`licence`.`school_id`
+WHERE `licence`.`school_id` = 1
+AND `licence`.`status_licence` = 0
+AND `licence`.`etat_licence` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `licence`.`licence_id` DESC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `licence`.`licence_id`, `licence`.`date_debut`, `licence`.`date_fin`, `licence`.`id_user`, `licence`.`school_id`, `licence`.`status_licence`, `licence`.`etat_licence`, `licence`.`created_at`, `licence`.`updated_at`, `licence`.`deleted_at`
+FROM `licence`
+INNER JOIN `school` ON `school`.`school_id`=`licence`.`school_id`
+WHERE `licence`.`school_id` = 1
+AND `licence`.`status_licence` = 0
+AND `licence`.`etat_licence` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'
+ORDER BY `licence`.`licence_id` DESC')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `licence`.`licence_id`, `licence`.`date_debut`, `licence`.`date_fin`, `licence`.`id_user`, `licence`.`school_id`, `licence`.`status_licence`, `licence`.`etat_licence`, `licence`.`created_at`, `licence`.`updated_at`, `licence`.`deleted_at`
+FROM `licence`
+INNER JOIN `school` ON `school`.`school_id`=`licence`.`school_id`
+WHERE `licence`.`school_id` = :licence.school_id:
+AND `licence`.`status_licence` = :licence.status_licence:
+AND `licence`.`etat_licence` = :licence.etat_licence:
+AND `school`.`status_school` = :school.status_school:
+AND `school`.`etat_school` = :school.etat_school:
+ORDER BY `licence`.`licence_id` DESC', [...], false)
+ 6 APPPATH\Models\LicenceModel.php(64): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\LicenceController.php(21): App\Models\LicenceModel->getLicenceDescBySchool(1)
+ 8 APPPATH\Controllers\SchoolController.php(48): App\Controllers\LicenceController->verif_licence(1)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SchoolController->liste_school('0')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SchoolController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-11-17 14:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 14:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 14:59:32 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/AllSchool/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:59:47 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('history/list', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:59:47 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/AllSchool/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 14:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 15:01:52 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/AllSchool/0', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 15:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 15:02:37 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('history/list', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 15:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 15:02:44 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 15:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 15:12:49 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 109.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/0', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:14:45 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 109.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('years/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:14:45 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 109.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('null', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/0', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 15:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-17 15:15:14 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH\Controllers\History\HistorySession.php on line 35.
+ 1 APPPATH\Controllers\History\HistorySession.php(35): fopen(null, 'a')
+ 2 APPPATH\Controllers\YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2023-11-17 15-11-14', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'Default Browser', 'Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:15:14 --> Path cannot be empty
+in APPPATH\Controllers\History\HistorySession.php on line 35.
+ 1 APPPATH\Controllers\History\HistorySession.php(35): fopen('', 'a')
+ 2 APPPATH\Controllers\YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2023-11-17 15-11-14', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'Default Browser', 'Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-17 15:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 15:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 19:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 19:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 19:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 19:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 19:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 20:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-17 21:01:22 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.school_id in C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\DEMETO\secondary-back\app\Models\TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\DEMETO\secondary-back\app\Controllers\StatistiqueController.php(48): App\Models\TeacherModel->getAllConnectedBySchool('1', 1)
+#7 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1('1')
+#8 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatistiqueController))
+#9 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DEMETO\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-11-17 21:01:22 --> SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.school_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.school_id', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *
+FROM `teacher`
+INNER JOIN `school` ON `school`.`school_id`=`teacher`.`school_id`
+INNER JOIN `teacher_class` ON `teacher_class`.`teacher_id`=`teacher`.`teacher_id`
+INNER JOIN `class` ON `class`.`class_id`=`teacher_class`.`class_id`
+WHERE `teacher_class`.`year_id` = 1
+AND `teacher_class`.`status_teacher_class` = 0
+AND `teacher_class`.`etat_teacher_class` = \'actif\'
+AND `teacher`.`school_id` = \'1\'
+AND `teacher`.`connected` = \'true\'
+AND `teacher`.`status_teacher` = 0
+AND `teacher`.`etat_teacher` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `teacher`
+INNER JOIN `school` ON `school`.`school_id`=`teacher`.`school_id`
+INNER JOIN `teacher_class` ON `teacher_class`.`teacher_id`=`teacher`.`teacher_id`
+INNER JOIN `class` ON `class`.`class_id`=`teacher_class`.`class_id`
+WHERE `teacher_class`.`year_id` = 1
+AND `teacher_class`.`status_teacher_class` = 0
+AND `teacher_class`.`etat_teacher_class` = \'actif\'
+AND `teacher`.`school_id` = \'1\'
+AND `teacher`.`connected` = \'true\'
+AND `teacher`.`status_teacher` = 0
+AND `teacher`.`etat_teacher` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `teacher`
+INNER JOIN `school` ON `school`.`school_id`=`teacher`.`school_id`
+INNER JOIN `teacher_class` ON `teacher_class`.`teacher_id`=`teacher`.`teacher_id`
+INNER JOIN `class` ON `class`.`class_id`=`teacher_class`.`class_id`
+WHERE `teacher_class`.`year_id` = 1
+AND `teacher_class`.`status_teacher_class` = 0
+AND `teacher_class`.`etat_teacher_class` = \'actif\'
+AND `teacher`.`school_id` = \'1\'
+AND `teacher`.`connected` = \'true\'
+AND `teacher`.`status_teacher` = 0
+AND `teacher`.`etat_teacher` = \'actif\'
+AND `school`.`status_school` = 0
+AND `school`.`etat_school` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `teacher`
+INNER JOIN `school` ON `school`.`school_id`=`teacher`.`school_id`
+INNER JOIN `teacher_class` ON `teacher_class`.`teacher_id`=`teacher`.`teacher_id`
+INNER JOIN `class` ON `class`.`class_id`=`teacher_class`.`class_id`
+WHERE `teacher_class`.`year_id` = :teacher_class.year_id:
+AND `teacher_class`.`status_teacher_class` = :teacher_class.status_teacher_class:
+AND `teacher_class`.`etat_teacher_class` = :teacher_class.etat_teacher_class:
+AND `teacher`.`school_id` = :teacher.school_id:
+AND `teacher`.`connected` = :teacher.connected:
+AND `teacher`.`status_teacher` = :teacher.status_teacher:
+AND `teacher`.`etat_teacher` = :teacher.etat_teacher:
+AND `school`.`status_school` = :school.status_school:
+AND `school`.`etat_school` = :school.etat_school:', [...], false)
+ 6 APPPATH\Models\TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\StatistiqueController.php(48): App\Models\TeacherModel->getAllConnectedBySchool('1', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatistiqueController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-17 21:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 21:09:19 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\StatistiqueController.php on line 55.
+ 1 APPPATH\Controllers\StatistiqueController.php(55): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1('1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatistiqueController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-17 21:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 21:11:28 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\StatistiqueController.php on line 55.
+ 1 APPPATH\Controllers\StatistiqueController.php(55): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1('1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatistiqueController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-17 21:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 21:12:36 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\StatistiqueController.php on line 57.
+ 1 APPPATH\Controllers\StatistiqueController.php(57): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1('1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatistiqueController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-17 21:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 21:39:46 --> Undefined variable $year_id
+in APPPATH\Controllers\StatistiqueController.php on line 56.
+ 1 APPPATH\Controllers\StatistiqueController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $year_id', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\app\\Controllers\\StatistiqueController.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1('1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatistiqueController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-17 21:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 21:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,6 @@
+
+1;takam_ange;admin;2023-12-15 10-12-45;Authentification;Réussite;Utilisateur;::1;Default Browser;Nouvelle session initialisée;EOF;
+1;takam ange;admin;2023-12-15 10-12-25;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-15 10-12-32;Selection;Echec;Classe;::1;Default Browser;Opération reussir;EOF;
+1;takam ange;admin;2023-12-15 10-12-02;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2023-12-15 10-12-06;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;

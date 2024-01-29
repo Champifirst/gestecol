@@ -1,0 +1,779 @@
+INFO - 2023-09-08 08:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 08:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 08:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 08:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 08:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 08:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 08:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 08:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 08:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 08:22:43 --> syntax error, unexpected token "<<", expecting "function" or "const"
+in APPPATH/Models/YearModel.php on line 53.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 APPPATH/Controllers/YearController.php(143): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Vidéos/secondary-back/public/index.php')
+CRITICAL - 2023-09-08 08:22:46 --> syntax error, unexpected token "<<", expecting "function" or "const"
+in APPPATH/Models/YearModel.php on line 53.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 APPPATH/Controllers/YearController.php(169): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->allYear()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Vidéos/secondary-back/public/index.php')
+INFO - 2023-09-08 09:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 09:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 11:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 11:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 11:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 11:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 14:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 14:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:46:36 --> Undefined variable $name_school
+in APPPATH\Controllers\ClassController.php on line 279.
+ 1 APPPATH\Controllers\ClassController.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name_school', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\ClassController.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ClassController->allClass('2', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClassController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 14:50:33 --> Undefined array key 0
+in APPPATH\Controllers\ClassController.php on line 319.
+ 1 APPPATH\Controllers\ClassController.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\ClassController.php', 319)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ClassController->allClass('2', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClassController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 14:55:44 --> Undefined array key 0
+in APPPATH\Controllers\ClassController.php on line 323.
+ 1 APPPATH\Controllers\ClassController.php(323): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\ClassController.php', 323)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ClassController->allClass('2', '1', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClassController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-08 15:35:19 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: surname in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\StudentModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(97): App\Models\StudentModel->getStudentExist(''trtrer', 'ytrytry', '2023-09-12', 'ytryrty')
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-08 15:35:19 --> SQLite3::query(): Unable to prepare statement: 1, no such column: surname
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: surname', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *
+FROM `student`
+WHERE `name` = \'\'\'trtrer\'
+AND `surname` = \'ytrytry\'
+AND `date_birth` = \'2023-09-12\'
+AND `place_birth` = \'ytryrty\'
+AND `status_student` = 0
+AND `etat_student` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `student`
+WHERE `name` = \'\'\'trtrer\'
+AND `surname` = \'ytrytry\'
+AND `date_birth` = \'2023-09-12\'
+AND `place_birth` = \'ytryrty\'
+AND `status_student` = 0
+AND `etat_student` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `student`
+WHERE `name` = \'\'\'trtrer\'
+AND `surname` = \'ytrytry\'
+AND `date_birth` = \'2023-09-12\'
+AND `place_birth` = \'ytryrty\'
+AND `status_student` = 0
+AND `etat_student` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `student`
+WHERE `name` = :name:
+AND `surname` = :surname:
+AND `date_birth` = :date_birth:
+AND `place_birth` = :place_birth:
+AND `status_student` = :status_student:
+AND `etat_student` = :etat_student:', [...], false)
+ 6 APPPATH\Models\StudentModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\StudentController.php(97): App\Models\StudentModel->getStudentExist('\'trtrer', 'ytrytry', '2023-09-12', 'ytryrty')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-08 15:36:08 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: date_birth in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\StudentModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(97): App\Models\StudentModel->getStudentExist(''trtrer', 'ytrytry', '2023-09-12', 'ytryrty')
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-08 15:36:08 --> SQLite3::query(): Unable to prepare statement: 1, no such column: date_birth
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: date_birth', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *
+FROM `student`
+WHERE `name` = \'\'\'trtrer\'
+AND `surname` = \'ytrytry\'
+AND `date_birth` = \'2023-09-12\'
+AND `place_birth` = \'ytryrty\'
+AND `status_student` = 0
+AND `etat_student` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `student`
+WHERE `name` = \'\'\'trtrer\'
+AND `surname` = \'ytrytry\'
+AND `date_birth` = \'2023-09-12\'
+AND `place_birth` = \'ytryrty\'
+AND `status_student` = 0
+AND `etat_student` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `student`
+WHERE `name` = \'\'\'trtrer\'
+AND `surname` = \'ytrytry\'
+AND `date_birth` = \'2023-09-12\'
+AND `place_birth` = \'ytryrty\'
+AND `status_student` = 0
+AND `etat_student` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `student`
+WHERE `name` = :name:
+AND `surname` = :surname:
+AND `date_birth` = :date_birth:
+AND `place_birth` = :place_birth:
+AND `status_student` = :status_student:
+AND `etat_student` = :etat_student:', [...], false)
+ 6 APPPATH\Models\StudentModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\StudentController.php(97): App\Models\StudentModel->getStudentExist('\'trtrer', 'ytrytry', '2023-09-12', 'ytryrty')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 15:39:09 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDE4MzkwMCwiZXhwIjoxNjk0MTg3NTAwLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.d6cyPQkff77LKjnGppDet8-JmJU2XpK-pPunDYNJT1A', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('student/insert', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 15:39:38 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDE4MzkwMCwiZXhwIjoxNjk0MTg3NTAwLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.d6cyPQkff77LKjnGppDet8-JmJU2XpK-pPunDYNJT1A', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('student/insert', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 15:57:06 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDE4MzkwMCwiZXhwIjoxNjk0MTg3NTAwLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.d6cyPQkff77LKjnGppDet8-JmJU2XpK-pPunDYNJT1A', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 15:57:06 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDE4MzkwMCwiZXhwIjoxNjk0MTg3NTAwLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.d6cyPQkff77LKjnGppDet8-JmJU2XpK-pPunDYNJT1A', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 15:57:07 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDE4MzkwMCwiZXhwIjoxNjk0MTg3NTAwLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.d6cyPQkff77LKjnGppDet8-JmJU2XpK-pPunDYNJT1A', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-08 15:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-08 15:58:27 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: place_birth in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\StudentModel.php(86): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(99): App\Models\StudentModel->getStudentExist('sddfsdf', 'fsdfds', '2023-09-20', 'fsdfds')
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-08 15:58:27 --> SQLite3::query(): Unable to prepare statement: 1, no such column: place_birth
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: place_birth', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT *
+FROM `student`
+WHERE `name` = \'sddfsdf\'
+AND `surname` = \'fsdfds\'
+AND `date_of_birth` = \'2023-09-20\'
+AND `place_birth` = \'fsdfds\'
+AND `status_student` = 0
+AND `etat_student` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `student`
+WHERE `name` = \'sddfsdf\'
+AND `surname` = \'fsdfds\'
+AND `date_of_birth` = \'2023-09-20\'
+AND `place_birth` = \'fsdfds\'
+AND `status_student` = 0
+AND `etat_student` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `student`
+WHERE `name` = \'sddfsdf\'
+AND `surname` = \'fsdfds\'
+AND `date_of_birth` = \'2023-09-20\'
+AND `place_birth` = \'fsdfds\'
+AND `status_student` = 0
+AND `etat_student` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `student`
+WHERE `name` = :name:
+AND `surname` = :surname:
+AND `date_of_birth` = :date_of_birth:
+AND `place_birth` = :place_birth:
+AND `status_student` = :status_student:
+AND `etat_student` = :etat_student:', [...], false)
+ 6 APPPATH\Models\StudentModel.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\StudentController.php(99): App\Models\StudentModel->getStudentExist('sddfsdf', 'fsdfds', '2023-09-20', 'fsdfds')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-08 15:59:51 --> ErrorException: SQLite3::exec(): no such table: parent in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(180): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-08 15:59:51 --> SQLite3::exec(): no such table: parent
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): no such table: parent', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'fsdfdf\', \'fsdfsdf\', \'fsdfdsf\', \'fsdfsdf\', \'345-321-323\', \'sqdqsdqsdsqd\', \'actif\', 0, \'2023-09-08 15:09:51\', \'2023-09-08 15:09:51\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'fsdfdf\', \'fsdfsdf\', \'fsdfdsf\', \'fsdfsdf\', \'345-321-323\', \'sqdqsdqsdsqd\', \'actif\', 0, \'2023-09-08 15:09:51\', \'2023-09-08 15:09:51\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'fsdfdf\', \'fsdfsdf\', \'fsdfdsf\', \'fsdfsdf\', \'345-321-323\', \'sqdqsdqsdsqd\', \'actif\', 0, \'2023-09-08 15:09:51\', \'2023-09-08 15:09:51\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (:name_parent:, :surnameParent:, :emailParent:, :professionParent:, :contactParent:, :adresseParent:, :etat_parent:, :status_parent:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\StudentController.php(180): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-08 16:00:11 --> ErrorException: SQLite3::exec(): table `class` already exists in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#5 C:\xampp\htdocs\secondary-back\app\Database\Migrations\2023-08-17-161855_ClasseMigrate.php(66): CodeIgniter\Database\Forge->createTable('class')
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\ClasseMigrate->up()
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\xampp\htdocs\secondary-back\spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2023-09-08 16:07:19 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: parent.id_user in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(180): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-08 16:07:20 --> SQLite3::exec(): NOT NULL constraint failed: parent.id_user
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: parent.id_user', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'fsdfdf\', \'fsdfsdf\', \'fsdfdsf\', \'fsdfsdf\', \'345-321-323\', \'sqdqsdqsdsqd\', \'actif\', 0, \'2023-09-08 16:09:19\', \'2023-09-08 16:09:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'fsdfdf\', \'fsdfsdf\', \'fsdfdsf\', \'fsdfsdf\', \'345-321-323\', \'sqdqsdqsdsqd\', \'actif\', 0, \'2023-09-08 16:09:19\', \'2023-09-08 16:09:19\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'fsdfdf\', \'fsdfsdf\', \'fsdfdsf\', \'fsdfsdf\', \'345-321-323\', \'sqdqsdqsdsqd\', \'actif\', 0, \'2023-09-08 16:09:19\', \'2023-09-08 16:09:19\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (:name_parent:, :surnameParent:, :emailParent:, :professionParent:, :contactParent:, :adresseParent:, :etat_parent:, :status_parent:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\StudentController.php(180): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-08 16:09:57 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: parent.id_user in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(185): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-08 16:09:57 --> SQLite3::exec(): NOT NULL constraint failed: parent.id_user
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: parent.id_user', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `id_user`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'scxwcxcw\', \'wxccwx\', \'cxxwcwxc\', \'cwxcxwcwx\', \'445-445-241\', NULL, \'sqsqdsqd\', \'actif\', 0, \'2023-09-08 16:09:57\', \'2023-09-08 16:09:57\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `id_user`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'scxwcxcw\', \'wxccwx\', \'cxxwcwxc\', \'cwxcxwcwx\', \'445-445-241\', NULL, \'sqsqdsqd\', \'actif\', 0, \'2023-09-08 16:09:57\', \'2023-09-08 16:09:57\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `id_user`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'scxwcxcw\', \'wxccwx\', \'cxxwcwxc\', \'cwxcxwcwx\', \'445-445-241\', NULL, \'sqsqdsqd\', \'actif\', 0, \'2023-09-08 16:09:57\', \'2023-09-08 16:09:57\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `id_user`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (:name_parent:, :surnameParent:, :emailParent:, :professionParent:, :contactParent:, :id_user:, :adresseParent:, :etat_parent:, :status_parent:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\StudentController.php(185): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-08 16:11:30 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: parent.id_user in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(185): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-08 16:11:30 --> SQLite3::exec(): NOT NULL constraint failed: parent.id_user
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: parent.id_user', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `id_user`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'scxwcxcw\', \'wxccwx\', \'cxxwcwxc\', \'cwxcxwcwx\', \'445-445-241\', NULL, \'sqsqdsqd\', \'actif\', 0, \'2023-09-08 16:09:30\', \'2023-09-08 16:09:30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `id_user`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'scxwcxcw\', \'wxccwx\', \'cxxwcwxc\', \'cwxcxwcwx\', \'445-445-241\', NULL, \'sqsqdsqd\', \'actif\', 0, \'2023-09-08 16:09:30\', \'2023-09-08 16:09:30\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `id_user`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (\'scxwcxcw\', \'wxccwx\', \'cxxwcwxc\', \'cwxcxwcwx\', \'445-445-241\', NULL, \'sqsqdsqd\', \'actif\', 0, \'2023-09-08 16:09:30\', \'2023-09-08 16:09:30\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `parent` (`name_parent`, `surnameParent`, `emailParent`, `professionParent`, `contactParent`, `id_user`, `adresseParent`, `etat_parent`, `status_parent`, `created_at`, `updated_at`) VALUES (:name_parent:, :surnameParent:, :emailParent:, :professionParent:, :contactParent:, :id_user:, :adresseParent:, :etat_parent:, :status_parent:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\StudentController.php(185): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:14:28 --> Undefined variable $db
+in APPPATH\Models\ParentModel.php on line 57.
+ 1 APPPATH\Models\ParentModel.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\secondary-back\\app\\Models\\ParentModel.php', 57)
+ 2 APPPATH\Controllers\StudentController.php(199): App\Models\ParentModel->getId()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:15:28 --> Undefined variable $birth_place
+in APPPATH\Controllers\StudentController.php on line 204.
+ 1 APPPATH\Controllers\StudentController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $birth_place', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\StudentController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:16:01 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student` (`sur_name`, `name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `id_user`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:sur_name:, :name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :id_user:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`sur_name`, `name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `id_user`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:sur_name:, :name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :id_user:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 7 APPPATH\Models\StudentModel.php(96): CodeIgniter\Database\BaseBuilder->insert([...])
+ 8 APPPATH\Controllers\StudentController.php(222): App\Models\StudentModel->insertstudent([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:16:26 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student` (`sur_name`, `name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `id_user`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:sur_name:, :name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :id_user:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`sur_name`, `name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `id_user`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:sur_name:, :name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :id_user:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 7 APPPATH\Models\StudentModel.php(96): CodeIgniter\Database\BaseBuilder->insert([...])
+ 8 APPPATH\Controllers\StudentController.php(222): App\Models\StudentModel->insertstudent([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:17:01 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student` (`sur_name`, `name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `id_user`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:sur_name:, :name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :id_user:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`sur_name`, `name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `id_user`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:sur_name:, :name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :id_user:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 7 APPPATH\Models\StudentModel.php(96): CodeIgniter\Database\BaseBuilder->insert([...])
+ 8 APPPATH\Controllers\StudentController.php(222): App\Models\StudentModel->insertstudent([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:18:03 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 7 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 8 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 9 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\StudentController.php(222): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:19:03 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 7 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 8 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 9 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\StudentController.php(233): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:19:49 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 7 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 8 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 9 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\StudentController.php(233): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:21:52 --> Undefined variable $school
+in APPPATH\Controllers\StudentController.php on line 177.
+ 1 APPPATH\Controllers\StudentController.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $school', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\StudentController.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 16:22:38 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StudentController.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-08 16:23:06 --> ErrorException: SQLite3::exec(): table student has no column named sexe in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `st...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `st...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(243): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-08 16:23:06 --> SQLite3::exec(): table student has no column named sexe
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): table student has no column named sexe', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'dsfsdfsdf\', \'fsdfdsf\', \'2023-08-29\', \'1694190187.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 9, \'4\', 8, \'2023-09-08 16:09:06\', \'2023-09-08 16:09:06\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'dsfsdfsdf\', \'fsdfdsf\', \'2023-08-29\', \'1694190187.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 9, \'4\', 8, \'2023-09-08 16:09:06\', \'2023-09-08 16:09:06\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'dsfsdfsdf\', \'fsdfdsf\', \'2023-08-29\', \'1694190187.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 9, \'4\', 8, \'2023-09-08 16:09:06\', \'2023-09-08 16:09:06\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\StudentController.php(243): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-08 18:11:18 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDE4ODY1NCwiZXhwIjoxNjk0MTkyMjU0LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.TuR2xTMoN6UGT42-eR7-YgXM0W2KQMPYElBbBJBoUCs', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('student/insert', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-08 18:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-08 18:12:28 --> ErrorException: SQLite3::exec(): table student has no column named session_id in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `st...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `st...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(243): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-08 18:12:28 --> SQLite3::exec(): table student has no column named session_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): table student has no column named session_id', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'sdsdfgdf\', \'fsdfdfdf\', \'2023-09-13\', \'1694196748.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 10, \'4\', 8, \'2023-09-08 18:09:28\', \'2023-09-08 18:09:28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'sdsdfgdf\', \'fsdfdfdf\', \'2023-09-13\', \'1694196748.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 10, \'4\', 8, \'2023-09-08 18:09:28\', \'2023-09-08 18:09:28\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'sdsdfgdf\', \'fsdfdfdf\', \'2023-09-13\', \'1694196748.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 10, \'4\', 8, \'2023-09-08 18:09:28\', \'2023-09-08 18:09:28\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\StudentController.php(243): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-08 18:14:13 --> ErrorException: SQLite3::exec(): table student has no column named cycle_id in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `st...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `st...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(243): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-08 18:14:13 --> SQLite3::exec(): table student has no column named cycle_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): table student has no column named cycle_id', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'sdsdfgdf\', \'fsdfdfdf\', \'2023-09-13\', \'1694196853.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 11, \'4\', 8, \'2023-09-08 18:09:13\', \'2023-09-08 18:09:13\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'sdsdfgdf\', \'fsdfdfdf\', \'2023-09-13\', \'1694196853.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 11, \'4\', 8, \'2023-09-08 18:09:13\', \'2023-09-08 18:09:13\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'sdsdfgdf\', \'fsdfdfdf\', \'2023-09-13\', \'1694196853.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 11, \'4\', 8, \'2023-09-08 18:09:13\', \'2023-09-08 18:09:13\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\StudentController.php(243): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-08 18:15:15 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: student.email in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `st...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `st...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\secondary-back\app\Controllers\StudentController.php(243): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#12 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-08 18:15:15 --> SQLite3::exec(): NOT NULL constraint failed: student.email
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: student.email', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'sdsdfgdf\', \'fsdfdfdf\', \'2023-09-13\', \'1694196916.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 12, \'4\', 8, \'2023-09-08 18:09:15\', \'2023-09-08 18:09:15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'sdsdfgdf\', \'fsdfdfdf\', \'2023-09-13\', \'1694196916.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 12, \'4\', 8, \'2023-09-08 18:09:15\', \'2023-09-08 18:09:15\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (\'sdsdfgdf\', \'fsdfdfdf\', \'2023-09-13\', \'1694196916.jpg\', \'camerounais\', \'F\', \'CM-ezeze-2023-tle--1\', 0, \'actif\', \'2\', \'4\', \'1\', 12, \'4\', 8, \'2023-09-08 18:09:15\', \'2023-09-08 18:09:15\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student` (`name`, `birth_place`, `date_of_birth`, `photo`, `nationality`, `sexe`, `matricule`, `status_student`, `etat_student`, `school_id`, `class_id`, `session_id`, `parent_id`, `cycle_id`, `year_id`, `created_at`, `updated_at`) VALUES (:name:, :birth_place:, :date_of_birth:, :photo:, :nationality:, :sexe:, :matricule:, :status_student:, :etat_student:, :school_id:, :class_id:, :session_id:, :parent_id:, :cycle_id:, :year_id:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\StudentController.php(243): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-08 18:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 18:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 19:07:10 --> Invalid file: "student/liste.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student/liste.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('student/liste.php', [], true)
+ 3 APPPATH\Controllers\StudentController.php(24): view('student/liste.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StudentController->liste()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-08 19:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

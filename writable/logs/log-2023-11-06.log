@@ -1,0 +1,42 @@
+INFO - 2023-11-06 10:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-06 11:03:36 --> ErrorException: SQLite3::exec(): database is locked in C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `us...')
+#2 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `us...')
+#3 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#4 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#5 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\DEMETO\secondary-back\app\Controllers\UserController.php(132): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\UserController->addUser()
+#11 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\DEMETO\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\DEMETO\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-11-06 11:03:36 --> SQLite3::exec(): database is locked
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): database is locked', 'C:\\xampp\\htdocs\\DEMETO\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `user` (`login`, `password`, `type_user`, `etat_user`, `status_user`, `created_at`, `updated_at`) VALUES (\'demeto\', \'37a8fa1b989ce5959888205a225fcce7\', \'admin\', \'actif\', 0, \'2023-11-06 11:11:36\', \'2023-11-06 11:11:36\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `user` (`login`, `password`, `type_user`, `etat_user`, `status_user`, `created_at`, `updated_at`) VALUES (\'demeto\', \'37a8fa1b989ce5959888205a225fcce7\', \'admin\', \'actif\', 0, \'2023-11-06 11:11:36\', \'2023-11-06 11:11:36\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`login`, `password`, `type_user`, `etat_user`, `status_user`, `created_at`, `updated_at`) VALUES (\'demeto\', \'37a8fa1b989ce5959888205a225fcce7\', \'admin\', \'actif\', 0, \'2023-11-06 11:11:36\', \'2023-11-06 11:11:36\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`login`, `password`, `type_user`, `etat_user`, `status_user`, `created_at`, `updated_at`) VALUES (:login:, :password:, :type_user:, :etat_user:, :status_user:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(132): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UserController->addUser()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DEMETO\\secondary-back\\public\\index.php')
+INFO - 2023-11-06 11:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-06 11:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-06 11:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-06 11:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-06 11:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-06 12:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

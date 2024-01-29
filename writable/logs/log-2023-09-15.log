@@ -1,0 +1,398 @@
+INFO - 2023-09-15 08:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 09:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-15 09:54:06 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: sudent.student_id in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `student...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `student...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `student...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\StudentClassModel.php(71): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\NoteController.php(34): App\Models\StudentClassModel->getStudentByClass('4', 10)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '3')
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-15 09:54:06 --> SQLite3::query(): Unable to prepare statement: 1, no such column: sudent.student_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: sudent.student_id', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`
+FROM `student_class`
+INNER JOIN `student` ON `sudent`.`student_id` = `student_class`.`student_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_class`.`year_id`
+INNER JOIN `class` ON `class`.`class_id` = `student_class`.`class_id`
+WHERE `student_class`.`class_id` = \'4\'
+AND `student_class`.`year_id` = 10
+AND `student_class`.`status_stu_class` = 0
+AND `student_class`.`etat_stu_class` = \'actif\'
+AND `class`.`status_class` = 0
+AND `class`.`etat_class` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`
+FROM `student_class`
+INNER JOIN `student` ON `sudent`.`student_id` = `student_class`.`student_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_class`.`year_id`
+INNER JOIN `class` ON `class`.`class_id` = `student_class`.`class_id`
+WHERE `student_class`.`class_id` = \'4\'
+AND `student_class`.`year_id` = 10
+AND `student_class`.`status_stu_class` = 0
+AND `student_class`.`etat_stu_class` = \'actif\'
+AND `class`.`status_class` = 0
+AND `class`.`etat_class` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`
+FROM `student_class`
+INNER JOIN `student` ON `sudent`.`student_id` = `student_class`.`student_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_class`.`year_id`
+INNER JOIN `class` ON `class`.`class_id` = `student_class`.`class_id`
+WHERE `student_class`.`class_id` = \'4\'
+AND `student_class`.`year_id` = 10
+AND `student_class`.`status_stu_class` = 0
+AND `student_class`.`etat_stu_class` = \'actif\'
+AND `class`.`status_class` = 0
+AND `class`.`etat_class` = \'actif\'
+AND `student`.`status_student` = 0
+AND `student`.`etat_student` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `student`.`student_id`, `student`.`surname`, `student`.`name`, `student`.`birth_place`, `student`.`date_of_birth`, `student`.`photo`, `student`.`nationality`, `student`.`sexe`, `student`.`matricule`, `student`.`status_student`, `student`.`etat_student`, `student`.`year_id`, `student`.`parent_id`, `student`.`created_at`, `student`.`updated_at`, `student`.`deleted_at`
+FROM `student_class`
+INNER JOIN `student` ON `sudent`.`student_id` = `student_class`.`student_id`
+INNER JOIN `year` ON `year`.`year_id` = `student_class`.`year_id`
+INNER JOIN `class` ON `class`.`class_id` = `student_class`.`class_id`
+WHERE `student_class`.`class_id` = :student_class.class_id:
+AND `student_class`.`year_id` = :student_class.year_id:
+AND `student_class`.`status_stu_class` = :student_class.status_stu_class:
+AND `student_class`.`etat_stu_class` = :student_class.etat_stu_class:
+AND `class`.`status_class` = :class.status_class:
+AND `class`.`etat_class` = :class.etat_class:
+AND `student`.`status_student` = :student.status_student:
+AND `student`.`etat_student` = :student.etat_student:', [...], false)
+ 6 APPPATH\Models\StudentClassModel.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\NoteController.php(34): App\Models\StudentClassModel->getStudentByClass('4', 10)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '3')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-15 10:19:42 --> Undefined variable $class_id
+in APPPATH\Models\NoteModel.php on line 59.
+ 1 APPPATH\Models\NoteModel.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $class_id', 'C:\\xampp\\htdocs\\secondary-back\\app\\Models\\NoteModel.php', 59)
+ 2 APPPATH\Controllers\NoteController.php(38): App\Models\NoteModel->getNoteByStudent(6, '6', 9)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-15 10:20:12 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: note.note in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `note`.`...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `note`.`...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `note`.`...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `note`.`...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\NoteModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\NoteController.php(38): App\Models\NoteModel->getNoteByStudent(6, '6', 9)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-15 10:20:12 --> SQLite3::query(): Unable to prepare statement: 1, no such column: note.note
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: note.note', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = :note.student_id:
+AND `note`.`teachingunit_id` = :note.teachingunit_id:
+AND `note`.`year_id` = :note.year_id:
+AND `note`.`status_note` = :note.status_note:
+AND `note`.`etat_note` = :note.etat_note:', [...], false)
+ 6 APPPATH\Models\NoteModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\NoteController.php(38): App\Models\NoteModel->getNoteByStudent(6, '6', 9)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-15 10:27:05 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: note.note in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `note`.`...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `note`.`...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `note`.`...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `note`.`...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\NoteModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\NoteController.php(38): App\Models\NoteModel->getNoteByStudent(6, '6', 9)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-15 10:27:05 --> SQLite3::query(): Unable to prepare statement: 1, no such column: note.note
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: note.note', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = :note.student_id:
+AND `note`.`teachingunit_id` = :note.teachingunit_id:
+AND `note`.`year_id` = :note.year_id:
+AND `note`.`status_note` = :note.status_note:
+AND `note`.`etat_note` = :note.etat_note:', [...], false)
+ 6 APPPATH\Models\NoteModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\NoteController.php(38): App\Models\NoteModel->getNoteByStudent(6, '6', 9)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-15 10:30:17 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: note.trimestre_id in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `note`.`...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `note`.`...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `note`.`...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `note`.`...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\NoteModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\NoteController.php(38): App\Models\NoteModel->getNoteByStudent(6, '6', 9)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-15 10:30:17 --> SQLite3::query(): Unable to prepare statement: 1, no such column: note.trimestre_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: note.trimestre_id', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`trimestre_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = :note.student_id:
+AND `note`.`teachingunit_id` = :note.teachingunit_id:
+AND `note`.`year_id` = :note.year_id:
+AND `note`.`status_note` = :note.status_note:
+AND `note`.`etat_note` = :note.etat_note:', [...], false)
+ 6 APPPATH\Models\NoteModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\NoteController.php(38): App\Models\NoteModel->getNoteByStudent(6, '6', 9)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+ERROR - 2023-09-15 10:31:08 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: note_created_at in C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\xampp\\htdocs...', 146)
+#1 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `note`.`...')
+#2 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `note`.`...')
+#3 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `note`.`...')
+#4 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `note`.`...', Array, false)
+#5 C:\xampp\htdocs\secondary-back\app\Models\NoteModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\secondary-back\app\Controllers\NoteController.php(38): App\Models\NoteModel->getNoteByStudent(6, '6', 9)
+#7 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+#8 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+#9 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-15 10:31:08 --> SQLite3::query(): Unable to prepare statement: 1, no such column: note_created_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such column: note_created_at', 'C:\\xampp\\htdocs\\secondary-back\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = 6
+AND `note`.`teachingunit_id` = \'6\'
+AND `note`.`year_id` = 9
+AND `note`.`status_note` = 0
+AND `note`.`etat_note` = \'actif\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `note`.`note_id`, `note`.`note`, `note`.`student_id`, `note`.`teachingunit_id`, `note`.`year_id`, `note`.`sequence_id`, `note`.`status_note`, `note`.`etat_note`, `note`.`status_note`, `note_created_at`, `note`.`updated_at`, `note`.`deleted_at`
+FROM `note`
+WHERE `note`.`student_id` = :note.student_id:
+AND `note`.`teachingunit_id` = :note.teachingunit_id:
+AND `note`.`year_id` = :note.year_id:
+AND `note`.`status_note` = :note.status_note:
+AND `note`.`etat_note` = :note.etat_note:', [...], false)
+ 6 APPPATH\Models\NoteModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\NoteController.php(38): App\Models\NoteModel->getNoteByStudent(6, '6', 9)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-15 10:44:19 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDc3MDg0MSwiZXhwIjoxNjk0Nzc0NDQxLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.AB44uuSTSF-p9Rykt7HtrrxlJj77ZewuvUvqtRso1R0', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-15 10:44:19 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDc3MDg0MSwiZXhwIjoxNjk0Nzc0NDQxLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.AB44uuSTSF-p9Rykt7HtrrxlJj77ZewuvUvqtRso1R0', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-15 10:44:21 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDc3MDg0MSwiZXhwIjoxNjk0Nzc0NDQxLCJlbWFpbCI6InRha2FtIGFuZ2UifQ.AB44uuSTSF-p9Rykt7HtrrxlJj77ZewuvUvqtRso1R0', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-15 10:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 10:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-15 10:45:08 --> Array to string conversion
+in APPPATH\Controllers\NoteController.php on line 52.
+ 1 APPPATH\Controllers\NoteController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\NoteController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-15 11:53:34 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDc3NDY2NywiZXhwIjoxNjk0Nzc4MjY3LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.r6TcF6a0zCQkG2eNUEMI_HHad4Y0Btlvicr17BiG2nc', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('year/actif', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-15 11:53:34 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDc3NDY2NywiZXhwIjoxNjk0Nzc4MjY3LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.r6TcF6a0zCQkG2eNUEMI_HHad4Y0Btlvicr17BiG2nc', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/select/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-15 11:53:36 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDc3NDY2NywiZXhwIjoxNjk0Nzc4MjY3LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.r6TcF6a0zCQkG2eNUEMI_HHad4Y0Btlvicr17BiG2nc', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('school/SchoolFilter/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-15 11:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 11:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-15 12:48:20 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\NoteController.php(164): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->insertnote()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-15 12:50:24 --> Undefined array key "close"
+in APPPATH\Controllers\NoteController.php on line 46.
+ 1 APPPATH\Controllers\NoteController.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "close"', 'C:\\xampp\\htdocs\\secondary-back\\app\\Controllers\\NoteController.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->GetnoteByTeachingUnit('4', '6', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-09-15 13:00:02 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 172.
+ 1 APPPATH\Filters\AuthFilter.php(52): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NDc3OTA2NywiZXhwIjoxNjk0NzgyNjY3LCJlbWFpbCI6InRha2FtIGFuZ2UifQ.hd7NvqVoeCtBJjoX0z_jOpkp9ooFqpXjx7RZVNGmKbQ', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('note/insert', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-15 13:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 13:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-15 13:08:01 --> Cannot access offset of type string on string
+in APPPATH\Controllers\NoteController.php on line 178.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->insertnote()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+INFO - 2023-09-15 13:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 13:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

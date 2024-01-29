@@ -1,0 +1,229 @@
+CRITICAL - 2023-08-29 09:29:10 --> syntax error, unexpected single-quoted string "status_sequence", expecting "]"
+in APPPATH\Controllers\SequenceController.php on line 64.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\secondary\\secondary-back\\app\\Controllers\\SequenceController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SequenceController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SequenceController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\SequenceController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 09:30:23 --> syntax error, unexpected single-quoted string "status_trimestre", expecting "]"
+in APPPATH\Models\TrimestreModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\secondary\\secondary-back\\app\\Models\\TrimestreModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TrimestreModel')
+ 3 APPPATH\Controllers\TrimestreController.php(18): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TrimestreModel')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TrimestreController->inserttrimestre()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrimestreController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+INFO - 2023-08-29 13:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-29 13:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-29 13:04:55 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\secondary\secondary-back\app\Models\LicenceModel.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\secondary\secondary-back\app\Controllers\LicenceController.php(20): App\Models\LicenceModel->getLicenceDesc()
+#6 C:\xampp\htdocs\secondary\secondary-back\app\Controllers\AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+#7 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-29 13:04:55 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `licence`
+WHERE `status_licence` = :status_licence:
+AND `etat_licence` = :etat_licence:
+ORDER BY `licence_id` DESC', [...], false)
+ 4 APPPATH\Models\LicenceModel.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LicenceController.php(20): App\Models\LicenceModel->getLicenceDesc()
+ 6 APPPATH\Controllers\AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+INFO - 2023-08-29 13:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-29 13:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-29 13:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-29 13:55:06 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\secondary\secondary-back\app\Models\LicenceModel.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\secondary\secondary-back\app\Controllers\LicenceController.php(20): App\Models\LicenceModel->getLicenceDesc()
+#6 C:\xampp\htdocs\secondary\secondary-back\app\Controllers\AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+#7 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\secondary\secondary-back\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-29 13:55:06 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `licence`
+WHERE `status_licence` = :status_licence:
+AND `etat_licence` = :etat_licence:
+ORDER BY `licence_id` DESC', [...], false)
+ 4 APPPATH\Models\LicenceModel.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LicenceController.php(20): App\Models\LicenceModel->getLicenceDesc()
+ 6 APPPATH\Controllers\AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+INFO - 2023-08-29 13:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-29 14:18:27 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 14:19:50 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 14:19:58 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 14:21:15 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 14:21:16 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 14:22:03 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 14:22:05 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 14:22:35 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 14:22:37 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+INFO - 2023-08-29 14:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-29 14:23:33 --> Invalid file: "note.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('note.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('note.php', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('note.php')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->note()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 15:48:20 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\NoteController.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\secondary\\secondary-back\\app\\Controllers\\NoteController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\NoteController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\NoteController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\NoteController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 15:52:49 --> Undefined variable $data
+in APPPATH\Controllers\NoteController.php on line 82.
+ 1 APPPATH\Controllers\NoteController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\secondary\\secondary-back\\app\\Controllers\\NoteController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->insertnote()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 15:55:44 --> syntax error, unexpected token ","
+in APPPATH\Controllers\NoteController.php on line 82.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\secondary\\secondary-back\\app\\Controllers\\NoteController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\NoteController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\NoteController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\NoteController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-29 15:56:06 --> Undefined variable $data
+in APPPATH\Controllers\NoteController.php on line 82.
+ 1 APPPATH\Controllers\NoteController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\secondary\\secondary-back\\app\\Controllers\\NoteController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NoteController->insertnote()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary\\secondary-back\\public\\index.php')

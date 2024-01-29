@@ -1,0 +1,24 @@
+CRITICAL - 2023-08-17 19:37:12 --> Class App\Controllers\FonctionnlityController cannot extend from trait CodeIgniter\API\ResponseTrait
+in APPPATH\Controllers\FonctionnlityController.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 19:37:51 --> Class "App\Controllers\helpers\SHareHelper" not found
+in APPPATH\Controllers\FonctionnlityController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\FonctionnlityController->defaultFonctionnality()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FonctionnlityController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-17 19:38:47 --> Class "App\Controllers\helpers\SHareHelper" not found
+in APPPATH\Controllers\FonctionnlityController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\FonctionnlityController->defaultFonctionnality()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FonctionnlityController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')
+CRITICAL - 2023-08-17 19:46:58 --> Class "App\Model\FonctionnalityModel" not found
+in APPPATH\Controllers\FonctionnlityController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\FonctionnlityController->defaultFonctionnality()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FonctionnlityController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\secondary-back\\public\\index.php')

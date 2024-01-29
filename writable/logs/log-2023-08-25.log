@@ -1,0 +1,80 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cd35c914c8e8bee9bed08f5dc5c82aa118225167
+INFO - 2023-08-25 21:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-25 21:15:39 --> Call to undefined function App\Controllers\LicenceModel()
+in APPPATH/Controllers/LicenceController.php on line 15.
+ 1 APPPATH/Controllers/AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Vidéos/secondary-back/public/index.php')
+INFO - 2023-08-25 21:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-25 21:16:57 --> Undefined variable $builder2
+in APPPATH/Models/LicenceModel.php on line 55.
+ 1 APPPATH/Models/LicenceModel.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/LicenceController.php(17): App\Models\LicenceModel->getLicenceDesc()
+ 3 APPPATH/Controllers/AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Vidéos/secondary-back/public/index.php')
+INFO - 2023-08-25 21:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-25 21:17:20 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: licence in /home/takam/Vidéos/secondary-back/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Vidéos/secondary-back/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Vidéos/secondary-back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Vidéos/secondary-back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Vidéos/secondary-back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Vidéos/secondary-back/app/Models/LicenceModel.php(57): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Vidéos/secondary-back/app/Controllers/LicenceController.php(17): App\Models\LicenceModel->getLicenceDesc()
+#7 /home/takam/Vidéos/secondary-back/app/Controllers/AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+#8 /home/takam/Vidéos/secondary-back/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#9 /home/takam/Vidéos/secondary-back/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/takam/Vidéos/secondary-back/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/takam/Vidéos/secondary-back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /home/takam/Vidéos/secondary-back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-08-25 21:17:20 --> SQLite3::query(): Unable to prepare statement: 1, no such table: licence
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/LicenceModel.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/LicenceController.php(17): App\Models\LicenceModel->getLicenceDesc()
+ 8 APPPATH/Controllers/AuthController.php(30): App\Controllers\LicenceController->verif_licence()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Vidéos/secondary-back/public/index.php')
+INFO - 2023-08-25 21:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-25 21:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-25 21:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-25 21:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-25 21:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
+=======
+=======
+ERROR - 2023-08-25 14:24:27 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" F...')
+#4 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\secondary\secondary-back\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\secondary\secondary-back\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+>>>>>>> 24005afe769907f9cbfe79d50d0a0d12e232d6bf
+>>>>>>> cd35c914c8e8bee9bed08f5dc5c82aa118225167

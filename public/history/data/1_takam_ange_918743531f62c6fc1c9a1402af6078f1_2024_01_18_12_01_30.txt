@@ -1,0 +1,2 @@
+
+1;takam_ange;admin;2024-01-18 12-01-30;Authentification;Réussite;Utilisateur;::1;Default Browser;Nouvelle session initialisée;EOF;
