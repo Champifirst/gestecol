@@ -213,7 +213,7 @@ class NoteController extends ResourcePresenter
         }     
     }        
 
-     public function listenote(){
+    public function listenote(){
 
         $NoteModel = new NoteModel();
 
@@ -282,87 +282,99 @@ class NoteController extends ResourcePresenter
     #@-- 1 --> modification des notes
     #- use:
     #-
-    public function updatenote()
-    {
-    //extanciation de la NoteModel
-        
-        $NoteModel = new NoteModel;
-
+    // public function updatenote()
+    // {
+    //     $NoteModel = new NoteModel;
+    //     // validation du formulaire 
+    //     $rules = [
+    //         'class'          => [
+    //             'rules' => 'required|max_length[15]'
+    //         ],
+    //         'sequence'          => [
+    //             'rules' => 'required|max_length[10]'
+    //         ],
+    //         'matiere'          => [
+    //             'rules' => 'required|max_length[40]'
+    //         ],
+    //         'annee'          => [
+    //             'rules' => 'required'
+    //         ]
+    //     ];
     
-        if ($this->validate($rules)) {
-            //validation good
+    //     if ($this->validate($rules)) {
+    //         //validation good
 
 
-            if ($new_note > 20) {
-                $response = [
-                    "success" => false,
-                    "status"  => 500,
-                    "code"    => "error",
-                    "title"   => "Erreur",
-                    "msg"     => "la note est incorrecte",
-                ];
+    //         if ($new_note > 20) {
+    //             $response = [
+    //                 "success" => false,
+    //                 "status"  => 500,
+    //                 "code"    => "error",
+    //                 "title"   => "Erreur",
+    //                 "msg"     => "la note est incorrecte",
+    //             ];
     
-                return $this->respond($response);
-            }else {
+    //             return $this->respond($response);
+    //         }else {
 
-                //modification en lot
-                $post_datas = $this->request->getvar($listing); //Array post datas
+    //             //modification en lot
+    //             $post_datas = $this->request->getvar($listing); //Array post datas
 
-                $data = []; //Initialize array 
+    //             $data = []; //Initialize array 
 
-                foreach ($post_datas as $listing) {
+    //             foreach ($post_datas as $listing) {
 
-                    $row = [
-                    'note'                   => $listing->new_note,
-                    'status_note'            => 0,
-                    'etat_note'              => 'actif',
-                    'updated_at'             => date("Y-m-d H:m:s"),
-                    ];
+    //                 $row = [
+    //                 'note'                   => $listing->new_note,
+    //                 'status_note'            => 0,
+    //                 'etat_note'              => 'actif',
+    //                 'updated_at'             => date("Y-m-d H:m:s"),
+    //                 ];
 
-                    // add row to data
-                    array_push($data, $row);
-                }
+    //                 // add row to data
+    //                 array_push($data, $row);
+    //             }
 
-                $note_id = $this->listenote($listing->note_id);
+    //             $note_id = $this->listenote($listing->note_id);
                 
-               if ($NoteModel->where('note_id', $note_id)->set($data)->update() === false) {
-                    // echec de modification
-                    $response = [
-                        "success" => false,
-                        "status"  => 500,
-                        "code"    => "error",
-                        "title"   => "Erreur",
-                        'msg'     => "champs incorrect",
-                        ];
-                    return $this->respond($response);
+    //            if ($NoteModel->where('note_id', $note_id)->set($data)->update() === false) {
+    //                 // echec de modification
+    //                 $response = [
+    //                     "success" => false,
+    //                     "status"  => 500,
+    //                     "code"    => "error",
+    //                     "title"   => "Erreur",
+    //                     'msg'     => "champs incorrect",
+    //                     ];
+    //                 return $this->respond($response);
 
-                }else
-                    {
-                     // modification reussir
-                    $response = [
-                        'success' => true,
-                        'status'  => 200,
-                        "code"    => "error",
-                        "title"   => "Erreur",
-                        'msg'     => "modification reussir",
-                    ];
-                    return $this->respond($response);
+    //             }else
+    //                 {
+    //                  // modification reussir
+    //                 $response = [
+    //                     'success' => true,
+    //                     'status'  => 200,
+    //                     "code"    => "error",
+    //                     "title"   => "Erreur",
+    //                     'msg'     => "modification reussir",
+    //                 ];
+    //                 return $this->respond($response);
 
-                }
+    //             }
 
-            }
+    //         }
                 
-        }else{
-            // validation failed
-            $response = [
-                "success" => false,
-                "status"  => 500,
-                "code"    => "error",
-                "title"   => "Erreur",
-                "msg"     => $this->validator->getErrors(),
-            ];
-            return $this->respond($response);
-        }
-    }
+    //     }else{
+    //         // validation failed
+    //         $response = [
+    //             "success" => false,
+    //             "status"  => 500,
+    //             "code"    => "error",
+    //             "title"   => "Erreur",
+    //             "msg"     => $this->validator->getErrors(),
+    //         ];
+    //         return $this->respond($response);
+    //     }
+    // }
 
 }

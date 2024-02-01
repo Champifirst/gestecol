@@ -19,7 +19,7 @@ class NoteMigrate extends Migration
             'null'              =>  false
         ],  
         'status_note'       =>[ 
-            'type'              =>  'INT'
+            'type'              =>  'INT' 
         ],  
         'etat_note'        =>[  
             'type'              =>  'TEXT',
@@ -42,7 +42,7 @@ class NoteMigrate extends Migration
             'null'              =>  false
         ], 
         'close'           =>[   
-            'type'              =>  'TEXT',
+            'type'              =>  'TEXT', // yes fermer no ouvert autorisation par admin avant ouverture
             'null'              =>  false
         ],  
         'created_at'       =>[  

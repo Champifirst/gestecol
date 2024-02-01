@@ -1,0 +1,223 @@
+INFO - 2024-01-31 17:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-31 17:53:22 --> Undefined variable $year_id
+in APPPATH\Models\TeacherModel.php on line 296.
+ 1 APPPATH\Models\TeacherModel.php(296): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $year_id', 'C:\\xampp64\\htdocs\\secondary-school\\app\\Models\\TeacherModel.php', 296)
+ 2 APPPATH\Controllers\StatistiqueController.php(47): App\Models\TeacherModel->getAllConnected(1)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1('0')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatistiqueController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp64\\htdocs\\secondary-school\\public\\index.php')
+INFO - 2024-01-31 17:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 17:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-31 18:13:40 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user in C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp64\\htdo...', 145)
+#1 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `te...')
+#2 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `te...')
+#3 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#4 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#5 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp64\htdocs\secondary-school\app\Controllers\TeachingUnitController.php(184): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeachingUnitController))
+#12 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp64\htdocs\secondary-school\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp64\\htdo...')
+#15 {main}
+CRITICAL - 2024-01-31 18:13:40 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user', 'C:\\xampp64\\htdocs\\secondary-school\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:40\', \'2024-01-31 18:01:40\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:40\', \'2024-01-31 18:01:40\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:40\', \'2024-01-31 18:01:40\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (:name:, :code:, :coefficient:, :year_id:, :user_id:, :class_id:, :status_teachingunit:, :etat_teachingunit:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\TeachingUnitController.php(184): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeachingUnitController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp64\\htdocs\\secondary-school\\public\\index.php')
+INFO - 2024-01-31 18:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-31 18:15:12 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.user_id in C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp64\\htdo...', 145)
+#1 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `te...')
+#2 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `te...')
+#3 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#4 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#5 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp64\htdocs\secondary-school\app\Controllers\TeachingUnitController.php(184): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeachingUnitController))
+#12 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp64\htdocs\secondary-school\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp64\\htdo...')
+#15 {main}
+CRITICAL - 2024-01-31 18:15:12 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.user_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: teachingunit.user_id', 'C:\\xampp64\\htdocs\\secondary-school\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `id_user`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:12\', \'2024-01-31 18:01:12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `id_user`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:12\', \'2024-01-31 18:01:12\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `id_user`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:12\', \'2024-01-31 18:01:12\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `id_user`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (:name:, :code:, :coefficient:, :year_id:, :id_user:, :class_id:, :status_teachingunit:, :etat_teachingunit:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\TeachingUnitController.php(184): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeachingUnitController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp64\\htdocs\\secondary-school\\public\\index.php')
+INFO - 2024-01-31 18:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-31 18:17:33 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.cycle_id in C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp64\\htdo...', 145)
+#1 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `te...')
+#2 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `te...')
+#3 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#4 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#5 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp64\htdocs\secondary-school\app\Controllers\TeachingUnitController.php(184): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeachingUnitController))
+#12 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp64\htdocs\secondary-school\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp64\\htdo...')
+#15 {main}
+CRITICAL - 2024-01-31 18:17:33 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.cycle_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: teachingunit.cycle_id', 'C:\\xampp64\\htdocs\\secondary-school\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:33\', \'2024-01-31 18:01:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:33\', \'2024-01-31 18:01:33\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:33\', \'2024-01-31 18:01:33\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (:name:, :code:, :coefficient:, :year_id:, :user_id:, :class_id:, :status_teachingunit:, :etat_teachingunit:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\TeachingUnitController.php(184): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeachingUnitController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp64\\htdocs\\secondary-school\\public\\index.php')
+INFO - 2024-01-31 18:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-31 18:19:20 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.session_id in C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', 'C:\\xampp64\\htdo...', 145)
+#1 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `te...')
+#2 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `te...')
+#3 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#4 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#5 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp64\htdocs\secondary-school\app\Controllers\TeachingUnitController.php(185): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeachingUnitController))
+#12 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp64\htdocs\secondary-school\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp64\htdocs\secondary-school\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp64\\htdo...')
+#15 {main}
+CRITICAL - 2024-01-31 18:19:20 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.session_id
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec(): NOT NULL constraint failed: teachingunit.session_id', 'C:\\xampp64\\htdocs\\secondary-school\\vendor\\codeigniter4\\framework\\system\\Database\\SQLite3\\Connection.php', 145)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(145): SQLite3->exec('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `cycle_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:20\', \'2024-01-31 18:01:20\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `cycle_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:20\', \'2024-01-31 18:01:20\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `cycle_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (\'francais\', \'FR\', \'1\', 1, \'1\', \'1\', \'6\', 0, \'actif\', \'2024-01-31 18:01:20\', \'2024-01-31 18:01:20\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `teachingunit` (`name`, `code`, `coefficient`, `year_id`, `user_id`, `cycle_id`, `class_id`, `status_teachingunit`, `etat_teachingunit`, `created_at`, `updated_at`) VALUES (:name:, :code:, :coefficient:, :year_id:, :user_id:, :cycle_id:, :class_id:, :status_teachingunit:, :etat_teachingunit:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\TeachingUnitController.php(185): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TeachingUnitController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp64\\htdocs\\secondary-school\\public\\index.php')
+INFO - 2024-01-31 18:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 18:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 19:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 20:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 20:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 20:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 21:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

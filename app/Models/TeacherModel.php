@@ -293,7 +293,7 @@ class TeacherModel extends Model
 
         $builder->join('teacher_class', 'teacher_class.teacher_id=teacher.teacher_id', 'inner');
         $builder->join('class', 'class.class_id=teacher_class.class_id', 'inner');
-        $builder->where('teacher_class.year_id', $year_id);
+        $builder->where('teacher_class.year_id', $id_year);
         $builder->where('teacher_class.status_teacher_class', 0);
         $builder->where('teacher_class.etat_teacher_class', 'actif');
 

@@ -38,10 +38,6 @@ class TeachingUnitMigrate extends Migration
                 'type'                  =>  'INT',
                 'null'                  =>  false
             ],
-            'id_user'           =>[
-                'type'              =>'INT',
-                'null'              =>false
-            ],
             'cycle_id'             =>[
                 'type'              =>'INT',
                 'null'              =>false

@@ -94,6 +94,7 @@
                                                 <th>#</th>
                                                 <th>Code</th>
                                                 <th>Nom de la matière</th>
+                                                <th>Coefficient</th>
                                                 <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -115,12 +116,97 @@
             <?= $this->include('components/footer.php') ?>
         </div>
     </div>
+
+     <!-- Modal edit -->
+     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modifier une matière</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form id="form_update" class="form-horizontal form-label-left">
+            <div class="modal-body">
+
+              <div class="item form-group">
+                <label class="col-form-label col-md-3 col-sm-3 label-align">Etablissement scolaire <span class="required">*</span>
+                </label>
+                <div class="col-md-9 col-sm-9 ">
+                    <select class="form-control" name="name_school_edit" id="name_school_edit" required="required" onchange="getSchoolUpdate()" style="width: 100%;">
+                        <option value="0">Selectionner un établissement</option>
+                    </select>
+                </div>
+              </div>
+              <div class="item form-group">
+                <label class="col-form-label col-md-3 col-sm-3 label-align">Session <span class="required">*</span>
+                </label>
+                <div class="col-md-9 col-sm-9 ">
+                    <select class="form-control" name="name_session_edit" id="name_session_edit" required="required" onchange="getSessionUpdate()" style="width: 100%;">
+                    </select>
+                </div>
+              </div>
+              <div class="item form-group">
+                <label class="col-form-label col-md-3 col-sm-3 label-align">Cycle <span class="required">*</span>
+                </label>
+                <div class="col-md-9 col-sm-9 ">
+                    <select class="form-control" name="name_cycle_edit" id="name_cycle_edit" required="required" onchange="getCycleUpdate()" style="width: 100%;">
+                    </select>
+                </div>
+              </div>
+              <div class="item form-group">
+                <label class="col-form-label col-md-3 col-sm-3 label-align">Classe <span class="required">*</span>
+                </label>
+                <div class="col-md-9 col-sm-9 ">
+                    <select class="form-control" name="name_classe_edit" id="name_classe_edit" required="required" style="width: 100%;">
+                    </select>
+                </div>
+              </div>
+              <div class="item form-group">
+                <label class="col-form-label col-md-3 col-sm-3 label-align">Code <span class="required">*</span>
+                </label>
+                <div class="col-md-9 col-sm-9 ">
+                    <input type="text" class="form-control text-uppercase" id="code_edit" required >
+                </div>
+              </div>
+              <div class="item form-group">
+                <label class="col-form-label col-md-3 col-sm-3 label-align">Nom <span class="required">*</span>
+                </label>
+                <div class="col-md-9 col-sm-9 ">
+                    <input type="text" class="form-control text-uppercase" id="nom_edit" required >
+                </div>
+              </div>
+              <div class="item form-group">
+                <label class="col-form-label col-md-3 col-sm-3 label-align">Coefficient <span class="required">*</span>
+                </label>
+                <div class="col-md-9 col-sm-9 ">
+                    <input type="number" min="0" class="form-control" id="coeff_edit" required >
+                </div>
+              </div>
+
+              <input type="number" name="teaching_id" id="teaching_id" hidden>
+              <input type="number" name="ligne_teaching" id="ligne_teaching" hidden>
+            </div>
+            <div class="modal-footer text-center">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler et fermer</button>
+              <button type="submit" id="btn-log-update" class="btn btn-success">Enregistrer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     
     <script>
         $("#name_school").select2();
         $("#name_session").select2();
         $("#name_cycle").select2();
         $("#name_classe").select2();
+
+        $("#name_school_edit").select2();
+        $("#name_session_edit").select2();
+        $("#name_cycle_edit").select2();
+        $("#name_classe_edit").select2();
     </script>
     <!-- For Invoice  -->
     <script src="<?= base_url()?>/function/teaching_unit/list.js"></script>

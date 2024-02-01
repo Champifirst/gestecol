@@ -54,6 +54,14 @@ class YearController extends ResourcePresenter
             ]
         ];
 
+        // session
+        $HistorySession = new HistorySession();
+        $data_session = $HistorySession-> getInfoSession();
+        $id_user   = $data_session['id_user'];
+        $type_user = $data_session['type_user'];
+        $login     = $data_session['login'];
+        $password  = $data_session['password'];
+
         if ($this->validate($rules)) {
             //validation good
             $date_start     = $this->request->getvar('date_start');
@@ -65,14 +73,6 @@ class YearController extends ResourcePresenter
             
             $number_date_start = intval($this->getYearWord($date_start));
             $number_date_end = intval($this->getYearWord($date_end));
-
-            // session
-            $HistorySession = new HistorySession();
-            $data_session = $HistorySession-> getInfoSession();
-            $id_user   = $data_session['id_user'];
-            $type_user = $data_session['type_user'];
-            $login     = $data_session['login'];
-            $password  = $data_session['password'];
 
             if ($number_date_start >= $number_date_end) {
                 $response = [
@@ -418,6 +418,14 @@ class YearController extends ResourcePresenter
                 'rules'         => 'required'
             ]
         ];
+        
+        // session
+        $HistorySession = new HistorySession();
+        $data_session = $HistorySession-> getInfoSession();
+        $id_user   = $data_session['id_user'];
+        $type_user = $data_session['type_user'];
+        $login     = $data_session['login'];
+        $password  = $data_session['password'];
 
         if ($this->validate($rules)) {
             //validation good
@@ -431,14 +439,6 @@ class YearController extends ResourcePresenter
             
             $number_date_start = intval($this->getYearWord($date_start));
             $number_date_end = intval($this->getYearWord($date_end));
-
-            // session
-            $HistorySession = new HistorySession();
-            $data_session = $HistorySession-> getInfoSession();
-            $id_user   = $data_session['id_user'];
-            $type_user = $data_session['type_user'];
-            $login     = $data_session['login'];
-            $password  = $data_session['password'];
 
 
             if ($number_date_start >= $number_date_end) {

@@ -310,6 +310,8 @@ $routes->group("teaching_unit", function($routes){
     $routes->match(["get", "post"], "update", "TeachingUnitController::updateTeachingUnit", ['filter' => 'authFilter']);
     // URL - /teaching_unit/delete
     $routes->match(["get", "post"], "delete/(:any)", "TeachingUnitController::deleteteachingUnit/$1", ['filter' => 'authFilter']);
+    // URL - /teaching_unit/getOne
+    $routes->match(["get", "post"], "one/(:any)", "TeachingUnitController::GetOne/$1", ['filter' => 'authFilter']);
 });
 
 /*

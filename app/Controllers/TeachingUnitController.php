@@ -10,6 +10,8 @@ use App\Models\ClassModel;
 use App\Models\SessionModel;
 use App\Models\CycleModel;
 use App\Models\YearModel;
+use App\Controllers\History;
+include('History/HistorySession.php');
 
 class TeachingUnitController extends ResourcePresenter
 {
@@ -22,6 +24,32 @@ class TeachingUnitController extends ResourcePresenter
     
     public function liste(){
         return view('teachingUnit/list.php');
+    }
+
+    public function GetOne($id_teachingunit){
+        $TeachingUnitModel = new TeachingUnitModel();
+        $data = $TeachingUnitModel->getTeachingById($id_teachingunit);
+        if (sizeof($data) == 0) {
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "msg"     => 'Cette matière n\'existe pas',
+                "data"    => $data,
+            ];
+            return $this->respond($response);
+        }else{
+            $response = [
+                "success" => true,
+                "status"  => 200,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "msg"     => 'Opération réussir',
+                "data"    => $data[0],
+            ];
+            return $this->respond($response);
+        }
     }
 
     public function allTeachingUnit($id_class){
@@ -52,7 +80,6 @@ class TeachingUnitController extends ResourcePresenter
     #@-- 1 --> insertion des matieres
     #- use:
     #-
-
     public function insertteaching()
     {
         $TeachingUnitModel = new TeachingUnitModel();
@@ -90,6 +117,14 @@ class TeachingUnitController extends ResourcePresenter
             ]
         ];
 
+        // session
+        $HistorySession = new HistorySession();
+        $data_session = $HistorySession-> getInfoSession();
+        $id_user   = $data_session['id_user'];
+        $type_user = $data_session['type_user'];
+        $login     = $data_session['login'];
+        $password  = $data_session['password'];
+
 
         if ($this->validate($rules)) {
             $name_school     = $this->request->getvar('name_school');
@@ -100,7 +135,6 @@ class TeachingUnitController extends ResourcePresenter
             $matiere         = $this->request->getvar('matiere');
             $coefficient     = $this->request->getvar('coefficient');
             $user_id         = $this->request->getvar('user_id');
-
             $data_school     = $SchoolModel->findAllSchoolByidSchool($name_school);
             $data_session    = $SessionModel->getSessionById($name_session);
             $data_cycle      = $CycleModel->getCycleById($name_cycle);
@@ -115,7 +149,7 @@ class TeachingUnitController extends ResourcePresenter
                     "msg"     => 'Cette école n\'existe pas',
                 ];
                 // history
-                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Echec", "Matiere", "", "", "ces  matiere existent deja");
+                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Echec", "Matière", "", "", "ces  matière existent déjà");
                 return $this->respond($response);
             }
             if (sizeof($data_session) == 0) {
@@ -126,6 +160,8 @@ class TeachingUnitController extends ResourcePresenter
                     "title"   => "Erreur",
                     "msg"     => 'Cette session n\'existe pas',
                 ];
+                // history
+                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Echec", "Matière", "", "", "cette session n'existe pqs");
                 return $this->respond($response);
             }
             if (sizeof($data_cycle) == 0) {
@@ -136,6 +172,7 @@ class TeachingUnitController extends ResourcePresenter
                     "title"   => "Erreur",
                     "msg"     => 'Ce cycle n\'existe pas',
                 ];
+                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Echec", "Matière", "", "", "ce cycle n'existe pqs");
                 return $this->respond($response);
             }
             if (sizeof($data_classe) == 0) {
@@ -162,6 +199,9 @@ class TeachingUnitController extends ResourcePresenter
                     'coefficient'           =>  $coefficient[$i],
                     'year_id'               =>  $year_id,
                     'user_id'               =>  $user_id,
+                    'cycle_id'              =>  $name_cycle,
+                    'session_id'            =>  $name_session,
+                    'school_id'             =>  $name_school,
                     'class_id'              =>  $name_classe,
                     'status_teachingunit'   =>  0,
                     'etat_teachingunit'     =>  'actif',
@@ -180,6 +220,8 @@ class TeachingUnitController extends ResourcePresenter
                 "title"   => "Réussite",
                 'msg'     => 'Insertion réussir',
             ];
+            // history
+            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Réussite", "Matiere", "", "", "Insertion reussir ");
             return $this->respond($response);
             
         }else {
@@ -197,232 +239,28 @@ class TeachingUnitController extends ResourcePresenter
         }
     }
 
-
-    #@-- 1 --> modification des matieres
+    #@-- 1 --> liste des matieres
     #- use:
     #-
-
-    public function updateteaching()
-    {
-       $TeachingUnitModel = new TeachingUnitModel();
-
-        /// validation du formulaire 
-        $rules = [
-            'name'             => [
-                'rules' => 'required|max_length[50]'
-            ],
-            'code'      => [
-                'rules' => 'required|max_length[15]'
-            ],
-            'coefficient'      => [
-                'rules' => 'required|max_length[2]'
-            ],
-            'school'      => [
-                'rules' => 'required'
-            ],
-            'year'      => [
-                'rules' => 'required'
-            ],
-            'cycle'      => [
-                'rules' => 'required'
-            ],
-            'session'      => [
-                'rules' => 'required'
-            ],
-            'classe'      => [
-                'rules' => 'required'
-            ],
-            'user_id'      => [
-                'rules' => 'required'
-            ],
-            'teachingunit_id'      => [
-                'rules' => 'required'
-            ]
-        ];
-
-        if ($this->validate($rules)) {
-            $name                   = $this->request->getvar('name');
-            $code                   = $this->request->getvar('code');
-            $coefficient            = $this->request->getvar('coefficient');
-            $coefficient            = $this->request->getvar('coefficient');
-            $school                 = $this->request->getvar('school');
-            $year                   = $this->request->getvar('year');
-            $cycle                  = $this->request->getvar('cycle');
-            $session                = $this->request->getvar('session');
-            $classe                 = $this->request->getvar('classe');
-            $user_id                = $this->request->getvar('user_id');
-            $teachingunit_id        = $this->request->getvar('teachingunit_id');
-            
-            
-            // session
-            $HistorySession = new HistorySession();
-            $data_session = $HistorySession-> getInfoSession();
-            $id_user   = $data_session['id_user'];
-            $type_user = $data_session['type_user'];
-            $login     = $data_session['login'];
-            $password  = $data_session['password'];
-
-            //-- if teaching unit exists
-            $data_teaching = $TeachingUnitModel->getTeaching($name,$code,$coefficient,$school,$year,$cycle, $session, $classe);
-
-            if (sizeof($data_teaching) != 0) {
-                $response = [
-                    "success" => false,
-                    "status"  => 500,
-                    "code"    => "error",
-                    "title"   => "Erreur",
-                    "msg"     => 'La matiere existe deja',
-                ];
-                // history
-                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Modification", "Echec", "Matiere", "", "", "La matiere existe déjà");
-                return $this->respond($response);
-            }
-            else {
-
-                    $data = [
-                    'name'                   => $name,
-                    'code'                   => $code,
-                    'coefficient'            => $coefficient,
-                    'school_id'              => $school_id,
-                    'year_id'                => $year_id,
-                    'id_user'                => $user_id,
-                    'updated_at'             => date("Y-m-d H:m:s"),
-                    ];
-
-                if ($TeachingUnitModel->where('teachingunit_id', $teachingunit_id)->set($data)->update() !== false) {
-                        
-                    // success modified
-                    $response = [
-                        'success' => true,
-                        'status'  => 200,
-                        "code"    => "success",
-                        "title"   => "Réussite",
-                        'msg'     => 'modification reussir',
-                    ];
-                    // history
-                    $donnee = $data["name"].",".$data["code"].",".$data["coefficient"].",".$data["school_id"].",".$data["year_id"].",".$data["id_user"].",".$data["updated_at"];
-
-                    $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Modification", "Réussite", "Matiere", "", "", $donnee);
-                    return $this->respond($response);
-                    }
-                else{
-                    // failed modified
-                    $response = [
-                        "success" => false,
-                        "status"  => 500,
-                        "code"    => "error",
-                        "title"   => "Erreur",
-                        'msg'     => 'echec de modification',
-                    ];
-                    // history
-                    $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Modification", "Echec", "Matiere", "", "", "Echec de modification");
-                    return $this->respond($response);
-                }
-                
-            }
-        }
-        else {
-            $response = [
-                "success" => false,
-                "status"  => 500,
-                "code"    => "error",
-                "title"   => "Erreur",
-                "msg"     => $this->validator->getErrors(),
-            ];
-            // history
-            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Modification", "Echec", "Matiere", "", "", "Echec de validation ");
-            return $this->respond($response); 
-        }
-    }
-
-
-
-    #@-- 3 --> supprimer des matieres
-   
-    public function deleteteaching($id_teachingunit){
-
-        $TeachingUnitModel = new TeachingUnitModel(); 
-        $data = $TeachingUnitModel->getTeachingById($id_teachingunit);
-
-        // session
-        $HistorySession = new HistorySession();
-        $data_session = $HistorySession-> getInfoSession();
-        $id_user   = $data_session['id_user'];
-        $type_user = $data_session['type_user'];
-        $login     = $data_session['login'];
-        $password  = $data_session['password']; 
-  
-        if (sizeof($data) == 0) {
-            $response = [
-                "success" => false,
-                "status"  => 500,
-                "code"    => "error",
-                "title"   => "Erreur",
-                'msg'     => "Cette matiere n'existe pas",
-            ];
-           // history
-            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Suppression", "Echec", "Matiere", "", "", "Cette matiere n'existe pas");
-            return $this->respond($response);
-        }else{ 
-  
-        $data = [
-          'status_teachingunit'    => 1,
-          'etat_teachingunit'      => 'inactif',
-          'deleted_at'         => date("Y-m-d H:m:s"),
-        ];
-            if ($TeachingUnitModel->where('teachingunit_id', $teachingunit_id)->set($data)->update() === false) {
-                  // echec de suppression
-                  $response = [
-                      "success" => false,
-                        "status"  => 500,
-                        "code"    => "error",
-                        "title"   => "Erreur",
-                        'msg'     => "Echec de suppression",
-                    ];
-                  
-                 //history
-                    $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Suppression", "Echec", "Matiere", "", "", "echec Suppression");
-                    return $this->respond($response);
-            }else{
-                   // suppression reussir
-                $response = [
-                    "success" => true,
-                    "status"  => 200,
-                    "code"    => "Success",
-                    "title"   => "Réussite",
-                    'msg'     => "Suppression reussir",
-                ];
-                $donnee = $data['status_teachingunit'].",".$data['etat_teachingunit']. ",". $data['deleted_at'];
-                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Suppression", "Reussite", "Matiere", "", "", $donnee);
-                return $this->respond($response);
-            
-            }   
-        }            
-     
-    }
-
-
     public function allteaching($id_school, $id_session, $id_cycle, $id_class){
 
-        $TeachingUnitModel   = new TeachingUnitModel();
-        $ClassModel   = new ClassModel();
-        $SessionModel = new SessionModel();
-        $CycleModel   = new CycleModel();
-        $YearModel    = new YearModel();
-        $SchoolModel  = new SchoolModel();
-
-        $school       = $SchoolModel->findAllSchoolByidSchool($id_school);
-        $session      = $SessionModel->getSessionById($id_session);
-        $cycle        = $CycleModel->getCycleById($id_cycle);
-        $class        = $ClassModel->getOneClass($id_class);
-
+        $TeachingUnitModel      = new TeachingUnitModel();
+        $ClassModel             = new ClassModel();
+        $SessionModel           = new SessionModel();
+        $CycleModel             = new CycleModel();
+        $YearModel              = new YearModel();
+        $SchoolModel            = new SchoolModel();
+        $school                 = $SchoolModel->findAllSchoolByidSchool($id_school);
+        $session                = $SessionModel->getSessionById($id_session);
+        $cycle                  = $CycleModel->getCycleById($id_cycle);
+        $class                  = $ClassModel->getOneClass($id_class);
         // session
-        $HistorySession = new HistorySession();
-        $data_session = $HistorySession-> getInfoSession();
-        $id_user   = $data_session['id_user'];
-        $type_user = $data_session['type_user'];
-        $login     = $data_session['login'];
-        $password  = $data_session['password']; 
+        $HistorySession         = new HistorySession();
+        $data_session           = $HistorySession-> getInfoSession();
+        $id_user                = $data_session['id_user'];
+        $type_user              = $data_session['type_user'];
+        $login                  = $data_session['login'];
+        $password               = $data_session['password']; 
 
         if (sizeof($school) == 0) {
             $response = [
@@ -430,7 +268,7 @@ class TeachingUnitController extends ResourcePresenter
                 "status"  => 500,
                 "code"    => "error",
                 "title"   => "Erreur",
-                "msg"     => 'Cette école n\'existe pas',
+                "msg"     => 'Désoler nous n\'qvons pas pu trouver cette école',
             ];
            //history
             $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", "cette ecole n'existe pas");
@@ -442,7 +280,7 @@ class TeachingUnitController extends ResourcePresenter
                 "status"  => 500,
                 "code"    => "error",
                 "title"   => "Erreur",
-                "msg"     => 'Cette session n\'existe pas',
+                "msg"     => 'Désoler nous n\'qvons pas pu trouver cette session',
             ];
             //history
             $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", "cette session n'existe pas");
@@ -454,7 +292,7 @@ class TeachingUnitController extends ResourcePresenter
                 "status"  => 500,
                 "code"    => "error",
                 "title"   => "Erreur",
-                "msg"     => 'Ce cycle n\'existe pas',
+                "msg"     => 'Désoler nous n\'qvons pas pu trouver ce cycle',
             ];
             //history
             $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", "ce cycle n'existe pas");
@@ -466,7 +304,7 @@ class TeachingUnitController extends ResourcePresenter
                 "status"  => 500,
                 "code"    => "error",
                 "title"   => "Erreur",
-                "msg"     => 'Cette classe n\'existe pas',
+                "msg"     => 'Désoler nous n\'qvons pas pu trouver cette classe',
             ];
            //history
             $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", "cette classe n'existe pas");
@@ -489,7 +327,7 @@ class TeachingUnitController extends ResourcePresenter
         }
         //-- restaure data
         $data_organize = array();
-        foreach ($data_class as $row) {
+        foreach ($class as $row) {
             $explode_name = explode("#", $row['name']);
             $new_name = $explode_name[0]." ".$explode_name[1]." ".$explode_name[2];
             $row['name'] = $new_name;
@@ -509,5 +347,221 @@ class TeachingUnitController extends ResourcePresenter
         return $this->respond($response);
 
         }
+
+    #@-- 1 --> modification des matieres
+    #- use:
+    #-
+    public function updateTeachingUnit()
+    {
+       $TeachingUnitModel = new TeachingUnitModel();
+
+        /// validation du formulaire 
+        $rules = [
+            'name'          => [
+                'rules'         => 'required|max_length[50]'
+            ],
+            'code'          => [
+                'rules'         => 'required|max_length[15]'
+            ],
+            'coefficient'   => [
+                'rules'         => 'required|max_length[2]'
+            ],
+            'school'        => [
+                'rules'         => 'required'
+            ],
+            'cycle'         => [
+                'rules'         => 'required'
+            ],
+            'session'       => [
+                'rules'         => 'required'
+            ],
+            'classe'        => [
+                'rules'         => 'required'
+            ],
+            'user_id'       => [
+                'rules'         => 'required'
+            ],
+            'teachingunit_id'=> [
+                'rules'         => 'required'
+            ]
+        ];
+
+        // session
+        $HistorySession = new HistorySession();
+        $data_session = $HistorySession-> getInfoSession();
+        $id_user   = $data_session['id_user'];
+        $type_user = $data_session['type_user'];
+        $login     = $data_session['login'];
+        $password  = $data_session['password'];
+
+        if ($this->validate($rules)) {
+            $name            = $this->request->getvar('name');
+            $code            = $this->request->getvar('code');
+            $coefficient     = $this->request->getvar('coefficient');
+            $school          = $this->request->getvar('school');
+            $cycle           = $this->request->getvar('cycle');
+            $session         = $this->request->getvar('session');
+            $classe          = $this->request->getvar('classe');
+            $user_id         = $this->request->getvar('user_id');
+            $teachingunit_id = $this->request->getvar('teachingunit_id');
+
+            // select year
+            $YearModel  = new YearModel();
+            $yearActif  = $YearModel->getYearActif();
+            $year       = $yearActif[0]['year_id'];
+
+            //-- if teaching unit exists
+            $data_teaching = $TeachingUnitModel->getTeaching($name,$code,$coefficient,$school,$year,$cycle, $session, $classe);
+
+            if (sizeof($data_teaching) > 1) {
+                $response = [
+                    "success" => false,
+                    "status"  => 500,
+                    "code"    => "error",
+                    "title"   => "Erreur",
+                    "msg"     => 'La matière existe déjà',
+                ];
+                // history
+                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Modification", "Echec", "Matiere", "", "", "La matière existe déjà");
+                return $this->respond($response);
+            }
+
+            if (sizeof($data_teaching) != 0 && sizeof($data_teaching) == 1 ) {
+                if ($teachingunit_id != $data_teaching[0]["teachingunit_id"]) {
+                    $response = [
+                        "success" => false,
+                        "status"  => 500,
+                        "code"    => "error",
+                        "title"   => "Erreur",
+                        "msg"     => 'La matière existe déjà',
+                    ];
+                    // history
+                    $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Modification", "Echec", "Matiere", "", "", "La matière existe déjà");
+                    return $this->respond($response);
+                }
+            }
+            
+            $data = [
+                'name'        => $name,
+                'code'        => $code,
+                'coefficient' => $coefficient,
+                'class_id'    => $classe,
+                'cycle_id'    => $cycle,
+                'session_id'  => $session,
+                'school_id'   => $school,
+                'year_id'     => $year,
+                'id_user'     => $user_id,
+                'updated_at'  => date("Y-m-d H:m:s"),
+            ];
+
+            if ($TeachingUnitModel->where('teachingunit_id', $teachingunit_id)->set($data)->update() !== false) {
+                    
+                // success modified
+                $response = [
+                    'success' => true,
+                    'status'  => 200,
+                    "code"    => "success",
+                    "title"   => "Réussite",
+                    'msg'     => 'Modification reussir',
+                    'data'    => $data
+                ];
+                // history
+                $donnee = $data["name"].",".$data["code"].",".$data["coefficient"].",".$data["school_id"].",".$data["year_id"].",".$data["id_user"].",".$data["updated_at"];
+
+                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Modification", "Réussite", "Matiere", "", "", $donnee);
+                return $this->respond($response);
+            }else{
+                // failed modified
+                $response = [
+                    "success" => false,
+                    "status"  => 500,
+                    "code"    => "error",
+                    "title"   => "Erreur",
+                    'msg'     => 'Echec de modification',
+                ];
+                // history
+                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Modification", "Echec", "Matiere", "", "", "Echec de modification");
+                return $this->respond($response);
+            }
+            
+        }
+        else {
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "msg"     => $this->validator->getErrors(),
+            ];
+            // history
+            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Modification", "Echec", "Matiere", "", "", "Echec de validation ");
+            return $this->respond($response); 
+        }
     }
+
+
+
+    #@-- 3 --> supprimer des matieres
+   
+    public function deleteteachingUnit($id_teachingunit){
+
+        $TeachingUnitModel  = new TeachingUnitModel(); 
+        $data               = $TeachingUnitModel->getTeachingById($id_teachingunit);
+        // session
+        $HistorySession     = new HistorySession();
+        $data_session       = $HistorySession-> getInfoSession();
+        $id_user            = $data_session['id_user'];
+        $type_user          = $data_session['type_user'];
+        $login              = $data_session['login'];
+        $password           = $data_session['password']; 
+  
+        if (sizeof($data) == 0) {
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                'msg'     => "Cette matière n'existe pas",
+            ];
+           // history
+            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Suppression", "Echec", "Matiere", "", "", "Cette matiere n'existe pas");
+            return $this->respond($response);
+        }else{ 
+  
+            $data = [
+                'status_teachingunit'  => 1,
+                'etat_teachingunit'    => 'inactif',
+                'deleted_at'           => date("Y-m-d H:m:s"),
+            ];
+            if ($TeachingUnitModel->where('teachingunit_id', $id_teachingunit)->set($data)->update() === false) {
+                  // echec de suppression
+                  $response = [
+                      "success"     => false,
+                        "status"    => 500,
+                        "code"      => "error",
+                        "title"     => "Erreur",
+                        'msg'       => "Echec de suppression",
+                    ];
+                  
+                 //history
+                    $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Suppression", "Echec", "Matiere", "", "", "echec Suppression");
+                    return $this->respond($response);
+            }else{
+                   // suppression reussir
+                $response = [
+                    "success" => true,
+                    "status"  => 200,
+                    "code"    => "Success",
+                    "title"   => "Réussite",
+                    'msg'     => "Suppression réussir",
+                ];
+                $donnee = $data['status_teachingunit'].",".$data['etat_teachingunit']. ",". $data['deleted_at'];
+                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Suppression", "Reussite", "Matiere", "", "", $donnee);
+                return $this->respond($response);
+            }   
+        }            
+    }
+
+}
+    
 
