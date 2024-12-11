@@ -1,0 +1,876 @@
+INFO - 2024-09-02 06:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-02 06:03:20 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen(null, 'a')
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2024-09-02 06-09-20', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'inconue', 'Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-02 06:03:20 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-02 06:05:39 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen(null, 'a')
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2024-09-02 06-09-39', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'inconue', 'Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-02 06:05:39 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-02 06:05:47 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen(null, 'a')
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2024-09-02 06-09-47', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'inconue', 'Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-02 06:05:47 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-02 06:06:16 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen(null, 'a')
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2024-09-02 06-09-16', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'inconue', 'Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-02 06:06:16 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-02 06:16:33 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/HistoryController.php on line 22.
+ 1 APPPATH/Controllers/HistoryController.php(22): fopen(null, 'r')
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HistoryController->listeMyHistory()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HistoryController))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-02 06:16:33 --> Path cannot be empty
+in APPPATH/Controllers/HistoryController.php on line 22.
+ 1 APPPATH/Controllers/HistoryController.php(22): fopen()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HistoryController->listeMyHistory()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-02 06:16:33 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 06:16:33 --> SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-02 06:16:59 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/HistoryController.php on line 22.
+ 1 APPPATH/Controllers/HistoryController.php(22): fopen(null, 'r')
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HistoryController->listeMyHistory()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HistoryController))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-02 06:16:59 --> Path cannot be empty
+in APPPATH/Controllers/HistoryController.php on line 22.
+ 1 APPPATH/Controllers/HistoryController.php(22): fopen()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HistoryController->listeMyHistory()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-02 06:16:59 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 06:16:59 --> SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-02 06:17:11 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/HistoryController.php on line 22.
+ 1 APPPATH/Controllers/HistoryController.php(22): fopen(null, 'r')
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HistoryController->listeMyHistory()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HistoryController))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-02 06:17:11 --> Path cannot be empty
+in APPPATH/Controllers/HistoryController.php on line 22.
+ 1 APPPATH/Controllers/HistoryController.php(22): fopen()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HistoryController->listeMyHistory()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-02 06:17:11 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 06:17:11 --> SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-02 06:17:42 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen(null, 'a')
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2024-09-02 06-09-42', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'inconue', 'Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-02 06:17:42 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-02 06:18:15 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen(null, 'a')
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2024-09-02 06-09-15', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'inconue', 'Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-02 06:18:15 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 06:18:46 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 06:18:46 --> SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 06:23:01 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: montant_scolarite in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/MontantScolariteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/ScolariteController.php(438): App\Models\MontantScolariteModel->getMontantScolarClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\ScolariteController->print_stat_scolarite()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 06:23:01 --> SQLite3::query(): Unable to prepare statement: 1, no such table: montant_scolarite
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/MontantScolariteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/ScolariteController.php(438): App\Models\MontantScolariteModel->getMontantScolarClass()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\ScolariteController->print_stat_scolarite()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-02 06:23:09 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: montant_scolarite in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/MontantScolariteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/ScolariteController.php(438): App\Models\MontantScolariteModel->getMontantScolarClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\ScolariteController->print_stat_scolarite()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 06:23:09 --> SQLite3::query(): Unable to prepare statement: 1, no such table: montant_scolarite
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/MontantScolariteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/ScolariteController.php(438): App\Models\MontantScolariteModel->getMontantScolarClass()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\ScolariteController->print_stat_scolarite()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 06:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 06:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:01:05 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-02 07:01:05 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 07:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:01:09 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-02 07:01:09 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 07:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:02:34 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-02 07:02:34 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 07:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:07:58 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-02 07:07:58 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 07:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:09:49 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-02 07:09:49 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 07:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:09:57 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-02 07:09:57 --> SQLite3::exec(): NOT NULL constraint failed: teachingunit.id_user
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/TeachingUnitController.php(212): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->insertteaching()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 07:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:35:50 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 07:35:50 --> SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 07:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:36:23 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 07:36:23 --> SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 07:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:49:15 --> ErrorException: SQLite3::exec(): database is locked in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/SessionController.php(83): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\SessionController->insertsession()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-02 07:49:15 --> SQLite3::exec(): database is locked
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/SessionController.php(83): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\SessionController->insertsession()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 07:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 07:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 07:51:54 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 07:51:54 --> SQLite3::query(): Unable to prepare statement: 1, no such column: teacher.connected
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/TeacherModel.php(331): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/StatistiqueController.php(54): App\Models\TeacherModel->getAllConnectedBySchool()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StatistiqueController->statistique1()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 08:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 08:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 08:24:38 --> ErrorException: SQLite3::exec(): table payment has no column named montant_lettre in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/ScolariteController.php(653): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\ScolariteController->payer_inscription()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-02 08:24:38 --> SQLite3::exec(): table payment has no column named montant_lettre
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/ScolariteController.php(653): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\ScolariteController->payer_inscription()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 08:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 08:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 08:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 08:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 12:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 15:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 15:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 15:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 15:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 15:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 15:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 15:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 15:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 16:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 17:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 18:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-02 18:42:42 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-02 18:42:42 --> SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(146): SQLite3->query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/TeachingUnitModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-09-02 19:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 19:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 20:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 20:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 20:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-02 20:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

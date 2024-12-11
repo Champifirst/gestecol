@@ -169,6 +169,107 @@ function ShowClass(id_school, name_session, cycle){
     });
 }
 
+function getClasse(){
+    var session = $('#session').val();
+    var cycle = $('#cycle').val();
+    var classe = $('#classe').val();
+    var name_school = $('#name_school').val();
+
+    if (name_school != "0" && session != "0" && session != null && name_school != null && cycle != "0" && cycle != null && classe != null && classe != null) {
+        ShowUnit(classe);
+    }else{
+        if (name_school == "0" || name_school == null) {
+            toastr["error"]("Selectionnez l'établissement ", "Attention");
+        }else if (session == "0" || session == null) {
+            toastr["error"]("Selectionnez la session ", "Attention");
+        }else if(cycle == "0" || cycle == null){
+            toastr["error"]("Selectionnez le cycle ", "Attention");
+        }else if(classe == null || classe == "0"){
+            toastr["error"]("Selectionnez la classe ", "Attention");
+        }
+    }
+}
+/*****  SHOW SUBJECTS *****/
+
+function ShowUnit(classe) {
+    let url = $('meta[name=app-url]').attr("content") + "/teaching_unit/ByClass/"+classe;
+    $.ajax({
+        url: url,
+        method: "GET",
+        dataType: 'json',
+        headers: {"Authorization": "Bearer " + localStorage.getItem('token')},
+        success: function(json) {
+            let data = json; // Pas besoin de `json.data` si `json` est déjà un tableau
+            if (data !== undefined && data.length > 0) {
+                let option = '<option value="all">Toutes les matières</option>';
+                    for (let i = 0; i < data.length; i++) {
+                        option += '<option value="' + data[i].teachingunit_id + '">' + data[i].name.toUpperCase() + '</option>';
+                    }
+                $('#subjet').html(option); // Remplir le select avec les options
+            } else {
+                $('#subject-container').hide(); // Masquer le conteneur si aucune matière n'est disponible
+            }
+        },
+        error: function (data) {
+            console.log(data.responseJSON);
+            $('#btn-log').prop('disabled', false);
+            toastr["error"]("Oousp La connexion au serveur a été perdu", "Erreur");
+        }
+    });
+}
+
+// COLLECTE SUBJECT
+function submitSubjects() {
+    // let url = 
+    var name_school = $('#name_school').val();
+    var session = $('#session').val();
+    var cycle = $('#cycle').val();
+    var classe = $('#classe').val();
+    var user_id = localStorage.getItem('id_user');
+    let selectedSubjects = [];
+
+    const selectElement = document.getElementById('subjet');
+  
+    // Initialiser un tableau pour stocker les valeurs sélectionnées
+    let selectedValues = [];
+    
+    // Parcourir les options
+    for (let option of selectElement.options) {
+        // Vérifier si l'option est sélectionnée
+        if (option.selected) {
+        selectedValues.push(option.value); // Ajouter la valeur au tableau
+        }
+    }
+    
+    const formData = new FormData();
+    formData.append('name_school', name_school);
+    formData.append('session', session);
+    formData.append('cycle', cycle);
+    formData.append('class', classe);
+    formData.append('user_id', user_id);
+    formData.append('subjects', JSON.stringify(selectedValues));
+
+    console.log(formData, selectedValues);
+
+    // // Envoyer les données via AJAX
+    // $.ajax({
+    //     url: '/path/to/your/server/endpoint', // Remplacez par l'URL de votre serveur
+    //     type: 'POST',
+    //     data: {
+    //         subjects: selectedSubjects,
+    //         // Vous pouvez ajouter d'autres données à envoyer si nécessaire
+    //     },
+    //     success: function(response) {
+    //         // Gérer la réponse du serveur
+    //         console.log('Données envoyées avec succès:', response);
+    //     },
+    //     error: function(xhr, status, error) {
+    //         // Gérer les erreurs
+    //         console.error('Erreur lors de l\'envoi des données:', error);
+    //     }
+    // });
+}
+
 
 /*****  RESET FORM *****/
 
@@ -184,10 +285,10 @@ function reset_form() {
     $('#profession').val("");
     $('#phone').val("");
     $('#adresse_parent').val("");
-    $('#name_school').val("");
-    $('#session').val("");
-    $('#cycle').val("");
-    $('#classe').val("");
+    $('#subject').val("");
+    // $('#session').val("");
+    // $('#cycle').val("");
+    // $('#classe').val("");
     $('#inscription').val("");
     // logo
     $('.file-upload-input').replaceWith($('.file-upload-input').clone());
@@ -229,6 +330,14 @@ $('#from_student').on('submit', function (e) {
     var inscription = $('#inscription').val();
     var user_id = localStorage.getItem('id_user');
 
+    const selectElement = document.getElementById('subjet');
+    let selectedValues = [];
+    for (let option of selectElement.options) {
+        if (option.selected) {
+        selectedValues.push(option.value);
+        }
+    }
+
     if (name == "" || date == "" || placeBirth == "" || sexe == "0" || nameParent == "" || phone == "" || logo == "" || name_school == "0" || session == "0" || cycle == "0" || classe == "0" ) {
         $('#btn-log').prop('disabled', false);
         toastr["error"]("Informations Invalides, il se pourrait que vous n\'avez pas tout renseigner les champs obligatoires", "Erreur");
@@ -251,10 +360,12 @@ $('#from_student').on('submit', function (e) {
         formData.append("cycle", cycle);
         formData.append("classe", classe);
         formData.append("inscription", inscription);
-
+        formData.append('subjects', JSON.stringify(selectedValues));
+        
         formData.append("logo", photo);
         formData.append("user_id", user_id);
 
+        console.log(formData);
         $.ajax({
             url: url,
             type: "POST",

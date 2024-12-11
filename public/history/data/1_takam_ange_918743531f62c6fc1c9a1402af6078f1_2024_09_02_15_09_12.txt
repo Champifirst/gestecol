@@ -1,0 +1,23 @@
+
+1;takam_ange;admin;2024-09-02 15-09-12;Authentification;Réussite;Utilisateur;127.0.0.1;inconue;Nouvelle session initialisée;EOF;
+1;takam ange;admin;2024-09-02 15-09-59;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 15-09-36;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;takam ange;admin;2024-09-02 15-09-54;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 15-09-11;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;takam ange;admin;2024-09-02 16-09-50;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-56;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-59;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-07;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;takam ange;admin;2024-09-02 16-09-40;insertion;Réussite;Matiere;127.0.0.1;inconue;Insertion reussir ;EOF;
+1;takam ange;admin;2024-09-02 16-09-41;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-43;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-50;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;takam ange;admin;2024-09-02 16-09-02;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-31;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-18;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-07;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-41;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;takam ange;admin;2024-09-02 16-09-41;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-59;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;takam ange;admin;2024-09-02 16-09-12;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-09-02 16-09-28;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;

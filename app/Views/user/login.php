@@ -8,7 +8,7 @@
     <link rel="icon" href="<?= base_url() ?>/components/images/logo.png" type="image/ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SM@RTSCHOOL | CONNEXION</title>
+    <title>DEVCODE | CONNEXION</title>
     <!-- Bootstrap -->
     <link href="<?= base_url() ?>/components/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -72,9 +72,9 @@
 
                 <div>
                   <div class="flex justify-center">
-                    <img src="<?= base_url() ?>/components/images/logo.png" alt="logo" width="160px">
+                    <img src="<?= base_url() ?>/components/images/logo.jpg" alt="logo" width="160px">
                   </div>
-                  <p>©<?= date("Y")?> Sm@rtSchool Tout Droit reservés. </p>
+                  <p>©<?= date("Y")?> devCode Tout Droit reservés. </p>
                 </div>
               </div>
             </form>

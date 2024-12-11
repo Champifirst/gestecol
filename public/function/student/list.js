@@ -203,8 +203,8 @@ function select_data(id_student, id_session, id_cycle, id_class, id_school, lign
                 $('#name').val(data.name.toUpperCase());
                 $("#surName").val(data.surname.toUpperCase());
                 //--
-                $("#date").val(data.date_birth);
-                $("#placeBirth").val(data.place_birth.toUpperCase());
+                $("#date").val(data.place_birth);
+                $("#placeBirth").val(data.date_birth.toUpperCase());
                 //--
                 $("#sexe").html("");
                 $("#name_school_edit").html("");
@@ -571,6 +571,7 @@ $('#from_student_update').on('submit', function (e) {
     var user_id = localStorage.getItem('id_user');
     
     if (name == "" || date == "" || placeBirth == "" || sexe == "0" || nameParent == "" || phone == "" || name_school == "0" || session == "0" || cycle == "0" || classe == "0" ) {
+        
         $('#btn-log-update').prop('disabled', false);
         toastr["error"]("Informations Invalides, il se pourrait que vous n\'avez pas tout renseigner les champs obligatoires", "Erreur");
     } else {
@@ -771,7 +772,8 @@ function getClass(){
                     let certificat = '<button class="btn btn-info btn-rounded btn-sm btn-select" onClick="certificatOne(' + json[i].student_id +','+name_school+','+name_session+','+name_cycle+','+name_classe+')">Certificat</button> ';
                     let bulletin = '<button class="btn btn-dark btn-rounded btn-sm btn-select" onClick="bulletin(' + json[i].student_id + ','+i+')">Bulletin</button> ';
                     let recu = '<button class="btn btn-warning btn-rounded btn-sm btn-select" onClick="recu(' + json[i].student_id + ','+i+')">Recu</button> ';
-                    let carte = '<button class="btn btn-info btn-rounded btn-sm btn-select" onClick="carteOne(' + json[i].student_id +','+name_school+','+name_session+','+name_cycle+','+name_classe+')">Carte</button> ';
+                    // let carte = '<button class="btn btn-info btn-rounded btn-sm btn-select" onClick="carteOne(' + json[i].student_id +','+name_school+','+name_session+','+name_cycle+','+name_classe+')">Carte</button> ';
+                    let carte = '<button class="btn btn-info btn-rounded btn-sm btn-select" diseable>Carte</button> ';
                     let photo = '<button class="btn btn-success btn-rounded btn-sm btn-select" onClick="photo(' + json[i].student_id + ','+i+')">4X4</button> ';
                     let supprimer = '';
                     if (type_user == "admin") {
@@ -834,8 +836,10 @@ function getClass(){
                     '<button type="button" class="mr-1 btn btn-info btn-sm mb-4" onclick="getPrintFicheInscrit('+name_school+','+name_session+','+name_cycle+','+name_classe+')"><i class="fa fa-print"></i> Elèves Inscrit</button>'+
                     '<button type="button" class="mr-1 btn btn-secondary btn-sm mb-4" onclick="getPrintFicheNotInscrit('+name_school+','+name_session+','+name_cycle+','+name_classe+')"><i class="fa fa-print"></i> Elèves non Inscrit</button>'+
                     '<button type="button" class="mr-1 btn btn-success btn-sm mb-4" onclick="getPrintFicheCertificat('+name_school+','+name_session+','+name_cycle+','+name_classe+')"><i class="fa fa-print" ></i> Certificat de scolarité</button>'+
-                    '<button type="button" class="mr-1 btn btn-primary btn-sm mb-4"  onclick="getPrintFicheCarte('+name_school+','+name_session+','+name_cycle+','+name_classe+')"><i class="fa fa-print"></i> Carte scolaire</button>'+
-                    '<button type="button" class="mr-1 btn btn-dark btn-sm mb-4"><i class="fa fa-print"></i> Bulletin de note</button>'+
+                    '<button type="button" class="mr-1 btn btn-warning btn-sm mb-4 text-white" onclick="getBordereaux('+name_school+','+name_session+','+name_cycle+','+name_classe+')"><i class="fa fa-print" ></i> Bordereaux de notes</button>'+
+                    // '<button type="button" class="mr-1 btn btn-primary btn-sm mb-4"  onclick="getPrintFicheCarte('+name_school+','+name_session+','+name_cycle+','+name_classe+')"><i class="fa fa-print"></i> Carte scolaire</button>'+
+                    '<button type="button" class="mr-1 btn btn-primary btn-sm mb-4"><i class="fa fa-print"></i> Carte scolaire</button>'+
+                    '<button type="button" class="mr-1 btn btn-dark btn-sm mb-4" onclick="getAllBulletin('+name_school+','+name_session+','+name_cycle+','+name_classe+')"><i class="fa fa-print"></i> Bulletin de note</button>'+
                     '</div>';
                     $("#printf").append(bloc);
                 }
@@ -1174,4 +1178,64 @@ function carteOne(id_student, name_school, name_session, name_cycle, name_classe
 
 
 
+function getBordereaux(name_school, name_session, name_cycle, name_classe){
+    let url = $('meta[name=app-url]').attr("content") + "/student/PrintAllBordereaux/"+name_school+"/"+name_session+"/"+name_cycle+"/"+name_classe;
+
+    $.ajax({
+        url: url,
+        method: "GET",
+        dataType: 'json',
+        headers: {"Authorization": "Bearer " +localStorage.getItem('token')},
+        success: function(json){
+            if (json !== undefined) {
+                if (json.success == true) {
+                    toastr["success"]("Impréssion réussir", "Réussite");
+                    Object.assign(document.createElement("a"), {
+                        target: "_blanck",
+                        href: '../'+json.name_file
+                    }).click();
+                }else{
+                    toastr["error"]("L'impression a échouer", "Erreur");
+                }
+            }
+        },
+        error: function (data) {
+            console.log(data.responseJSON);
+            $('#btn-log').prop('disabled', false);
+            toastr["error"]("Oousp La connexion au serveur a été perdu", "Erreur");
+        }
+    });
+}
+
+getAllBulletin
+
+function getAllBulletin(name_school, name_session, name_cycle, name_classe){
+    let url = $('meta[name=app-url]').attr("content") + "/student/PrintAllBulletin/"+name_school+"/"+name_session+"/"+name_cycle+"/"+name_classe;
+
+    $.ajax({
+        url: url,
+        method: "GET",
+        dataType: 'json',
+        headers: {"Authorization": "Bearer " +localStorage.getItem('token')},
+        success: function(json){
+            console.log(json);
+            if (json !== undefined) {
+                if (json.success == true) {
+                    toastr["success"]("Impréssion réussir", "Réussite");
+                    Object.assign(document.createElement("a"), {
+                        target: "_blanck",
+                        href: '../'+json.name_file
+                    }).click();
+                }else{
+                    toastr["error"]("L'impression a échouer", "Erreur");
+                }
+            }
+        },
+        error: function (data) {
+            console.log(data.responseJSON);
+            $('#btn-log').prop('disabled', false);
+            toastr["error"]("Oousp La connexion au serveur a été perdu", "Erreur");
+        }
+    });
+}
 

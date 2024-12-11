@@ -1,0 +1,130 @@
+INFO - 2024-11-08 04:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 04:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 04:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 04:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 04:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 04:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-08 04:32:21 --> Call to undefined method App\Models\NoteModel::getMinMaxNoteByTeaching
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/StudentController.php(2508): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-08 05:12:08 --> Unsupported operand types: int + array
+in APPPATH/Controllers/StudentController.php on line 2515.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-08 05:13:42 --> Unsupported operand types: array / int
+in APPPATH/Controllers/StudentController.php on line 2523.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-08 05:14:26 --> Cannot increment array
+in APPPATH/Controllers/StudentController.php on line 2516.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-08 05:14:59 --> Unsupported operand types: int + array
+in APPPATH/Controllers/StudentController.php on line 2515.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-08 05:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 05:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 05:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 05:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 05:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 05:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 05:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-08 05:18:15 --> Unsupported operand types: int + array
+in APPPATH/Controllers/StudentController.php on line 2515.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-08 05:46:06 --> Undefined array key "moyenne_gene"
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 624.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(624): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/StudentController.php(2600): App\Controllers\BulletinPremierTrimestre->footerBulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-08 11:32:32 --> max(): Argument #1 ($value) must be of type array, float given
+in APPPATH/Controllers/StudentController.php on line 2532.
+ 1 APPPATH/Controllers/StudentController.php(2532): max()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-08 11:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-08 11:34:54 --> max(): Argument #1 ($value) must be of type array, float given
+in APPPATH/Controllers/StudentController.php on line 2532.
+ 1 APPPATH/Controllers/StudentController.php(2532): max()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-08 11:56:56 --> Array to string conversion
+in APPPATH/Controllers/StudentController.php on line 2570.
+ 1 APPPATH/Controllers/StudentController.php(2570): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-08 12:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 17:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 17:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 17:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 17:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 17:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 17:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 17:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-08 18:25:11 --> Undefined array key "note"
+in APPPATH/Controllers/StudentController.php on line 2545.
+ 1 APPPATH/Controllers/StudentController.php(2545): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-08 18:25:38 --> Undefined array key "note"
+in APPPATH/Controllers/StudentController.php on line 2545.
+ 1 APPPATH/Controllers/StudentController.php(2545): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-08 18:35:09 --> Undefined array key "min"
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 573.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(573): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/StudentController.php(2640): App\Controllers\BulletinPremierTrimestre->listing()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-08 18:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

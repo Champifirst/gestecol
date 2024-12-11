@@ -406,35 +406,67 @@ function getSequence(){
 function ShowMatiere(name_classe){
     $('#name_matiere').html("");
     $('#name_matiere').append('<option value="0">Selectionner une matière</option>');
-    
-    let url = $('meta[name=app-url]').attr("content") + "/teaching_unit/all/"+name_classe+"";
 
-    $.ajax({
-        url: url,
-        method: "GET",
-        dataType: 'json',
-        headers: {"Authorization": "Bearer " +localStorage.getItem('token')},
-        success: function(data){
-            if (data !== undefined) {
-                if (data.length == 0) {
-                    toastr["warning"]("Aucune matière trouvée", "Alerte");
-                }else{
-                    let option ='';
-                    for (let i = 0; i < data.length; i++) {
-                        option += '<option value="'+data[i].teachingunit_id+'">'+data[i].name.toUpperCase()+'</option>'
+    if(localStorage.getItem("type_user") !== "teacher"){
+        let url = $('meta[name=app-url]').attr("content") + "/teaching_unit/all/"+name_classe+"";
+        $.ajax({
+            url: url,
+            method: "GET",
+            dataType: 'json',
+            headers: {"Authorization": "Bearer " +localStorage.getItem('token')},
+            success: function(data){
+                if (data !== undefined) {
+                    if (data.length == 0) {
+                        toastr["warning"]("Aucune matière trouvée", "Alerte");
+                    }else{
+                        let option ='';
+                        for (let i = 0; i < data.length; i++) {
+                            option += '<option value="'+data[i].teachingunit_id+'">'+data[i].name.toUpperCase()+'</option>'
+                        }
+                        $('#name_matiere').append(option);
                     }
-                    $('#name_matiere').append(option);
+                }else{
+                    toastr["warning"]("Aucune matière trouvée", "Alerte");
                 }
-            }else{
-                toastr["warning"]("Aucune matière trouvée", "Alerte");
+            },
+            error: function (data) {
+                console.log(data.responseJSON);
+                $('#btn-log').prop('disabled', false);
+                toastr["error"]("Oousp La connexion au serveur a été perdu", "Erreur");
             }
-        },
-        error: function (data) {
-            console.log(data.responseJSON);
-            $('#btn-log').prop('disabled', false);
-            toastr["error"]("Oousp La connexion au serveur a été perdu", "Erreur");
-        }
-    });
+        });
+    }else{
+        let id_teacher = localStorage.getItem('id_user');
+        let url = $('meta[name=app-url]').attr("content") + "/teaching_unit/AllByTeacher/"+name_classe+ "/" + id_teacher+"";
+        $.ajax({
+            url: url,
+            method: "GET",
+            dataType: 'json',
+            headers: {"Authorization": "Bearer " +localStorage.getItem('token')},
+            success: function(data){
+                if (data !== undefined) {
+                    if (data.length == 0) {
+                        toastr["warning"]("Aucune matière trouvée", "Alerte");
+                    }else{
+                        let option ='';
+                        for (let i = 0; i < data.length; i++) {
+                            option += '<option value="'+data[i].teachingunit_id+'">'+data[i].name.toUpperCase()+'</option>'
+                        }
+                        $('#name_matiere').append(option);
+                    }
+                }else{
+                    toastr["warning"]("Aucune matière trouvée", "Alerte");
+                }
+            },
+            error: function (data) {
+                console.log(data.responseJSON);
+                $('#btn-log').prop('disabled', false);
+                toastr["error"]("Oousp La connexion au serveur a été perdu", "Erreur");
+            }
+        });
+    }
+    
+    
 
 }
 
@@ -535,13 +567,18 @@ function changeNote(v, coff){
     var note_coff = note*coff;
     if (note == "") {
         note_coff = "";
+    }else {
+        if (note > 20){
+            note_coff = "";
+            toastr["error"]("Veillez entrer une note sur 20 ", "Attention");
+        }
     }
     document.getElementsByName("note_coff")[index].value = note_coff;
 }
 
 /*****  NOTE *****/
 $('#from_note').on('submit', function (e) {
-    event.preventDefault();
+    e.preventDefault();
 
     let url = $('meta[name=app-url]').attr("content") + "/note/insert";
 

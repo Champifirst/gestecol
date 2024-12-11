@@ -15,10 +15,18 @@ use App\Models\StudentClassModel;
 use App\Models\StudentCycleModel;
 use App\Models\StudentSchoolModel;
 use App\Models\StudentSessionModel;
+use App\Models\StudentunitModel;
 use App\Models\TeacherClassModel;
-use App\Models\InscriptionModel;
+use App\Models\InscriptionModel; 
+use App\Models\BourseStudentModel; 
 use App\Controllers\History;
 use App\Controllers\fpdf;
+use App\Models\TeachingUnitModel;
+use App\Models\TeacherUnitClassModel;
+use App\Models\TeacherModel;
+use App\Models\NoteModel;
+use App\Models\SequenceModel;
+use App\Models\TrimestreModel;
 
 use Endroid\QrCode\Color\Color;
 use Endroid\QrCode\Encoding\Encoding;
@@ -38,10 +46,20 @@ set_time_limit(480);
 include('History/HistorySession.php');
 include('fpdf/fpdf.php');
 include('report/FPDF_LISTING.php');
+include('report/FPDF_CERT.php');
+include('report/FPDF_BULLETIN.php');
 
 class StudentController extends ResourcePresenter
 {
     use ResponseTrait;
+
+    public function giveBourses(){
+        return view('student/giveBourse.php');
+    }
+    
+    public function giveMatiere(){
+        return view('student/giveMatiere.php');
+    }
 
     public function save(){
         return view('student/save.php');
@@ -57,6 +75,157 @@ class StudentController extends ResourcePresenter
 
     public function importer_liste(){
         return view('student/importer_liste.php');
+    }
+
+    public function deliberation(){
+        return view('student/deliberation.php');
+    }
+
+    public function basculeNextYear(){
+        return view('student/basculeNextYear.php');
+    }
+
+    public function profile_student($id_student){
+       
+        $StudentModel = new StudentModel();
+        $StudentSessionModel = new StudentSessionModel();
+        $StudentCycleModel = new StudentCycleModel();
+        $StudentClassModel = new StudentClassModel();
+        $ClassModel = new ClassModel();
+        
+        $YearModel = new YearModel();
+
+        $yearActif = $YearModel->getYearActif();
+        $year_id = $yearActif[0]["year_id"];
+
+        $student = $StudentModel->getstudentById($id_student);
+        $session = $StudentSessionModel->getStudentSessionById($id_student, $year_id);
+        $cycle = $StudentCycleModel->getStudentCycleById($id_student, $year_id);
+        $classe = $ClassModel->getClassStudentYear($id_student, $year_id);
+        
+        if (sizeof($student) == 0 || sizeof($session) == 0 || sizeof($cycle) == 0 || sizeof($classe) == 0) {
+            $data["data"] = [];
+            return view('student/profile_student', $data);
+        }else{
+            $dataResult = [
+                "image"       => getenv('FILE_PHOTO_STUDENT')."/".$student[0]["photo"],
+                "matricule"   => strtoupper($student[0]["matricule"]),
+                "nom"         => strtoupper($student[0]["name"]),
+                "prenom"      => strtoupper($student[0]["surname"]),
+                "sexe"        => strtoupper($student[0]["sexe"]),
+                "session"     => strtoupper($session[0]["name_session"]),
+                "cycle"       => strtoupper($cycle[0]["name_cycle"]),
+                "classe"      => $ClassModel->format_name_class($classe[0]["name"])
+            ];
+
+            $data["data"]  = $dataResult;
+
+            return view('student/profile_student', $data);
+        }
+        
+    }
+
+    public function giveBourse(){
+        $BourseStudentModel = new BourseStudentModel();
+
+        $rules = [
+            'name_school'   => [ 
+                'rules'         => 'required'
+            ],
+            'name_session'  => [
+                'rules'         => 'required'
+            ],
+            'name_cycle'   => [
+                'rules'         => 'required'
+            ],
+            'name_classe'   => [
+                'rules'         => 'required'
+            ],
+            'student'   => [
+                'rules'         => 'required'
+            ],
+            'name_bourse'   => [
+                'rules'         => 'required'
+            ],
+            'id_user'   => [
+                'rules'         => 'required'
+            ]
+        ];
+        
+        if ($this->validate($rules)) {
+            $id_school  = $this->request->getvar('name_school');
+            $id_session = $this->request->getvar('name_session');
+            $id_cycle   = $this->request->getvar('name_cycle');
+            $id_classe  = $this->request->getvar('name_classe');
+            $id_student = $this->request->getvar('student');
+            $id_bourse  = $this->request->getvar('name_bourse');
+            $user_id    = $this->request->getvar('id_user');
+
+            $YearModel      = new YearModel();
+            $yearActif      = $YearModel->getYearActif();
+            $year_id        = $yearActif[0]["year_id"];
+
+            $data = [
+                'session_id' => $id_session,
+                'cycle_id'   => $id_cycle,
+                'class_id'   => $id_classe,
+                'student_id' => $id_student,
+                'year_id'    => $year_id,
+                'bourse_id'  => $id_bourse,
+                'user_id'    => $user_id,
+                'status'     => 0,
+                'etat'       => "actif", 
+                'created_at' => date("Y-m-d H:m:s"),
+                'updated_at' => date("Y-m-d H:m:s")
+            ];
+
+            if (sizeof($BourseStudentModel->isGiveBourse($id_session, $id_cycle, $id_classe, $year_id, $id_student, $id_bourse)) != 0) {
+                //validation failed
+                $response = [
+                    "success" => false,
+                    "status"  => 500,
+                    "code"    => "error",
+                    "title"   => "Erreur",
+                    "error"   => $this->validator->getErrors(),
+                    "msg"     => "Cette éleve ne peut recevoir la meme bourse",
+                ];
+
+                return $this->respond($response);
+            }
+
+            if ($BourseStudentModel->save($data)) {
+                
+                $response = [
+                    "success" => true,
+                    "status"  => 200,
+                    "code"    => "Success",
+                    "title"   => "Réussite",
+                    "msg"     => 'L\'enregistrement c\'est terminer avec succèss',
+                ];
+                return $this->respond($response);
+            }else{
+                $response = [
+                    "success" => false,
+                    "status"  => 500,
+                    "code"    => "error",
+                    "title"   => "Erreur",
+                    "msg"     => 'L\'enregistrement à échouer',
+                ];
+                return $this->respond($response);
+            }
+        }else{
+            //validation failed
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "error"   => $this->validator->getErrors(),
+                "msg"     => "Erreur informations invalides",
+            ];
+
+            return $this->respond($response); 
+        }
     }
 
     public function liste_student_school($id_school){
@@ -87,7 +256,6 @@ class StudentController extends ResourcePresenter
             ];
             return $this->respond($response);
         }
-        
     }
 
     public function get_one_student($id_student, $id_session, $id_cycle, $id_class, $id_school){
@@ -297,6 +465,98 @@ class StudentController extends ResourcePresenter
             return $this->respond($response);
         } 
     }
+
+
+    public function insert_matieres() {
+        $rules = [
+            'name_school'   => ['rules' => 'required'],
+            'name_session'  => ['rules' => 'required'],
+            'name_cycle'    => ['rules' => 'required'],
+            'name_classe'   => ['rules' => 'required'],
+            'student_id'    => ['rules' => 'required']
+        ];
+    
+        if ($this->validate($rules)) {
+            // Récupération des valeurs des champs du formulaire
+            $formData       = $this->request->getPost();
+            $school_id      = $formData['name_school'];
+            $session_id     = $formData['name_session'];
+            $cycle_id       = $formData['name_cycle'];
+            $class_id       = $formData['name_classe'];
+            $user_id        = $formData['user_id'];
+            
+            $StudentModel   = new StudentModel();
+            $StudentUnit    = new StudentunitModel();
+            $YearModel      = new YearModel();
+            
+            // Récupération de l'année active
+            $yearActif      = $YearModel->getYearActif();
+            $year_id        = $yearActif[0]['year_id'];
+    
+            // Récupérer les données des étudiants et de leurs matières
+            $studentsData = [];
+            if (isset($formData['student_id']) && is_array($formData['student_id'])) {
+                foreach ($formData['student_id'] as $student_id) {
+                    if (isset($formData['subjects'][$student_id])) {
+                        $subjectIds = $formData['subjects'][$student_id];
+                        $subjectNames = $formData['matiereStudent'][$student_id] ?? [];
+                        
+                        $studentsData[$student_id] = [
+                            'student_id'    => $student_id,
+                            'subject_ids'   => $subjectIds,
+                            'subject_names' => $subjectNames,
+                        ];
+                    }
+                }
+            }
+    
+            // Insérer chaque matière choisie pour chaque étudiant
+            foreach ($studentsData as $studentId => $data) {
+                foreach ($data['subject_ids'] as $teachingunit_id) {
+                    $data_student_unit = [
+                        'student_id'        => $data['student_id'],
+                        'teachingunit_id'   => $teachingunit_id,
+                        'year_id'           => $year_id,
+                        'user_id'           => $user_id,
+                        'status_studentunit'=> 0,
+                        'etat_studentunit'  => 'actif',
+                        'created_at'        => date("Y-m-d H:i:s"),
+                        'updated_at'        => date("Y-m-d H:i:s"),
+                    ];
+    
+                    // Enregistrement des données dans la table 'student_unit'
+                    if (!$StudentUnit->insert($data_student_unit)) {
+                        return $this->respond([
+                            "success" => false,
+                            "status"  => 500,
+                            "code"    => "error",
+                            "title"   => "Erreur",
+                            "msg"     => "Nous n'avons pas pu affecter cet élève à ces matières",
+                        ]);
+                    }
+                }
+            }
+             // success insert
+             $response = [
+                'success' => true,
+                'status'  => 200,
+                "code"    => "success",
+                "title"   => "Réussite",
+                'msg'     => 'Insertion réussir',
+            ];
+            return $this->respond($response);
+            //return $this->response->setJSON(['status' => 'success', 'message' => 'Données traitées avec succès']);
+        } else {
+            return $this->respond([
+                "success" => false,
+                "status"  => 400,
+                "code"    => "validation_error",
+                "title"   => "Erreur de validation",
+                "msg"     => "Veuillez remplir tous les champs obligatoires."
+            ]);
+        }
+    }
+    
 
     // sauvegarder le fichier excel a esporter
     public function uploadFile($path, $image) {
@@ -710,17 +970,20 @@ class StudentController extends ResourcePresenter
             'classe'            => [
                 'rules'             => 'required'
             ],
+            'subjects'          => [
+                'rules'             => 'required'
+            ],
             'user_id'           => [
                 'rules'             => 'required'
             ]
         ];
 
-         // session
-         $data_session = $HistorySession-> getInfoSession();
-         $id_user   = $data_session['id_user'];
-         $type_user = $data_session['type_user'];
-         $login     = $data_session['login'];
-         $password  = $data_session['password'];
+        // session
+        $data_session  = $HistorySession-> getInfoSession();
+        $id_user       = $data_session['id_user'];
+        $type_user     = $data_session['type_user'];
+        $login         = $data_session['login'];
+        $password      = $data_session['password'];
 
         if ($this->validate($rules)) {
             $name                   = $this->request->getvar('name');
@@ -738,6 +1001,7 @@ class StudentController extends ResourcePresenter
             $session                = $this->request->getvar('session');
             $cycle                  = $this->request->getvar('cycle');
             $classe                 = $this->request->getvar('classe');
+            $matiere                = $this->request->getvar('subjects');
             $logo                   = $this->request->getFile('logo');
             $user_id                = $this->request->getvar('user_id');
             $inscription            = $this->request->getvar('inscription');
@@ -748,11 +1012,13 @@ class StudentController extends ResourcePresenter
             $CycleModel             = new CycleModel();
             $YearModel              = new YearModel();
             $ParentModel            = new ParentModel();
+            $StudentUnit            = new StudentunitModel();
             $StudentClassModel      = new StudentClassModel();
             $StudentCycleModel      = new StudentCycleModel();
             $StudentSchoolModel     = new StudentSchoolModel();
             $StudentSessionModel    = new StudentSessionModel();
             $InscriptionModel       = new InscriptionModel();
+
             
             $data_school            = $SchoolModel->findAllSchoolByidSchool($name_school);
             $data_session           = $SessionModel->getSessionById($session);
@@ -832,7 +1098,7 @@ class StudentController extends ResourcePresenter
                 $dbHost = getenv('FILE_PHOTO_STUDENT');
                 $verdic = $logo->move($dbHost, $new_logo_name);
 
-                if (!$verdic) {
+                if (!$verdic) { 
                     // failed insert
                     $response = [
                         "success" => false,
@@ -841,14 +1107,15 @@ class StudentController extends ResourcePresenter
                         "title"   => "Erreur",
                         'msg'     => 'echec d\'insertion de la photo',
                     ];
-                   // history
+                    // history
                     $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Echec", "Eleve", "", "", "echec d'insertion de la photo ");
                     return $this->respond($response);
 
                 }else{
                     $student = $StudentModel->findAll(); 
                     // generate matricule
-                    $matricule = "CM-".$data_school[0]["code"]."-".date("Y")."-".$data_classe[0]['number']."-".(sizeof($student)+1);
+                    $matricule = date("y")."-".$ClassModel->format_name_class($data_classe[0]['name'])."-"."0".(sizeof($student)+1);
+                    //$matricule = "CM-".$data_school[0]["code"]."-".date("Y")."-".$data_classe[0]['number']."-".(sizeof($student)+1);
                     $yearActif = $YearModel->getYearActif();
 
                     if (sizeof($yearActif) == 0) {
@@ -915,11 +1182,10 @@ class StudentController extends ResourcePresenter
                             'updated_at'    => date("Y-m-d H:m:s"),
                         ];
                         if ($StudentModel->save($data)) {
-                            
                             // getId student
                             $student_id = $ParentModel->getId();
                             
-                            // if exist -- student_class 
+                            // if exist -- student_class
                             $student_class = $StudentClassModel->getStudentClassExist($student_id, $classe, $yearActif[0]['year_id']);
                             if (sizeof($student_class) != 0) {
                                 $response = [
@@ -932,8 +1198,43 @@ class StudentController extends ResourcePresenter
                                 return $this->respond($response);
                             }
                             // insert student_class
+                            $matiereArray = json_decode($matiere, true);
+                            if (is_array($matiereArray) && !empty($matiereArray)) {
+                                if ($matiereArray[0] === "all") {
+                                    $student_unit_id = 'all';
+                                } else {
+                                    if (is_array($matiereArray)) {
+                                        foreach ($matiereArray as $subject) {
+                                            $data_student_unit = [
+                                                'student_id'        => $student_id,
+                                                'teachingunit_id'   => $subject,
+                                                'year_id'           => $yearActif[0]['year_id'],
+                                                'user_id'           => $id_user,
+                                                'status_studentunit'=> '0',
+                                                'etat_studentunit'  => 'actif',
+                                                'created_at'        => date("Y-m-d H:m:s"),
+                                                'updated_at'        => date("Y-m-d H:m:s"),
+                                            ];
+                                            if (!$StudentUnit->save($data_student_unit)) {
+                                                $response = [
+                                                    "success" => false,
+                                                    "status"  => 500,
+                                                    "code"    => "error",
+                                                    "title"   => "Erreur",
+                                                    'msg'     => 'Nous n\'avons pas pu affecter cet élève à ces matières',
+                                                ];
+                                                return $this->respond($response);
+                                            }
+                                        }
+                                    } 
+                                    
+                                    //student_unit_id
+                                    $student_unit_id = $StudentUnit->getId();
+                                }
+                            }
                             $data_student_class = [
                                 'class_id'          => $classe,
+                                'matieres'          => $student_unit_id,
                                 'student_id'        => $student_id,
                                 'year_id'           => $yearActif[0]['year_id'],
                                 'id_user'           => $id_user,
@@ -942,7 +1243,6 @@ class StudentController extends ResourcePresenter
                                 'created_at'        => date("Y-m-d H:m:s"),
                                 'updated_at'        => date("Y-m-d H:m:s"),
                             ];
-
                             if (!$StudentClassModel->save($data_student_class)) {
                                 $response = [
                                     "success" => false,
@@ -1127,7 +1427,6 @@ class StudentController extends ResourcePresenter
         $student_list = $StudentModel->getStudentByClassYear($id_class, $year_id);
 
         return $this->respond($student_list);
-
     }
 
     public function delete_user($id_student){
@@ -1318,8 +1617,15 @@ class StudentController extends ResourcePresenter
                     }
                     
                 }
+
+                $student = $StudentModel->find($student_id); 
+                
+                $ancienMatTab = explode("-", $student["matricule"]);
+                $matricule = date("y")."-".$ClassModel->format_name_class($data_classe[0]['name'])."-".$ancienMatTab[2];
+
                 // update student
                 $data_student = [
+                    'matricule'     => $matricule,
                     'surname'       => $surName,
                     'name'          => $name,
                     'birth_place'   => $placeBirth,
@@ -1561,6 +1867,81 @@ class StudentController extends ResourcePresenter
 		$fpdf->footer_listing(38, $msg); 
 		//-- listing des eleves
 		$fpdf->listing($title, $name_class, $session[0]['name_session'], $cycle[0]['name_cycle'], $eleves, $garcon, $fille, $chaine_ensg, ($tab_start_year[0].' / '.($tab_start_year[0]+1)), $ecole[0]['name'], $ecole[0]['phone'], $ecole[0]['matricule'], $msg);
+		// /***********************/
+		
+		//-- sortie
+        $name_file = $name_folder.'/Liste_eleves_'.$cycle[0]['name_cycle'].'_'.$session[0]['name_session'].'_'.$name_class.'_'.($tab_start_year[0].'_'.($tab_start_year[0]+1)).'.pdf';
+		$fpdf->Output($name_file,'F');
+
+        $response = [
+            'success'   => true,
+            'status'    => 200,
+            'name_file' => $name_file,
+        ];
+        return $this->respond($response);
+    }
+
+    public function print_bordereau_notes($ecole_id, $session_id, $cycle_id, $id_class){
+        $StudentModel = new StudentModel();
+        $YearModel = new YearModel();
+        $SchoolModel = new SchoolModel();
+        $SessionModel = new SessionModel();
+        $CycleModel = new CycleModel();
+        $ClassModel = new ClassModel();
+        $TeacherClassModel = new TeacherClassModel();
+        $yearActif = $YearModel->getYearActif();
+        $year_id = $yearActif[0]["year_id"];
+        $start_year = $yearActif[0]["start_year"];
+        $tab_start_year = explode('-', $yearActif[0]["start_year"]);
+        $ecole = $SchoolModel->getIDSchool($ecole_id);
+        $session = $SessionModel->getSessionById($session_id);
+        $cycle = $CycleModel->getCycleById($cycle_id);
+        $class = $ClassModel->getOneClass($id_class);
+        $name_class = $ClassModel->format_name_class($class[0]['name']);
+        $garcon = sizeof($StudentModel->getStudentByClassYearSexeAll($id_class, $year_id, "M"));
+        $fille = sizeof($StudentModel->getStudentByClassYearSexeAll($id_class, $year_id, "F"));
+        $enseignant = $TeacherClassModel->getTeacherClass($id_class, $year_id);
+        $chaine_ensg = '';
+        foreach ($enseignant as $line) {
+            if (strlen($chaine_ensg) == 0) {
+                $chaine_ensg = $line['name'];
+            }else {
+                $chaine_ensg = $chaine_ensg.', '.$chaine_ensg;
+            }
+        }
+        // $qrCode = $this->generate_qrcode($class[0]["number"], $name_class, date("Y-m-d H:m:s"), $ecole[0]['name'], $ecole[0]['logo']);
+        $student_list = $StudentModel->getStudentByClassYear($id_class, $year_id, "non");
+        $name_folder = getenv('FILE_PRINT_DOC');
+        $i = 0;
+        $eleves = array();
+        foreach ($student_list as $row) {
+            $eleves[] = array(
+                'num' 			=> $i+1,
+                'mat' 			=> strtoupper(strtolower($row["matricule"])),
+                'nom' 	        => strtoupper(strtolower($row["name"]))." ".(ucfirst(strtolower($row["surname"]))),
+                'sexe' 	        => strtoupper($row["sexe"]),
+                'classe'        => $name_class,
+                'parent' 	    => $row["name_parent"].' '.$row["surnameParent"],
+                'phone' 	    => $row["contactParent"],
+                'redouble' 	    => $row["redouble"],
+            );
+            $i++;
+        }
+
+        $fpdf  = new FPDF_LISTING('L', 'mm', 'A4');  
+		$fpdf->AliasNbPages(); 
+		$fpdf->SetAutoPageBreak(1, 1); 
+		$fpdf->AddPage();
+        //-- fil
+		$fpdf->Filigramme("School");
+		//-- entete
+        $title = "FICHES DES NOTES ".strtoupper($name_class);
+		$fpdf->header_p(($tab_start_year[0].' / '.($tab_start_year[0]+1)), $ecole[0]['name'], $ecole[0]['phone'], $ecole[0]['matricule']);
+		//-- footer
+        $msg = "Fiches des notes de ".$cycle[0]['name_cycle'].", session ".$session[0]['name_session']." de la classe du ".$name_class;
+		$fpdf->footer_listing(38, $msg); 
+		//-- listing des eleves
+		$fpdf->fiche_notes($title, $name_class, $session[0]['name_session'], $cycle[0]['name_cycle'], $eleves, $garcon, $fille, $chaine_ensg, ($tab_start_year[0].' / '.($tab_start_year[0]+1)), $ecole[0]['name'], $ecole[0]['phone'], $ecole[0]['matricule'], $msg);
 		// /***********************/
 		
 		//-- sortie
@@ -2060,7 +2441,7 @@ class StudentController extends ResourcePresenter
         $student_list = $StudentModel->getStudentByClassYear($id_class, $year_id, "non");
         $name_folder = getenv('FILE_PRINT_DOC');
         
-        $fpdf  = new FPDF_LISTING('P', 'mm', 'A4');  
+        $fpdf  = new FPDF_CERT('P', 'mm', 'A4');  
 		$fpdf->AliasNbPages(); 
 		$fpdf->SetAutoPageBreak(1, 1);
 
@@ -2096,6 +2477,616 @@ class StudentController extends ResourcePresenter
 		//-- sortie
         $name_file = $name_folder.'/Certificat_eleves_'.$cycle[0]['name_cycle'].'_'.$session[0]['name_session'].'_'.$name_class.'_'.($tab_start_year[0].'_'.($tab_start_year[0]+1)).'.pdf';
 		$fpdf->Output($name_file,'F');
+
+        $response = [
+            'success'   => true,
+            'status'    => 200,
+            'name_file' => $name_file,
+        ];
+        return $this->respond($response);
+    }
+
+
+    //-- PRINT ALL BULLETIN
+    public function print_all_bulletin($ecole_id, $session_id, $cycle_id, $id_class, $name_trimestre, $name_sequence , $imprime_pour, $student_id){
+        $StudentModel           = new StudentModel();
+        $YearModel              = new YearModel();
+        $SchoolModel            = new SchoolModel();
+        $SessionModel           = new SessionModel();
+        $CycleModel             = new CycleModel();
+        $ClassModel             = new ClassModel();
+        $TeacherClassModel      = new TeacherClassModel();
+        $TeachingUnitModel      = new TeachingUnitModel();
+        $teacherUnitClassModel  = new TeacherUnitClassModel();
+        $StudentUnit            = new StudentunitModel();
+        $TeacherModel           = new TeacherModel();
+        $NoteModel              = new NoteModel();
+        $SequenceModel          = new SequenceModel();
+        $TrimestreModel         = new TrimestreModel();
+
+        $yearActif      = $YearModel->getYearActif();
+        $year_id        = $yearActif[0]["year_id"];
+        $start_year     = $yearActif[0]["start_year"];
+        $tab_start_year = explode('-', $yearActif[0]["start_year"]);
+
+        $ecole          = $SchoolModel->getIDSchool($ecole_id);
+        $session        = $SessionModel->getSessionById($session_id);
+        $cycle          = $CycleModel->getCycleById($cycle_id);
+        $class          = $ClassModel->getOneClass($id_class);
+        $name_class     = $ClassModel->format_name_class($class[0]['name']);
+        $name_seq       = $SequenceModel->getOneSequence($name_sequence);
+        $name_trim      = $TrimestreModel->getTrimestreById($name_trimestre);
+        $garcon         = sizeof($StudentModel->getStudentByClassYearSexeAll($id_class, $year_id, "M"));
+        $fille          = sizeof($StudentModel->getStudentByClassYearSexeAll($id_class, $year_id, "F"));
+        $enseignant     = $TeacherClassModel->getTeacherClass($id_class, $year_id);
+
+        $chaine_ensg    = '';
+        
+        foreach ($enseignant as $line) {
+            if (strlen($chaine_ensg) == 0) {
+                $chaine_ensg = $line['name'] . ' ' . $line['surname'];
+                // var_dump($chaine_ensg);
+            }else {
+                $chaine_ensg = $chaine_ensg.', '.$chaine_ensg;
+            }
+        }
+
+        $name_folder = getenv('FILE_PRINT_DOC');
+        $student_list = $StudentModel->getStudentByClassYear($id_class, $year_id, "non");
+        $i = 0;
+        $maxNote = 0;
+        $minNote = 0;
+        $effectif = 0;
+        $allmoyenne = [];
+        $lowest_average = 0;
+        $highest_average = 0;
+        $total_moyennes = 0;
+        $total_etudiants = 0;
+        $moyenne_generale = 0;
+        $eleves = array();
+        $footerData = array();
+        $note_matieres_eleves = array();
+        $etudiants_ayant_moyenne = 0;
+        $moyenne_passage = 10;
+
+        foreach ($student_list as $row) {
+            $eleves[] = array(
+                'num' 			=> $i+1,
+                'mat' 			=> strtoupper(strtolower($row["matricule"])),
+                'nom' 	        => strtoupper(strtolower($row["name"]))." ".(ucfirst(strtolower($row["surname"]))),
+                'sexe' 	        => strtoupper($row["sexe"]),
+                'date_of_birth' => strtoupper($row["date_of_birth"]),
+                'birth_place'   => strtoupper($row["birth_place"]),
+                'classe'        => $name_class,
+                'parent' 	    => $row["name_parent"].' '.$row["surnameParent"],
+                'phone' 	    => $row["contactParent"],
+                'redouble' 	    => $row["redouble"],
+                'student_id'    => $row["student_id"],
+            );
+            $i++;
+            $effectif += 1;
+        }
+
+        $pdf = new BulletinPremierTrimestre();
+        $pdf->AliasNbPages();
+        $pdf->SetAutoPageBreak(1, 1);
+        $pdf->AddPage();
+        
+        if($name_sequence == "1"){
+            $sequences = $SequenceModel->getSequenceBySchoolSessionCycleClasseTrim($ecole_id, $session_id, $cycle_id, $id_class, $name_trimestre);
+
+            foreach ($eleves as $student){
+                //Trouver la moyenne de chaque eleve
+                $moyennes = $NoteModel->getStudentAverageTrim($student['student_id'], $year_id, $sequences[0]['sequence_id'], $sequences[1]['sequence_id']);
+                // var_dump($moyennes);
+
+                if ($moyennes !== null) {
+                    $total_moyennes += $moyennes['moyenne_student'];
+                    $total_etudiants++;
+                    $allmoyenne[] = $moyennes['moyenne_student'];
+
+                    if ($moyennes['moyenne_student'] >= $moyenne_passage) {
+                        $etudiants_ayant_moyenne++;
+                    }
+                }
+            }
+            // Calculer la moyenne générale de la classe
+            if ($total_etudiants > 0) {
+                $moyenne_generale = round($total_moyennes / $total_etudiants, 2);
+            }
+            if(!empty($allmoyenne)) {
+                $highest_average = max($allmoyenne); 
+                $lowest_average  = min($allmoyenne);
+            }
+            $pourcentage_reussite = ($total_etudiants > 0) ? ($etudiants_ayant_moyenne / $total_etudiants) * 100 : 0;
+            
+            foreach ($eleves as $student) {
+                if($session_id == '3' || $session_id == '4'){
+                    $title = "BULLETIN DE NOTE DU ";
+                    if($name_trim[0]['name'] == "TRIMESTRE 1"){
+                        $title = "REPORT CARD FOR TERM 1";
+                    }else if($name_trim[0]['name'] == "TRIMEST 2"){
+                        $title = "REPORT CARD FOR TERM 2";
+                    } else if($name_trim[0]['name'] == "TRIMEST 3"){
+                        $title = "REPORT CARD FOR TERM 3";
+                    }
+
+                    $All_data_teaching = $TeachingUnitModel->getAllTeachingSchoolSessionCycleClassOTHER($ecole_id, $session_id, $cycle_id,$id_class);
+                    $data_teaching = $StudentUnit->getStudentSubjects($ecole_id, $session_id, $cycle_id,$id_class,$student['student_id']);
+
+                    foreach($data_teaching as $teach){  
+                        $teaching_unit =  $TeachingUnitModel->getTeachingById($teach['teachingunit_id']);
+                        $teacherByUnit =  $teacherUnitClassModel->getTeachersByTeachingUnitClassAndYear($teach['teachingunit_id'], $id_class, $year_id);
+                        // var_dump($teacherByUnit);
+                        $note1 = $NoteModel->getNoteByStudent($student['student_id'], $teach['teachingunit_id'], $year_id, $sequences[0]['sequence_id']);
+                        $note2 = $NoteModel->getNoteByStudent($student['student_id'], $teach['teachingunit_id'], $year_id, $sequences[1]['sequence_id']);
+                        $notes = $NoteModel->getNoteTrimByTeaching($teach['teachingunit_id'], $year_id, $sequences[0]['sequence_id'],$sequences[1]['sequence_id']);
+                        $minMaxNotes = $NoteModel->getMinMaxNoteFromDataTim($notes);
+                        $moyennes = $NoteModel->getStudentAverageTrim($student['student_id'], $year_id, $sequences[0]['sequence_id'], $sequences[1]['sequence_id']);
+    
+                        $moyenne = $moyennes['moyenne_student'];
+                        $minNote = $minMaxNotes['min_note'];
+                        $maxNote = $minMaxNotes['max_note'];
+    
+                        // Calcul des notes trimestrielles
+                        $val_note = -1;
+                        $close = "false";
+                        if (sizeof($note1) != 0 && sizeof($note2) != 0) {
+                            $val_note = ($note1[0]['note'] + $note2[0]['note']) / 2;
+                            $close = $note2[0]['close'];
+                        } else {
+                            return false;
+                        }
+    
+                        $appreciation = "";
+                        $appr = "";
+                        if($val_note >= 0 && $val_note < 10){
+                            $appreciation = "Skills Not Acquired (SNA)";
+                        } elseif($val_note >= 10 && $val_note < 12 ){
+                            $appreciation = "Skills Moderately Acquired (SMA)";
+                            
+                        } elseif($val_note >= 12 && $val_note < 14){
+                            $appreciation = "Skills Acquired (SA)";
+                            
+                        } elseif($val_note >= 14 && $val_note < 16){
+                            $appreciation = "Skills Well Acquired (SWA)";
+                            
+                        } elseif($val_note >= 16 && $val_note <= 20){
+                            $appreciation = "Skills Very Well Acquired (SVWA)";
+                            
+                        }
+    
+                        $cote = "";
+                        if($moyennes['moyenne_student'] >= 0 && $moyennes['moyenne_student'] < 10){
+                            $cote = "D";
+                            $appr = "SNA";
+                        } elseif($moyennes['moyenne_student'] >= 10 && $moyennes['moyenne_student'] < 12 ){
+                            $cote = "C";
+                            $appr = "SMA";
+                        } elseif($moyennes['moyenne_student'] >= 12 && $moyennes['moyenne_student'] < 14){
+                            $cote = "C+";
+                            $appr = "SA";
+                        } elseif($moyennes['moyenne_student'] >= 14 && $moyennes['moyenne_student'] < 15){
+                            $cote = "B";
+                            $appr = "SA";
+                        }elseif($moyennes['moyenne_student'] >= 15 && $moyennes['moyenne_student'] < 16){
+                            $cote = "B+";
+                            $appr = "SWA";
+                        } elseif($moyennes['moyenne_student'] >= 16 && $moyennes['moyenne_student'] < 18){
+                            $cote = "A";
+                            $appr = "SWA";
+                        }elseif($moyennes['moyenne_student'] >= 18 && $moyennes['moyenne_student'] <= 20){
+                            $cote = "A+";
+                            $appr = "SVWA";
+                        }
+    
+                        $footerData[] = [
+                            'total_gene'    => $moyennes['total_notes'],
+                            'total_coef'    => $moyennes['total_coefficients'],
+                            'moyenne_trim'  => $moyennes['moyenne_student'],
+                            'moyenne_gene'  => $moyenne_generale,
+                            'highest'       => $highest_average,
+                            'lowest'        => $lowest_average,
+                            'nbre_reussite' => $etudiants_ayant_moyenne,
+                            'pourcentageR'  => round($pourcentage_reussite, 2),
+                            'cote'          => $cote,
+                            'total_eleve'   => $total_etudiants,
+                            'appreciation'  => $appr
+                        ];
+    
+                        $note_matieres_eleves[] = [
+                            "id_student"        => $row['student_id'],
+                            "teachingunit_id"   => $teach["teachingunit_id"],
+                            "code"              => $teach["code"],
+                            "name"              => $teach["name"],
+                            "teacher"           => $teacherByUnit[0]["name"],
+                            'coefficient'       => $teaching_unit[0]['coefficient'],
+                            'note'              => $val_note,
+                            'close'             => $close,
+                            "appreciation"      => $appreciation,
+                            "max"               => $maxNote,
+                            "min"               => $minNote,
+                            "moyenne"           => $moyenne,
+                        ];
+                    }
+
+                    $pdf->header_portrait($tab_start_year[0].' / '.($tab_start_year[0]+1), $ecole[0]['name'], $ecole[0]['phone'], $ecole[0]['matricule']);
+                    $pdf->AddHeaderStudentAnglo($student, $effectif, $chaine_ensg);
+                    $pdf->listingAnglo($note_matieres_eleves, $title);
+                    $pdf->footerBulletinAnglo($footerData[0]);
+                    $pdf->AddPage();
+
+                    $note_matieres_eleves = array();
+                    $footerData = array();
+
+                }else{
+                    if($name_trim[0]['name'] == "TRIMESTRE 1"){
+                        $title = "BULLETIN DE NOTE DU ".strtoupper($name_trim[0]['name']);
+                    }else if($name_trim[0]['name'] == "TRIMEST 2"){
+                        $title = "BULLETIN DE NOTE DU ".strtoupper($name_trim[0]['name']);
+                    } else if($name_trim[0]['name'] == "TRIMEST 3"){
+                        $title = "BULLETIN DE NOTE DU ".strtoupper($name_trim[0]['name']);
+                    }
+                    
+                    $data_teaching = $TeachingUnitModel->getAllTeachingSchoolSessionCycleClassOTHER($ecole_id, $session_id, $cycle_id,$id_class);
+                    foreach($data_teaching as $teach){
+                        $teaching_unit =  $TeachingUnitModel->getTeachingById($teach['teachingunit_id']);
+                        $teacherByUnit =  $teacherUnitClassModel->getTeachersByTeachingUnitClassAndYear($teach['teachingunit_id'], $id_class, $year_id);
+                        // var_dump($teacherByUnit);
+                        $note1 = $NoteModel->getNoteByStudent($student['student_id'], $teach['teachingunit_id'], $year_id, $sequences[0]['sequence_id']);
+                        $note2 = $NoteModel->getNoteByStudent($student['student_id'], $teach['teachingunit_id'], $year_id, $sequences[1]['sequence_id']);
+                        $notes = $NoteModel->getNoteTrimByTeaching($teach['teachingunit_id'], $year_id, $sequences[0]['sequence_id'],$sequences[1]['sequence_id']);
+                        // var_dump($notes);
+                        $minMaxNotes = $NoteModel->getMinMaxNoteFromDataTim($notes);
+                        // var_dump($minMaxNotes);
+                        $moyennes = $NoteModel->getStudentAverageTrim($student['student_id'], $year_id, $sequences[0]['sequence_id'], $sequences[1]['sequence_id']);
+    
+                        $moyenne = $moyennes['moyenne_student'];
+                        $minNote = $minMaxNotes['min_note'];
+                        $maxNote = $minMaxNotes['max_note'];
+
+                        $val_note = -1;
+                        $close = "false";
+                        if (sizeof($note1) != 0 && sizeof($note2) != 0) {
+                            $val_note = ($note1[0]['note'] + $note2[0]['note']) / 2;
+                            $close = $note2[0]['close'];
+                        } else{
+                            $response = [
+                                'success'   => true,
+                                'status'    => 200,
+                                'msg'       => "Une Séquence n'a pas de notes",
+                            ];
+                            return $this->respond($response);
+                        }
+    
+                        $appreciation = "";
+                        $appr = "";
+                        if($val_note >= 0 && $val_note < 10){
+                            $appreciation = "Compétences non acquises (CNA)";
+                        } elseif($val_note >= 10 && $val_note < 12 ){
+                            $appreciation = "Compétences moyennement acquises";
+                            
+                        } elseif($val_note >= 12 && $val_note < 14){
+                            $appreciation = "Compétences acquises (CA)";
+                            
+                        } elseif($val_note >= 14 && $val_note < 16){
+                            $appreciation = "Compétences bien acquises (CBA)";
+                            
+                        } elseif($val_note >= 16 && $val_note <= 20){
+                            $appreciation = "Compétences très bien acquises (CTBA)";
+                            
+                        }
+    
+                        $cote = "";
+                        if($moyennes['moyenne_student'] >= 0 && $moyennes['moyenne_student'] < 10){
+                            $cote = "D";
+                            $appr = "CNA";
+                        } elseif($moyennes['moyenne_student'] >= 10 && $moyennes['moyenne_student'] < 12 ){
+                            $cote = "C";
+                            $appr = "CMA";
+                        } elseif($moyennes['moyenne_student'] >= 12 && $moyennes['moyenne_student'] < 14){
+                            $cote = "C+";
+                            $appr = "CA";
+                        } elseif($moyennes['moyenne_student'] >= 14 && $moyennes['moyenne_student'] < 15){
+                            $cote = "B";
+                            $appr = "CA";
+                        }elseif($moyennes['moyenne_student'] >= 15 && $moyennes['moyenne_student'] < 16){
+                            $cote = "B+";
+                            $appr = "CBA";
+                        } elseif($moyennes['moyenne_student'] >= 16 && $moyennes['moyenne_student'] < 18){
+                            $cote = "A";
+                            $appr = "CBA";
+                        }elseif($moyennes['moyenne_student'] >= 18 && $moyennes['moyenne_student'] <= 20){
+                            $cote = "A+";
+                            $appr = "CTBA";
+                        }
+    
+                        $footerData[] = [
+                            'total_gene'    => $moyennes['total_notes'],
+                            'total_coef'    => $moyennes['total_coefficients'],
+                            'moyenne_trim'  => $moyennes['moyenne_student'],
+                            'moyenne_gene'  => $moyenne_generale,
+                            'highest'       => $highest_average,
+                            'lowest'        => $lowest_average,
+                            'nbre_reussite' => $etudiants_ayant_moyenne,
+                            'pourcentageR'  => round($pourcentage_reussite, 2),
+                            'cote'          => $cote,
+                            'total_eleve'   => $total_etudiants,
+                            'appreciation'  => $appr
+                        ];
+    
+                        $note_matieres_eleves[] = [
+                            "id_student"        => $row['student_id'],
+                            "teachingunit_id"   => $teach["teachingunit_id"],
+                            "code"              => $teach["code"],
+                            "name"              => $teach["name"],
+                            "teacher"           => $teacherByUnit[0]["name"],
+                            'coefficient'       => $teaching_unit[0]['coefficient'],
+                            'note'              => $val_note,
+                            'close'             => $close,
+                            "appreciation"      => $appreciation,
+                            "max"               => $maxNote,
+                            "min"               => $minNote,
+                            "moyenne"           => $moyenne
+                        ];
+                    }
+                    $pdf->header_portrait($tab_start_year[0].' / '.($tab_start_year[0]+1), $ecole[0]['name'], $ecole[0]['phone'], $ecole[0]['matricule']);
+                    $pdf->AddHeaderStudent($student, $effectif, $chaine_ensg);
+                    $pdf->listing($note_matieres_eleves, $title);
+                    $pdf->footerBulletin($footerData[0]);
+                    $pdf->AddPage();
+
+                    $note_matieres_eleves = array();
+                    $footerData = array();
+
+                    $note_matieres_eleves = array();
+                    $footerData = array();
+                }
+            }
+
+            $name_file = $name_folder.'/bulletin_annuel.pdf';
+            $pdf->Output($name_file, 'F');  
+        }else {
+            foreach ($eleves as $student){
+                //Trouver la moyenne de chaque eleve
+                $moyennes = $NoteModel->getStudentAverage($student['student_id'], $year_id, $name_sequence);
+                if ($moyennes !== null) {
+                    $total_moyennes += $moyennes['moyenne_student'];
+                    $total_etudiants++;
+
+                    $allmoyenne[] = $moyennes['moyenne_student'];
+
+                    if ($moyennes['moyenne_student'] >= $moyenne_passage) {
+                        $etudiants_ayant_moyenne++;
+                    }
+                }
+            }
+            // Calculer la moyenne générale de la classe
+            if ($total_etudiants > 0) {
+                $moyenne_generale = round($total_moyennes / $total_etudiants, 2);
+            }
+            if(!empty($allmoyenne)) {
+                $highest_average = max($allmoyenne); 
+                $lowest_average  = min($allmoyenne);
+            }
+            $pourcentage_reussite = ($total_etudiants > 0) ? ($etudiants_ayant_moyenne / $total_etudiants) * 100 : 0;
+            foreach ($eleves as $student) {
+                if($session_id == '3' || $session_id == '4'){
+                    $title = "GRADE REPORT OF THE ".strtoupper($name_seq[0]['name']);
+                    $All_data_teaching = $TeachingUnitModel->getAllTeachingSchoolSessionCycleClassOTHER($ecole_id, $session_id, $cycle_id,$id_class);
+                    $data_teaching = $StudentUnit->getStudentSubjects($ecole_id, $session_id, $cycle_id,$id_class,$student['student_id']);
+
+                    foreach($data_teaching as $teach){
+                        $teaching_unit =  $TeachingUnitModel->getTeachingById($teach['teachingunit_id']);
+                        $teacherByUnit =  $teacherUnitClassModel->getTeachersByTeachingUnitClassAndYear($teach['teachingunit_id'], $id_class, $year_id);
+                        $note = $NoteModel->getNoteByStudent($student['student_id'], $teach['teachingunit_id'], $year_id, $name_sequence);
+                        $notes = $NoteModel->getNoteByTeaching($teach['teachingunit_id'], $year_id, $name_sequence);
+                        $minMaxNotes = $NoteModel->getMinMaxNoteFromData($notes);
+                        $moyennes = $NoteModel->getStudentAverage($student['student_id'], $year_id, $name_sequence);
+    
+                        $moyenne = $moyennes['moyenne_student'];
+                        $minNote = $minMaxNotes['min_note'];
+                        $maxNote = $minMaxNotes['max_note'];
+    
+                        $val_note = -1;
+                        $close = "false";
+                        if (sizeof($note) != 0) {
+                            $val_note = $note[0]['note'];
+                            $close = $note[0]['close'];
+                        }
+    
+                        $appreciation = "";
+                        $appr = "";
+                        if($val_note >= 0 && $val_note < 10){
+                            $appreciation = "Skills Not Acquired (SNA)";
+                        } elseif($val_note >= 10 && $val_note < 12 ){
+                            $appreciation = "Skills Moderately Acquired (SMA)";
+                            
+                        } elseif($val_note >= 12 && $val_note < 14){
+                            $appreciation = "Skills Acquired (SA)";
+                            
+                        } elseif($val_note >= 14 && $val_note < 16){
+                            $appreciation = "Skills Well Acquired (SWA)";
+                            
+                        } elseif($val_note >= 16 && $val_note <= 20){
+                            $appreciation = "Skills Very Well Acquired (SVWA)";
+                            
+                        }
+    
+                        $cote = "";
+                        if($moyennes['moyenne_student'] >= 0 && $moyennes['moyenne_student'] < 10){
+                            $cote = "D";
+                            $appr = "SNA";
+                        } elseif($moyennes['moyenne_student'] >= 10 && $moyennes['moyenne_student'] < 12 ){
+                            $cote = "C";
+                            $appr = "SMA";
+                        } elseif($moyennes['moyenne_student'] >= 12 && $moyennes['moyenne_student'] < 14){
+                            $cote = "C+";
+                            $appr = "SA";
+                        } elseif($moyennes['moyenne_student'] >= 14 && $moyennes['moyenne_student'] < 15){
+                            $cote = "B";
+                            $appr = "SA";
+                        }elseif($moyennes['moyenne_student'] >= 15 && $moyennes['moyenne_student'] < 16){
+                            $cote = "B+";
+                            $appr = "SWA";
+                        } elseif($moyennes['moyenne_student'] >= 16 && $moyennes['moyenne_student'] < 18){
+                            $cote = "A";
+                            $appr = "SWA";
+                        }elseif($moyennes['moyenne_student'] >= 18 && $moyennes['moyenne_student'] <= 20){
+                            $cote = "A+";
+                            $appr = "SVWA";
+                        }
+    
+                        $footerData[] = [
+                            'total_gene'    => $moyennes['total_notes'],
+                            'total_coef'    => $moyennes['total_coefficients'],
+                            'moyenne_trim'  => $moyennes['moyenne_student'],
+                            'moyenne_gene'  => $moyenne_generale,
+                            'highest'       => $highest_average,
+                            'lowest'        => $lowest_average,
+                            'nbre_reussite' => $etudiants_ayant_moyenne,
+                            'pourcentageR'  => round($pourcentage_reussite, 2),
+                            'cote'          => $cote,
+                            'total_eleve'   => $total_etudiants,
+                            'appreciation'  => $appr
+                        ];
+    
+                        $note_matieres_eleves[] = [
+                            "id_student"        => $row['student_id'],
+                            "teachingunit_id"   => $teach["teachingunit_id"],
+                            "code"              => $teach["code"],
+                            "name"              => $teach["name"],
+                            "teacher"           => isset($teacherByUnit[0]["name"])? $teacherByUnit[0]["name"] : " ",
+                            'coefficient'       => $teaching_unit[0]['coefficient'],
+                            'note'              => $val_note,
+                            'close'             => $close,
+                            "appreciation"      => $appreciation,
+                            "max"               => $maxNote,
+                            "min"               => $minNote,
+                            "moyenne"           => $moyenne,
+                        ];
+                    }
+                    // var_dump($note_matieres_eleves);
+                    $pdf->header_portrait($tab_start_year[0].' / '.($tab_start_year[0]+1), $ecole[0]['name'], $ecole[0]['phone'], $ecole[0]['matricule']);
+                    $pdf->AddHeaderStudentAnglo($student, $effectif, $chaine_ensg);
+                    $pdf->listingAnglo($note_matieres_eleves, $title);
+                    $pdf->footerBulletinAnglo($footerData[0]);
+                    $pdf->AddPage();
+
+                    $note_matieres_eleves = array();
+                    $footerData = array();
+                }else{
+                    $title = "BULLETIN DE NOTE DE LA ".strtoupper($name_seq[0]['name']);
+                    $data_teaching = $TeachingUnitModel->getAllTeachingSchoolSessionCycleClassOTHER($ecole_id, $session_id, $cycle_id,$id_class);
+                    foreach($data_teaching as $teach){
+                        $teaching_unit =  $TeachingUnitModel->getTeachingById($teach['teachingunit_id']);
+                        $teacherByUnit =  $teacherUnitClassModel->getTeachersByTeachingUnitClassAndYear($teach['teachingunit_id'], $id_class, $year_id);
+                        $note = $NoteModel->getNoteByStudent($student['student_id'], $teach['teachingunit_id'], $year_id, $name_sequence);
+                        $notes = $NoteModel->getNoteByTeaching($teach['teachingunit_id'], $year_id, $name_sequence);
+                        // var_dump($notes);
+                        $minMaxNotes = $NoteModel->getMinMaxNoteFromData($notes);
+                        // var_dump($minMaxNotes);
+
+                        $moyennes = $NoteModel->getStudentAverage($student['student_id'], $year_id, $name_sequence);
+    
+                        $moyenne = $moyennes['moyenne_student'];
+                        $minNote = $minMaxNotes['min_note'];
+                        $maxNote = $minMaxNotes['max_note'];
+    
+    
+                        $val_note = -1;
+                        $close = "false";
+                        if (sizeof($note) != 0) {
+                            $val_note = $note[0]['note'];
+                            $close = $note[0]['close'];
+                        }
+    
+                        $appreciation = "";
+                        $appr = "";
+                        if($val_note >= 0 && $val_note < 10){
+                            $appreciation = "Compétences non acquises (CNA)";
+                        } elseif($val_note >= 10 && $val_note < 12 ){
+                            $appreciation = "Compétences moyennement acquises";
+                            
+                        } elseif($val_note >= 12 && $val_note < 14){
+                            $appreciation = "Compétences acquises (CA)";
+                            
+                        } elseif($val_note >= 14 && $val_note < 16){
+                            $appreciation = "Compétences bien acquises (CBA)";
+                            
+                        } elseif($val_note >= 16 && $val_note <= 20){
+                            $appreciation = "Compétences très bien acquises (CTBA)";
+                            
+                        }
+    
+                        $cote = "";
+                        if($moyennes['moyenne_student'] >= 0 && $moyennes['moyenne_student'] < 10){
+                            $cote = "D";
+                            $appr = "CNA";
+                        } elseif($moyennes['moyenne_student'] >= 10 && $moyennes['moyenne_student'] < 12 ){
+                            $cote = "C";
+                            $appr = "CMA";
+                        } elseif($moyennes['moyenne_student'] >= 12 && $moyennes['moyenne_student'] < 14){
+                            $cote = "C+";
+                            $appr = "CA";
+                        } elseif($moyennes['moyenne_student'] >= 14 && $moyennes['moyenne_student'] < 15){
+                            $cote = "B";
+                            $appr = "CA";
+                        }elseif($moyennes['moyenne_student'] >= 15 && $moyennes['moyenne_student'] < 16){
+                            $cote = "B+";
+                            $appr = "CBA";
+                        } elseif($moyennes['moyenne_student'] >= 16 && $moyennes['moyenne_student'] < 18){
+                            $cote = "A";
+                            $appr = "CBA";
+                        }elseif($moyennes['moyenne_student'] >= 18 && $moyennes['moyenne_student'] <= 20){
+                            $cote = "A+";
+                            $appr = "CTBA";
+                        }
+    
+                        $footerData[] = [
+                            'total_gene'    => $moyennes['total_notes'],
+                            'total_coef'    => $moyennes['total_coefficients'],
+                            'moyenne_trim'  => $moyennes['moyenne_student'],
+                            'moyenne_gene'  => $moyenne_generale,
+                            'highest'       => $highest_average,
+                            'lowest'        => $lowest_average,
+                            'nbre_reussite' => $etudiants_ayant_moyenne,
+                            'pourcentageR'  => round($pourcentage_reussite, 2),
+                            'cote'          => $cote,
+                            'total_eleve'   => $total_etudiants,
+                            'appreciation'  => $appr
+                        ];
+    
+                        $note_matieres_eleves[] = [
+                            "id_student"        => $row['student_id'],
+                            "teachingunit_id"   => $teach["teachingunit_id"],
+                            "code"              => $teach["code"],
+                            "name"              => $teach["name"],
+                            "teacher"           => $teacherByUnit[0]["name"],
+                            'coefficient'       => $teaching_unit[0]['coefficient'],
+                            'note'              => $val_note,
+                            'close'             => $close,
+                            "appreciation"      => $appreciation,
+                            "max"               => $maxNote,
+                            "min"               => $minNote,
+                            "moyenne"           => $moyenne
+                        ];
+                    }
+
+                    $pdf->header_portrait($tab_start_year[0].' / '.($tab_start_year[0]+1), $ecole[0]['name'], $ecole[0]['phone'], $ecole[0]['matricule']);
+                    $pdf->AddHeaderStudent($student, $effectif, $chaine_ensg);
+                    $pdf->listing($note_matieres_eleves, $title);
+                    $pdf->footerBulletin($footerData[0]);
+                    $pdf->AddPage();
+
+                    $note_matieres_eleves = array();
+                    $footerData = array();
+                }
+              
+            }
+            $name_file = $name_folder.'/bulletin_premier_trimestre.pdf';
+            $pdf->Output($name_file, 'F');
+        }
 
         $response = [
             'success'   => true,

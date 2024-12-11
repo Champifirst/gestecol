@@ -1,0 +1,15 @@
+
+1;duplix;teacher;2024-12-10 14-12-40;Authentification;Réussite;Utilisateur;127.0.0.1;inconue;Nouvelle session initialisée;EOF;
+1;duplix;teacher;2024-12-10 14-12-41;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;duplix;teacher;2024-12-10 14-12-48;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;duplix;teacher;2024-12-10 14-12-53;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;duplix;teacher;2024-12-10 14-12-54;insertion;Echec;Trimestre;127.0.0.1;inconue;Echec de validation ;EOF;
+1;duplix;teacher;2024-12-10 14-12-08;insertion;Echec;Trimestre;127.0.0.1;inconue;Echec de validation ;EOF;
+1;duplix;teacher;2024-12-10 14-12-21;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;duplix;teacher;2024-12-10 14-12-22;insertion;Echec;Trimestre;127.0.0.1;inconue;Echec de validation ;EOF;
+1;duplix;teacher;2024-12-10 14-12-20;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;duplix;teacher;2024-12-10 14-12-25;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;duplix;teacher;2024-12-10 14-12-27;insertion;Echec;Trimestre;127.0.0.1;inconue;Echec de validation ;EOF;
+1;duplix;teacher;2024-12-10 14-12-42;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;duplix;teacher;2024-12-10 14-12-18;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;duplix;teacher;2024-12-10 14-12-35;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;

@@ -293,12 +293,41 @@ class ClassModel extends Model
         return $res->getResultArray();
     }
 
+    
+
     // format name class
     public function format_name_class($name){
         $explode_name = explode("#", $name);
         // $new_name = $explode_name[0]." ".$explode_name[1]." ".$explode_name[2];
         return $explode_name[0];
     }
+
+    public function getOnclasseTeachYear($class_id, $teacher_id, $id_school, $id_year) {
+        $builder = $this->db->table('class');
+    
+        $builder->select('class.class_id, class.name as class_name, class.number as class_number, teacher.name as teacher_name, teacher.surname as teacher_surname, school.name as school_name, cycle.name_cycle as cycle_name, session.name_session as session_name, year.name_year as year_name');
+
+        $builder->join('teacher_class', 'teacher_class.class_id = class.class_id', 'inner');
+        $builder->join('teacher', 'teacher.teacher_id = teacher_class.teacher_id', 'inner');
+        $builder->join('school', 'school.school_id = class.school_id', 'inner');
+        $builder->join('cycle', 'cycle.cycle_id = class.cycle_id', 'inner');
+        $builder->join('session', 'session.session_id = class.session_id', 'inner');
+        $builder->join('year', 'year.year_id = teacher_class.year_id', 'inner');
+        
+        $builder->where('class.class_id', $class_id);
+        $builder->where('teacher_class.teacher_id', $teacher_id);
+        $builder->where('class.school_id', $id_school);
+        $builder->where('teacher_class.year_id', $id_year);
+    
+        $result = $builder->get();
+    
+        if ($result->getNumRows() > 0) {
+            return $result->getRowArray();
+        } else {
+            return null;
+        }
+    }
+    
 
     
 }

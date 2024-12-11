@@ -37,6 +37,7 @@ $routes->get('Licence', 'Home::licence');
 $routes->get("log-out-user", "AuthController::logOut");
 
 $routes->get("shool-choice-user", "Home::choiceSchool");
+$routes->get('Profile_student/(:any)', 'StudentController::profile_student/$1');
 
 $routes->get('Note', 'Home::note');
 
@@ -118,6 +119,11 @@ $routes->group("school", function($routes){
  * --------------------------------------------------------------------
  */
 $routes->group("scolarite", function($routes){
+    
+     // VIEW - bourse/save
+    $routes->get('historique_paiement', 'ScolariteController::historique_paiement');
+    // VIEW - bourse/save
+    $routes->get('save_bourse', 'ScolariteController::save_bourse');
     // VIEW - scolarite/save
     $routes->get('save_inscription', 'ScolariteController::save_inscription');
     // VIEW - scolarite/liste
@@ -126,7 +132,30 @@ $routes->group("scolarite", function($routes){
     $routes->match(["get", "post"], "Payer_inscription", "ScolariteController::payer_inscription", ['filter' => 'authFilter']);
     // URL - /scolarite/Payer_scolarite
     $routes->match(["get", "post"], "Payer_scolarite", "ScolariteController::payer_scolarite", ['filter' => 'authFilter']);
-    
+    // VIEW - /scolarite/Statistique_scolarite
+    $routes->match(["get", "post"], "Statistique_scolarite", "ScolariteController::statistique_scolarite");
+    // VIEW - /scolarite/montant_scolarite
+    $routes->match(["get", "post"], "Montant_scolarite", "ScolariteController::montant_scolarite");
+    // URL - /scolarite/Print_stat_scolarite
+    $routes->match(["get", "post"], "Print_stat_scolarite", "ScolariteController::print_stat_scolarite", ['filter' => 'authFilter']);
+    // URL - /scolarite/Payer_montant_scolarite
+    $routes->match(["get", "post"], "Payer_montant_scolarite", "ScolariteController::payer_montant_scolarite", ['filter' => 'authFilter']);
+    // URL - /scolarite/allClas
+    $routes->match(["get", "post"], "AllClas/(:any)/(:any)/(:any)", "ScolariteController::allClassMontant/$1/$2/$3", ['filter' => 'authFilter']);
+    // URL - /scolarite/Enregistrer_bourse
+    $routes->match(["get", "post"], "Enregistrer_bourse", "ScolariteController::enregistrer_bourse", ['filter' => 'authFilter']);
+    // URL - /scolarite/list_bourse
+    $routes->match(["get", "post"], "List_bourse", "ScolariteController::list_bourse", ['filter' => 'authFilter']);
+    // URL - /scolarite/RecapPayement
+    $routes->match(["get", "post"], "RecapPayement/(:any)/(:any)/(:any)/(:any)/(:any)", "ScolariteController::recap_payement/$1/$2/$3/$4/$5", ['filter' => 'authFilter']);
+    // URL - /scolarite/AllPaiement
+    $routes->match(["get", "post"], "AllPaiement/(:any)/(:any)", "ScolariteController::allPaiement/$1/$2", ['filter' => 'authFilter']);
+    // URL - /scolarite/delete
+    $routes->match(["get", "post"], "delete/(:any)", "ScolariteController::deletePaiement/$1", ['filter' => 'authFilter']);
+    // URL - /scolarite/getOne
+    $routes->match(["get", "post"], "getOne/(:any)", "ScolariteController::getOne/$1", ['filter' => 'authFilter']);
+    // URL - /scolarite/update
+    $routes->match(["get", "post"], "update", "ScolariteController::updatePaiement", ['filter' => 'authFilter']);
 });
 
 /*
@@ -135,6 +164,13 @@ $routes->group("scolarite", function($routes){
  * --------------------------------------------------------------------
  */
 $routes->group("student", function($routes){
+    
+    // VIEW - student/GiveBourses
+    $routes->get('GiveBourses', 'StudentController::giveBourses');
+    // VIEW - student/save
+    $routes->get('deliberation', 'StudentController::deliberation');
+    // VIEW - student/save
+    $routes->get('basculeNextYear', 'StudentController::basculeNextYear');
     // VIEW - student/save
     $routes->get('save', 'StudentController::save');
     // VIEW - student/liste
@@ -145,6 +181,8 @@ $routes->group("student", function($routes){
     $routes->get('Importer', 'StudentController::importer_liste');
     // URL - /student/photo
     $routes->match(["get", "post"], "insertPhoto", "StudentController::insert_photo", ['filter' => 'authFilter']); 
+    // URL - /student/matieres
+    $routes->match(["get", "post"], "insertMatieres", "StudentController::insert_matieres", ['filter' => 'authFilter']);
     // URL - /student/importStudent
     $routes->match(["get", "post"], "importStudent", "StudentController::import_student", ['filter' => 'authFilter']); 
     // URL - /student/getOne
@@ -163,6 +201,8 @@ $routes->group("student", function($routes){
     $routes->match(["get", "post"], "StudentFilter", "StudentController::student_filter", ['filter' => 'authFilter']);
     // URL - /student/PrintListClass
     $routes->match(["get", "post"], "PrintListClass/(:any)/(:any)/(:any)/(:any)", "StudentController::print_list_class/$1/$2/$3/$4", ['filter' => 'authFilter']);
+    // URL - /student/PrintAllBordereaux
+    $routes->match(["get", "post"], "PrintAllBordereaux/(:any)/(:any)/(:any)/(:any)", "StudentController::print_bordereau_notes/$1/$2/$3/$4", ['filter' => 'authFilter']);
     // URL - /student/PrintListClassRedouble
     $routes->match(["get", "post"], "PrintListClassRedouble/(:any)/(:any)/(:any)/(:any)", "StudentController::print_list_redouble/$1/$2/$3/$4", ['filter' => 'authFilter']);
     // URL - /student/PrintListClassRedouble
@@ -183,6 +223,14 @@ $routes->group("student", function($routes){
     $routes->match(["get", "post"], "PrintFicheCertificatOne/(:any)/(:any)/(:any)/(:any)/(:any)", "CertificatController::print_certificat_class_one/$1/$2/$3/$4/$5", ['filter' => 'authFilter']);
     // URL - /student/PrintFicheCertificatOne
     $routes->match(["get", "post"], "PrintOneCarteScolaire/(:any)/(:any)/(:any)/(:any)/(:any)", "PrintCarteControl::print_carte_class_one/$1/$2/$3/$4/$5", ['filter' => 'authFilter']);
+    // URL - student/GiveMatiere
+    $routes->get('GiveMatiere', 'StudentController::giveMatiere');
+    // URL - student/GiveBourse
+    $routes->post('GiveBourse', 'StudentController::giveBourse');
+    // URL - /student/AllStudentSchool
+    $routes->match(["get", "post"], "AllStudentSchool/(:any)", "StudentController::liste_student_school/$1", ['filter' => 'authFilter']); 
+    //URL - /student/PrintAllBulletin
+    $routes->match(["get", "post"], "PrintAllBulletin/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)", "StudentController::print_all_bulletin/$1/$2/$3/$4/$5/$6/$7/$8", ['filter' => 'authFilter']);
 });
 
 /*
@@ -231,10 +279,14 @@ $routes->group("class", function($routes){
     $routes->match(["get", "post"], "insert", "ClassController::insertclass", ['filter' => 'authFilter']);
     // URL - /class/update
     $routes->match(["get", "post"], "update", "ClassController::updateclass", ['filter' => 'authFilter']);
+    //URL - /class/Update class
+    $routes->match(["get", "post"], "getOnclasse/(:any)/(:any)/(:any)", "ClassController::getOneClassAndTeacher/$1/$2/$3", ['filter' => 'authFilter']);
     // URL - /class/delete
     $routes->match(["get", "post"], "delete/(:any)", "ClassController::deleteclass/$1", ['filter' => 'authFilter']);
     // URL - /class/all
     $routes->match(["get", "post"], "all/(:any)/(:any)/(:any)", "ClassController::allClass/$1/$2/$3", ['filter' => 'authFilter']);
+    // URL - /class/ dara
+    $routes->match(["get", "post"], "getClassSchoolYear/(:any)/(:any)/(:any)", "ClassController::getClassSchoolYearControl/$1/$2/$3", ['filter' => 'authFilter']);
     
 });
 
@@ -251,15 +303,19 @@ $routes->group("teacher", function($routes){
     // VIEW - teacher/liste
     $routes->get('list', 'TeacherController::liste'); 
     // VIEW - teacher/giveClass
-    $routes->get('giveClass', 'TeacherController::GiveClass'); 
+    $routes->get('giveClass', 'TeacherController::GiveClass');
+    // VIEW - teacher/giveSubjet
+    $routes->get('giveSubjet', 'TeacherController::GiveSubjet'); 
     // URL - /teacher/imorter teacher
     $routes->match(["get", "post"], "Importer_teacher", "TeacherController::impoter_eacher", ['filter' => 'authFilter']);
     // URL - /teacher/insert
     $routes->match(["get", "post"], "insert", "TeacherController::insertteacher", ['filter' => 'authFilter']);
     // URL - /teacher/all
     $routes->match(["get", "post"], "all/(:any)/(:any)", "TeacherController::allTeacher/$1/$2", ['filter' => 'authFilter']);
-     // URL - /teacher/all
-     $routes->match(["get", "post"], "getTeacherSchoolClass/(:any)/(:any)/(:any)", "TeacherController::GetTeacherSchoolClass/$1/$2/$3", ['filter' => 'authFilter']);
+    // URL - /teacher/all
+    $routes->match(["get", "post"], "getTeacherSchoolClass/(:any)/(:any)/(:any)", "TeacherController::GetTeacherSchoolClass/$1/$2/$3", ['filter' => 'authFilter']);
+    // URL - /teacher/ teachingunit class
+    $routes->match(["get", "post"], "getTeacherSchoolClassSubject/(:any)/(:any)/(:any)/(:any)", "TeacherController::GetTeacherSchoolClassSubject/$1/$2/$3/$4", ['filter' => 'authFilter']);
     // URL - /teacher/update
     $routes->match(["get", "post"], "update", "TeacherController::updateteacher", ['filter' => 'authFilter']);
     // URL - /teacher/delete
@@ -280,6 +336,8 @@ $routes->group("teacher", function($routes){
     $routes->match(["get", "post"], "PrintFicheDecharge/(:any)", "TeacherController::printFicheDecharge/$1", ['filter' => 'authFilter']);
     // URL - /teacher/Attribution_class 
     $routes->match(["get", "post"], "Attribution_class", "TeacherController::attribution_class", ['filter' => 'authFilter']);
+    // URL - /teacher/Attribution_SUBJECT 
+    $routes->match(["get", "post"], "Attribution_subject", "TeacherController::attribution_subject", ['filter' => 'authFilter']);
     // URL - /teacher/salary 
     $routes->match(["get", "post"], "salary", "TeacherController::salaire_personnel");
     // URL - /teacher/save_salaire 
@@ -304,14 +362,19 @@ $routes->group("teaching_unit", function($routes){
     $routes->get('list', 'TeachingUnitController::liste'); 
     // URL - /teaching_unit/insert
     $routes->match(["get", "post"], "insert", "TeachingUnitController::insertteaching", ['filter' => 'authFilter']);
-    // URL - /teaching_unit/all
+    // URL - /teaching_unit/all 
     $routes->match(["get", "post"], "all/(:any)", "TeachingUnitController::allTeachingUnit/$1", ['filter' => 'authFilter']);
+    // URL - /teaching_unit/AllByTeacher
+    $routes->match(["get", "post"], "AllByTeacher/(:any)/(:any)", "TeachingUnitController::allTeachingUnitByTeacher/$1/$2", ['filter' => 'authFilter']);
     // URL - /teaching_unit/update
     $routes->match(["get", "post"], "update", "TeachingUnitController::updateTeachingUnit", ['filter' => 'authFilter']);
     // URL - /teaching_unit/delete
     $routes->match(["get", "post"], "delete/(:any)", "TeachingUnitController::deleteteachingUnit/$1", ['filter' => 'authFilter']);
     // URL - /teaching_unit/getOne
     $routes->match(["get", "post"], "one/(:any)", "TeachingUnitController::GetOne/$1", ['filter' => 'authFilter']);
+    // URL - /teaching_unit/byClass
+    // $routes->match(["get", "post"], "ByClass/(:any)/(:any)/(:any)/(:any)", "TeachingUnitController::allteaching/$1/$2/$3/$4", ['filter' => 'authFilter']);
+    $routes->match(["get", "post"], "ByClass/(:any)", "TeachingUnitController::allTeachingUnit/$1", ['filter' => 'authFilter']);
 });
 
 /*
@@ -441,7 +504,7 @@ $routes->group("serie", function($routes){
  * route for matiere
  * --------------------------------------------------------------------
  */
- $routes->group("teachingunit", function($routes){
+$routes->group("teachingunit", function($routes){
     // VIEW - teachingunit/save
     $routes->get('save', 'TeachingUnitController::save');
     // VIEW - teachingunit/liste
@@ -452,6 +515,8 @@ $routes->group("serie", function($routes){
     $routes->match(["get", "post"], "update", "TeachingUnitController::updateteaching", ['filter' => 'authFilter']);
     // URL - /teachingunit/all
     $routes->match(["get", "post"], "all/(:any)", "TeachingUnitController::allteaching/$1/$2/$3/$4", ['filter' => 'authFilter']);
+    // URL - /teachingunit/all others
+    $routes->match(["get", "post"], "allothers/(:any)", "TeachingUnitController::allteachingOther/$1/$2/$3/$4", ['filter' => 'authFilter']);
     // URL - /teachingunit/delete
     $routes->match(["get", "post"], "delete/(:any)", "TeachingUnitController::deleteteaching/$1", ['filter' => 'authFilter']);
 });
@@ -461,10 +526,10 @@ $routes->group("serie", function($routes){
  * route for enseignant
  * --------------------------------------------------------------------
  */
- $routes->group("teacher", function($routes){
+$routes->group("teacher", function($routes){
     // VIEW - teacher/save
     $routes->get('save', 'TeacherController::save');
-    // VIEW - teacher/liste
+    // VIEW - teacher/liste/$1/$2/$3/$4
     $routes->get('list', 'TeacherController::liste'); 
     // URL - /teachert/insert
     $routes->match(["get", "post"], "insert", "TeacherController::insertteacher", ['filter' => 'authFilter']);
@@ -483,6 +548,8 @@ $routes->group("serie", function($routes){
  */
 
  $routes->group("note", function($routes){
+    // VIEW - note/save
+    $routes->get('imprimer_bulletin', 'NoteController::imprimer_bulletin');
     // VIEW - note/save
     $routes->get('save', 'NoteController::save');
     // VIEW - note/liste

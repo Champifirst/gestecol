@@ -1,0 +1,48 @@
+INFO - 2024-10-29 15:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 15:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 15:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 15:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 15:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 15:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 15:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 15:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 19:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-10-29 19:08:00 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen(null, 'a')
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2024-10-29 19-10-00', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'inconue', 'Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-10-29 19:08:00 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-10-29 19:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 19:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 19:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 19:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 19:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 19:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 21:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 21:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 21:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 21:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 21:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 21:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 21:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-29 21:34:55 --> Call to undefined method App\Controllers\FPDF_LISTING::fiche_notes()
+in APPPATH/Controllers/StudentController.php on line 1845.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_bordereau_notes()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-10-29 21:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-29 21:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

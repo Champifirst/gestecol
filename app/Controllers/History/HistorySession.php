@@ -56,9 +56,11 @@ class HistorySession extends BaseController
 
     function getUserAgent(){
         $userAgent = $_SERVER['HTTP_USER_AGENT'];
-        $browser = get_browser($userAgent);
+        //$browser = get_browser($userAgent);
+        $browser = "inconue";
 
-        return $browser->browser;
+        //return $browser->browser;
+        return $browser;
     }
 
     public function getInfoSession(){

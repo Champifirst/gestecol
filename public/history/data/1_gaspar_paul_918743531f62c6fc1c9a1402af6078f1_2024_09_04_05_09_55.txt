@@ -1,0 +1,10 @@
+
+1;gaspar_paul;admin;2024-09-04 05-09-55;Authentification;Réussite;Utilisateur;127.0.0.1;inconue;Nouvelle session initialisée;EOF;
+1;gaspar paul;admin;2024-09-04 05-09-14;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-09-04 05-09-07;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;admin;2024-09-04 05-09-15;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-09-04 05-09-10;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;admin;2024-09-04 05-09-01;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-09-04 05-09-09;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;admin;2024-09-04 06-09-04;insertion;Echec;Eleve;127.0.0.1;inconue;Cet école élève existe déjà ;EOF;
+1;gaspar paul;admin;2024-09-04 06-09-37;insertion;Réussite;Eleve;127.0.0.1;inconue;Rosponirtt,Tankou,bafoussam,2024-09-06,1725431616.png,camerounais,M,1,CM-001-2024-sil-1103,0,actif,1,6,1,1103,1,1,2024-09-04 06:09:36,2024-09-04 06:09:36;EOF;

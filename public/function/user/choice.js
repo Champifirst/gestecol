@@ -73,7 +73,7 @@ function liste_ecole() {
                                 '<div class="form-group text-center">'+
                                     '<div class="col-md-6 offset-md-3 mt-4">'+
                                         '<a href="/"><button type="submit" class="btn btn-danger" id="btn-log">Retouner à la page de connexion </button></a>'+
-                                        button_continous+
+                                        // button_continous+
                                     '</div>'+
                                 '</div>'+
                             '</div>'+
@@ -87,7 +87,7 @@ function liste_ecole() {
       
                 '<div>'+
                   '<div class="pull-center text-white" style="text-align: center; font-size: 1.2em; font-weight: bold;">'+
-                  'Sm@rtSchool - Ecole intelligente. Contactez-Nous: +237 694 375 270 / +237 690 857 430 Power By <a href="https://sm@rtdiso.com">Sm@rtDiso</a>'+
+                  'DevCode - Ecole intelligente. Contactez-Nous: +237 659 373 726 / +237 656 141 969 Power By <a href="#">devCode</a>'+
                   '</div>'+
                   '<div class="clearfix"></div>'+
                 '</div>'+

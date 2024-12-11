@@ -24,6 +24,11 @@ class NoteController extends ResourcePresenter
         return view('note/list.php');
     }
 
+    public function imprimer_bulletin(){
+        return view('note/imprimer_bulletin.php');
+    }
+    
+
     public function GetnoteByTeachingUnit($id_class, $id_teaching_unit, $id_sequence){
         $NoteModel = new NoteModel();
         $StudentModel = new StudentModel();

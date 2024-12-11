@@ -8,10 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SM@RTSCHOOL | SCHOOL </title>
+    <title>DEVCODE | STUDENT </title>
     
     <!-- CSS locate component -->
     <?= $this->include('components/css.php') ?>
+    <!-- Font Awesome -->
     <style>
         .file-upload {
         background-color: #ffffff;
@@ -162,13 +163,13 @@
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align">Nom<span class="required">*</span></label>
                                             <div class="col-md-6 col-sm-6">
-                                                <input class="form-control" data-validate-length-range="3" data-validate-words="1" name="name" id="name" placeholder="TANKOU" required="required" />
+                                                <input class="form-control" data-validate-length-range="3" data-validate-words="1" name="name" id="name" placeholder="..." required="required" />
                                             </div>
                                         </div>
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align">Prénom <span class="required"></span></label>
                                             <div class="col-md-6 col-sm-6">
-                                                <input class="form-control" name="surName" id="surName" placeholder="Rospain" />
+                                                <input class="form-control" name="surName" id="surName" placeholder="..." />
                                             </div>
                                         </div>
                                         <div class="field item form-group">
@@ -180,7 +181,7 @@
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align">Lieu de naissance <span class="required">*</span></label>
                                             <div class="col-md-6 col-sm-6">
-                                                <input class="form-control" data-validate-length-range="3" data-validate-words="1" name="placeBirth" id="placeBirth" placeholder="Bafoussam" required="required" />
+                                                <input class="form-control" data-validate-length-range="3" data-validate-words="1" name="placeBirth" id="placeBirth" placeholder="..." required="required" />
                                             </div>
                                         </div>
                                         <div class="field item form-group">
@@ -223,13 +224,13 @@
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align"> Nom du parent<span class="required">*</span></label>
                                             <div class="col-md-6 col-sm-6">
-                                                <input class="form-control" data-validate-length-range="3" data-validate-words="1" name="nameParent" id="nameParent" placeholder="TANKOU" required="required" /> 
+                                                <input class="form-control" data-validate-length-range="3" data-validate-words="1" name="nameParent" id="nameParent" placeholder="..." required="required" /> 
                                             </div>
                                         </div>
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align"> Prénom du parent</label>
                                             <div class="col-md-6 col-sm-6">
-                                                <input class="form-control" name="surnameParent" id="surnameParent" placeholder="ANGEL" /> 
+                                                <input class="form-control" name="surnameParent" id="surnameParent" placeholder="..." /> 
                                             </div>
                                         </div>
                                         <div class="field item form-group">
@@ -241,7 +242,7 @@
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align"> Profession du parent</label>
                                             <div class="col-md-6 col-sm-6">
-                                                <input class="form-control" name="profession" id="profession" placeholder="Profession" /> 
+                                                <input class="form-control" name="profession" id="profession" placeholder="..." /> 
                                             </div>
                                         </div>
                                         <div class="field item form-group">
@@ -254,7 +255,7 @@
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align"> Adresse du parent</label>
                                             <div class="col-md-6 col-sm-6">
-                                                <input class="form-control" name="adresse_parent" id="adresse_parent" placeholder="Adresse" /> 
+                                                <input class="form-control" name="adresse_parent" id="adresse_parent" placeholder="..." /> 
                                             </div>
                                         </div>
                                        
@@ -289,15 +290,25 @@
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align">Classe<span class="required">*</span></label>
                                             <div class="col-md-6 col-sm-6">
-                                                <select class="form-control" name="classe" id="classe" required='required'>
+                                                <select class="form-control" name="classe" id="classe" required='required' onchange="getClasse()">
                                                     <option value="0">Choisir une classe</option>
                                                 </select>
                                             </div>
                                         </div>
+
+                                        <div class="field item form-group">
+                                            <label class="col-form-label col-md-3 col-sm-3 label-align">Matières<span class="required">*</span></label>
+                                            <div class="col-md-6 col-sm-6">
+                                                <select class="form-control" name="subjects[]" id="subjet" required='required' multiple>
+                                                    <option value="all">Toutes les matières</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align"> Inscription</label>
                                             <div class="col-md-6 col-sm-6">
-                                                <input type="number" min="0" class="form-control" name="inscription" id="inscription" placeholder="Inscription" /> 
+                                                <input type="number" min="0" class="form-control" name="inscription" id="inscription" placeholder="..."/> 
                                             </div>
                                         </div>
 
@@ -306,6 +317,7 @@
                                                 <div class="col-md-6 offset-md-3 mt-4">
                                                     <button type='reset' class="btn btn-danger">Annuler</button>
                                                     <button type='submit' class="btn btn-success" id="btn-log">Enregistrer</button>
+                                                    <!-- <button onClick="submitSubjects()">tect</button> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -325,6 +337,8 @@
     
     <!-- script locate to componenents -->
     <script>
+        
+        $("#subjet").select2();
         $("#sexe").select2();
         $("#name_school").select2();
         $("#session").select2();
@@ -333,6 +347,7 @@
     </script>
     <?= $this->include('components/js.php') ?>
     <script src="<?= base_url()?>/function/student/save.js"></script>
+    <!-- JavaScript -->
     <script>
         // initialize a validator instance from the "FormValidator" constructor.
         // A "<form>" element is optionally passed as an argument, but is not a must
@@ -356,7 +371,6 @@
             if (this.checked)
                 $('form .alert').remove();
         }).prop('checked', false);
-
     </script>
     <script>
         // add logo school

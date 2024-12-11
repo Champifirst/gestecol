@@ -50,22 +50,24 @@ AND class.school_id = 2
 
 
 
-CREATE TABLE `salaire` (
-	`id_salaire` INTEGER PRIMARY KEY AUTOINCREMENT,
+
+
+
+
+CREATE TABLE `montant_scolarite` (
+	`montant_scolarite_id` INTEGER PRIMARY KEY AUTOINCREMENT,
 	`montant` TEXT NOT NULL,
-	`mode_payment` TEXT NOT NULL,
-	`code_payement` TEXT NOT NULL,
-	`id_user` INT NOT NULL,
+	`class_id` INT NOT NULL,
 	`year_id` INT NOT NULL,
-	`teacher_id` INT NOT NULL,
-	`status_salaire` INT NOT NULL,
-	`etat_salaire` TEXT NOT NULL,
+	`id_user` INT NOT NULL,
+	`status_montant_scolarite` INT NOT NULL,
+	`etat_montant_scolarite` TEXT NOT NULL,
 	`created_at` TIMESTAMP NULL,
 	`updated_at` TIMESTAMP NULL,
 	`deleted_at` TIMESTAMP NULL,
-	CONSTRAINT `payment_id_user_foreign` FOREIGN KEY (`id_user`) REFERENCES `user`(`id_user`),
-	CONSTRAINT `payment_year_id_foreign` FOREIGN KEY (`year_id`) REFERENCES `year`(`year_id`),
-	CONSTRAINT `payment_teacher_id_foreign` FOREIGN KEY (`teacher_id`) REFERENCES `teacher`(`teacher_id`)
+	CONSTRAINT `montant_scolarite_id_user_foreign` FOREIGN KEY (`id_user`) REFERENCES `user`(`id_user`),
+	CONSTRAINT `montant_scolarite_id_year_forein` FOREIGN KEY (`year_id`) REFERENCES `year`(`year_id`),
+	CONSTRAINT `montant_scolarite_id_class_foreign` FOREIGN KEY (`class_id`) REFERENCES `class`(`class_id`)
 );
 
 
@@ -137,4 +139,45 @@ CREATE TABLE "teacher_class" (
 	CONSTRAINT "year_id_id_foreign" FOREIGN KEY("year_id") REFERENCES "year"("year_id") ON UPDATE CASCADE ON DELETE CASCADE,
 	CONSTRAINT "user_id_id_foreign" FOREIGN KEY("user_id") REFERENCES "user"("user_id") ON UPDATE CASCADE ON DELETE CASCADE,
 	PRIMARY KEY("teacher_class_id" AUTOINCREMENT)
+)
+
+
+CREATE TABLE `bourse` (
+	`bourse_id` INTEGER PRIMARY KEY AUTOINCREMENT,
+	`year_id` INT NOT NULL,
+	`name` TEXT NOT NULL,
+	`description` TEXT NOT NULL,
+	`amount` INT NOT NULL,
+	`status` INT NOT NULL,
+	`etat` TEXT NOT NULL,
+	`created_at` TIMESTAMP NULL,
+	`updated_at` TIMESTAMP NULL,
+	`deleted_at` TIMESTAMP NULL,
+	CONSTRAINT `year_id_foreign` FOREIGN KEY (`year_id`) REFERENCES `year`(`year_id`),
+)
+
+
+
+CREATE TABLE `bourse_student` (
+	`bourse_student_id` INTEGER PRIMARY KEY AUTOINCREMENT,
+	`session_id` INT NOT NULL,
+	`cycle_id` INT NOT NULL,
+	`class_id` INT NOT NULL,
+	`student_id` INT NOT NULL,
+	`year_id` INT NOT NULL,
+	`user_id` INT NOT NULL,
+	`bourse_id` INT NOT NULL,
+	`status` INT NOT NULL,
+	`etat` TEXT NOT NULL,
+	`created_at` TIMESTAMP NULL,
+	`updated_at` TIMESTAMP NULL,
+	`deleted_at` TIMESTAMP NULL,
+
+	CONSTRAINT `session_id_foreign` FOREIGN KEY (`session_id`) REFERENCES `session`(`session_id`),
+	CONSTRAINT `cycle_id_foreign` FOREIGN KEY (`cycle_id`) REFERENCES `cycle`(`cycle_id`),
+	CONSTRAINT `class_id_foreign` FOREIGN KEY (`class_id`) REFERENCES `class`(`class_id`),
+	CONSTRAINT `student_id_foreign` FOREIGN KEY (`student_id`) REFERENCES `student`(`student_id`),
+	CONSTRAINT `year_id_foreign` FOREIGN KEY (`year_id`) REFERENCES `year`(`year_id`),
+	CONSTRAINT `user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `user`(`user_id`),
+	CONSTRAINT `bourse_id_foreign` FOREIGN KEY (`bourse_id`) REFERENCES `bourse`(`bourse_id`)
 )

@@ -1,0 +1,2 @@
+
+1;brenda;teacher;2024-12-10 06-12-45;Authentification;Réussite;Utilisateur;127.0.0.1;inconue;Nouvelle session initialisée;EOF;

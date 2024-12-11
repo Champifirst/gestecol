@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SM@RTSCHOOL | SESSION </title>
+    <title>DEVCODE | SESSION </title>
     
     <!-- CSS locate component -->
     <?= $this->include('components/css.php') ?>

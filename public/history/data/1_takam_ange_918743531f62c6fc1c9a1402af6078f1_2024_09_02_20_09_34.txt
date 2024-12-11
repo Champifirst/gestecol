@@ -1,0 +1,2 @@
+
+1;takam_ange;admin;2024-09-02 20-09-34;Authentification;Réussite;Utilisateur;127.0.0.1;inconue;Nouvelle session initialisée;EOF;

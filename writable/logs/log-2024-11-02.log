@@ -1,0 +1,122 @@
+INFO - 2024-11-02 11:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 11:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-02 11:13:01 --> [DEPRECATED] fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen(null, 'a')
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation(null, null, null, '2024-11-02 11-11-01', 'Année active', 'Reussite', 'Année', '127.0.0.1', 'inconue', 'Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44')
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YearController))
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-02 11:13:01 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-02 11:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 11:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 11:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 11:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 11:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 11:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 12:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 12:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 12:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 12:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 12:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 12:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 12:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 13:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 13:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 13:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 13:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 13:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 13:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-02 13:56:55 --> Undefined variable $posty
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 729.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(729): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/StudentController.php(2456): App\Controllers\BulletinPremierTrimestre->PiedBulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-02 13:59:55 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::TableauNotes()
+in APPPATH/Controllers/StudentController.php on line 2440.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-02 14:00:16 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::TableauNotes()
+in APPPATH/Controllers/StudentController.php on line 2440.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-02 14:01:24 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::TableauNotes()
+in APPPATH/Controllers/StudentController.php on line 2440.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-02 14:02:51 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::TableauNotes()
+in APPPATH/Controllers/StudentController.php on line 2440.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-02 14:03:00 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::TableauNotes()
+in APPPATH/Controllers/StudentController.php on line 2440.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-02 14:14:22 --> Undefined variable $posty
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 653.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(653): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/StudentController.php(2429): App\Controllers\BulletinPremierTrimestre->PiedBulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-02 14:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 14:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 15:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 15:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 15:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 15:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 15:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 15:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 15:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 16:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 17:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 17:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 17:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 17:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 17:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 17:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 17:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

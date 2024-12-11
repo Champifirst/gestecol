@@ -1,0 +1,65 @@
+INFO - 2024-12-07 08:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 08:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 08:11:11 --> Undefined array key ""
+in APPPATH/Controllers/StudentController.php on line 2528.
+ 1 APPPATH/Controllers/StudentController.php(2528): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-12-07 08:11:18 --> Undefined array key ""
+in APPPATH/Controllers/StudentController.php on line 2528.
+ 1 APPPATH/Controllers/StudentController.php(2528): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-12-07 08:43:51 --> Call to undefined method App\Models\TeacherClassModel::getTeachersByTeachingUnitClassAndYear
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/StudentController.php(2731): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-12-07 08:51:28 --> Undefined array key "name"
+in APPPATH/Controllers/StudentController.php on line 2813.
+ 1 APPPATH/Controllers/StudentController.php(2813): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-12-07 08:51:45 --> Undefined array key "name"
+in APPPATH/Controllers/StudentController.php on line 2813.
+ 1 APPPATH/Controllers/StudentController.php(2813): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-12-07 18:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 18:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 18:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 18:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 18:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 18:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 18:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 18:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 18:58:28 --> utf8_decode() expects exactly 1 argument, 0 given
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 580.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(580): utf8_decode()
+ 2 APPPATH/Controllers/StudentController.php(2826): App\Controllers\BulletinPremierTrimestre->listing()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-12-07 19:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

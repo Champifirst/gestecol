@@ -1,0 +1,259 @@
+CRITICAL - 2024-09-04 05:45:55 --> Path cannot be empty
+in APPPATH/Controllers/HistoryController.php on line 22.
+ 1 APPPATH/Controllers/HistoryController.php(22): fopen()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HistoryController->listeMyHistory()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 05:46:14 --> Path cannot be empty
+in APPPATH/Controllers/HistoryController.php on line 22.
+ 1 APPPATH/Controllers/HistoryController.php(22): fopen()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HistoryController->listeMyHistory()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 05:57:25 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 835.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:00:39 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 837.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:02:02 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 837.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:02:46 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 837.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:04:33 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 836.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:05:40 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 836.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:05:56 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 836.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:06:21 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 836.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:07:08 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 837.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:07:37 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 838.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:08:11 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 838.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:08:38 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 837.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:18:54 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 836.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:19:21 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 836.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:19:39 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 836.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:20:01 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 837.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:20:24 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 836.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:26:49 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 836.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 06:27:19 --> Call to a member function getName() on null
+in APPPATH/Controllers/StudentController.php on line 837.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-04 06:28:53 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: student_unit.class_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StudentController.php(960): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2024-09-04 06:41:28 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: student_unit.class_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StudentController.php(959): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2024-09-04 06:45:24 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: student_unit.class_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/StudentController.php(960): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-04 06:57:36 --> Call to undefined method App\Models\StudentunitModel::getId
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/StudentController.php(974): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 07:09:20 --> Call to undefined method App\Models\StudentunitModel::getId
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/StudentController.php(973): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 07:11:12 --> Call to undefined method App\Models\StudentunitModel::getId
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/StudentController.php(973): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 07:16:35 --> Call to undefined method App\Models\StudentunitModel::getId
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/StudentController.php(974): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 07:17:53 --> Call to undefined method App\Models\StudentunitModel::getId
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/StudentController.php(974): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 07:20:08 --> Call to undefined method App\Models\StudentunitModel::getId
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/StudentController.php(974): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-04 07:21:23 --> Call to undefined method App\Models\StudentunitModel::getId
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/StudentController.php(973): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->insertstudent()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')

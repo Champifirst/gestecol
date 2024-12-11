@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SM@RTSCHOOL | CLASS </title>
+    <title>DEVCODE | CLASS </title>
 
     <!-- CSS locate component -->
     <?= $this->include('components/css.php') ?>
@@ -57,24 +57,17 @@
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <div>
                                     <label for="">Etablissement scolaire</label>
-                                    <select class="form-control" name="school" id="school">
+                                    <select class="form-control" name="school" id="school" onchange="getSchool()">
                                         <!-- school -->
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">
-                                <label for="">Nombre d'élèves</label>
+                                <label for="">Sessions</label>
                                 <div>
-                                    <select class="form-control" name="count_student" id="count_student">
+                                    <select class="form-control" name="count_student" id="count_student" onchange="getSession()">
+                                      <option value="0">Choissez une session</option>
                                         <!-- school -->
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                <label for="">Nombre d'enseignant(e)s</label>
-                                <div>
-                                    <select class="form-control" name="count_enseignant" id="count_enseignant">
-                                    <!-- school -->
                                     </select>
                                 </div>
                             </div>
@@ -82,9 +75,16 @@
                                 <label for="">Cycles</label>
                                 <div>
                                     <select class="form-control" name="count_enseignant" id="count_enseignant">
+                                      <option value="0">Choissez un cyle</option>
                                     <!-- school -->
                                     </select>
                                 </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                              <label for="session">.</label>
+                              <div>
+                                  <button type='button' class="btn btn-secondary col-12" onclick="charger_fiche()">Charger la fiche</button>
+                              </div>
                             </div>
 
                         </div>
@@ -98,15 +98,13 @@
                                 <th>#</th>
                                 <th>Code</th>
                                 <th>Nom</th>
-                                <th>Enseignant(e)s</th>
+                                <th>Enseignant(e) Titulaire</th>
                                 <th>Nombre d'élèves</th>
                                 <th>Action</th>
                               </tr>
                             </thead>
-
-
-                            <tbody>
-                              
+                            <tbody id="contain_body">
+                              <!-- tr -->
                             </tbody>
                           </table>
                         </div>

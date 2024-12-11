@@ -54,6 +54,7 @@
     <script src="<?= base_url() ?>/components/vendors/cropper/dist/cropper.min.js"></script>
     <!-- Dropzone.js -->
     <script src="<?= base_url() ?>/components/vendors/dropzone/dist/min/dropzone.min.js"></script>
+    <!-- liens vers la bibliotheque du select multiple -->
     <script>
         $('.myDatepicker').datetimepicker({
             format: 'DD.MM.YYYY'
@@ -84,6 +85,8 @@
     
     <!-- chart -->
     <script src="<?= base_url() ?>/components/jsChart/jquery.canvasjs.min.js"></script>
+
+    <script src="<?= base_url()?>/function/constant.js"></script>
         
     <script>
     

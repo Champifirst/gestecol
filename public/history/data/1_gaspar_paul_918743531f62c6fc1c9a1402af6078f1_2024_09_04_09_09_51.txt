@@ -1,0 +1,5 @@
+
+1;gaspar_paul;admin;2024-09-04 09-09-51;Authentification;Réussite;Utilisateur;127.0.0.1;inconue;Nouvelle session initialisée;EOF;
+1;gaspar paul;admin;2024-09-04 09-09-06;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-09-04 09-09-47;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;admin;2024-09-04 10-09-22;insertion;Réussite;Eleve;127.0.0.1;inconue;Aristod,Paul,Doul,2024-08-26,1725444201.png,camerounais,F,1,CM-001-2024-sil-1116,0,actif,1,6,1,1116,1,1,2024-09-04 10:09:21,2024-09-04 10:09:21;EOF;

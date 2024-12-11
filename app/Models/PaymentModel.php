@@ -56,8 +56,18 @@ class PaymentModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
+    public function getAllPaymentById($id){
+        $builder = $this->db->table('payment');
+        $builder->select('*');
+        $builder->where('payment.status_payment', 0);
+        $builder->where('payment.etat_payment', 'actif');
+        $builder->where('payment.payment_id', $id);
 
-public function getPayment($montant,$mode_payment,$motif_payment,$year_id, $school_id, $session_id, $class_id, $student_id)
+        $res  = $builder->get();
+        return $res->getResultArray();
+    }
+
+    public function getPayment($montant,$mode_payment,$motif_payment,$year_id, $school_id, $session_id, $class_id, $student_id)
     {
         $builder = $this->db->table('payment');
         $builder->select("*");
@@ -201,7 +211,38 @@ public function getPayment($montant,$mode_payment,$motif_payment,$year_id, $scho
         return $res->getResultArray();
     }
 
-     public function getAllPaymentClass($id_school, $id_year, $id_class){
+    public function getAllPaymentByClass($id_year, $id_class){
+        $builder = $this->db->table('payment');
+        $builder->select('payment.payment_id, payment.montant, payment.mode_payment,payment.motif_payment,student.name, student.surname, payment.created_at, payment.montant_lettre, student.matricule, student.photo');
+        $builder->join('school', 'school.school_id=payment.school_id');
+        $builder->join('year', 'year.year_id=payment.year_id');
+        $builder->join('class', 'class.class_id=payment.class_id');
+         $builder->join('student', 'student.student_id=payment.student_id');
+
+        $builder->where('payment.year_id', $id_year);
+        $builder->where('payment.class_id', $id_class);
+
+
+        $builder->where('payment.status_payment', 0);
+        $builder->where('payment.etat_payment', 'actif');
+
+        $builder->where('school.status_school', 0);
+        $builder->where('school.etat_school', 'actif');
+
+        $builder->where('year.status_year', 0);
+        $builder->where('year.etat_year', 'actif');
+
+        $builder->where('class.status_class', 0);
+        $builder->where('class.etat_class', 'actif');
+
+        $builder->where('student.status_student', 0);
+        $builder->where('student.etat_student', 'actif');
+
+        $res  = $builder->get();
+        return $res->getResultArray();
+    }
+
+    public function getAllPaymentClass($id_school, $id_year, $id_class){
         $builder = $this->db->table('payment');
         $builder->select('payment.payment_id, payment.montant, payment.mode_payment,payment.motif_payment,student.name, class.name');
         $builder->join('school', 'school.school_id=payment.school_id');
@@ -221,7 +262,7 @@ public function getPayment($montant,$mode_payment,$motif_payment,$year_id, $scho
         $builder->where('school.etat_school', 'actif');
 
         $builder->where('year.status_year', 0);
-        $builder->where('payment.etat_year', 'actif');
+        $builder->where('year.etat_year', 'actif');
 
         $builder->where('class.status_class', 0);
         $builder->where('class.etat_class', 'actif');
@@ -234,21 +275,20 @@ public function getPayment($montant,$mode_payment,$motif_payment,$year_id, $scho
     }
 
     public function getAllPaymentStudent($id_school, $id_year, $id_class, $id_session, $id_student){
-
+        
         $builder = $this->db->table('payment');
-        $builder->select('payment.payment_id, payment.montant, payment.mode_payment,payment.motif_payment,class.name, student.name, session.name');
-        $builder->join('school', 'school.school_id=payment.school_id');
-        $builder->join('year', 'year.year_id=payment.year_id');
-        $builder->join('student', 'student.student_id=payment.student_id');
-        $builder->join('class', 'class.class_id=payment.student_id');
-        $builder->join('session', 'session.session_id=payment.student_id');
+        $builder->select('payment.payment_id, payment.montant, payment.mode_payment,payment.motif_payment,class.name, student.name, session.name_session');
+        $builder->join('school', 'school.school_id=payment.school_id', 'inner');
+        $builder->join('year', 'year.year_id=payment.year_id', 'inner');
+        $builder->join('student', 'student.student_id=payment.student_id', 'inner');
+        $builder->join('class', 'class.class_id=payment.class_id', 'inner');
+        $builder->join('session', 'session.session_id=payment.session_id', 'inner');
 
         $builder->where('payment.school_id', $id_school);
         $builder->where('payment.year_id', $id_year);
         $builder->where('payment.student_id', $id_student);
         $builder->where('payment.class_id', $id_class);
         $builder->where('payment.session_id', $id_session);
-
 
         $builder->where('payment.status_payment', 0);
         $builder->where('payment.etat_payment', 'actif');
@@ -257,7 +297,42 @@ public function getPayment($montant,$mode_payment,$motif_payment,$year_id, $scho
         $builder->where('school.etat_school', 'actif');
 
         $builder->where('year.status_year', 0);
-        $builder->where('payment.etat_year', 'actif');
+        $builder->where('year.etat_year', 'actif');
+
+        $builder->where('class.status_class', 0);
+        $builder->where('class.etat_class', 'actif');
+
+        $builder->where('student.status_student', 0);
+        $builder->where('student.etat_student', 'actif');
+
+        $builder->where('session.status_session', 0);
+        $builder->where('session.etat_session', 'actif');
+
+        $res  = $builder->get();
+        return $res->getResultArray();
+    }
+
+    public function getAllPaymentStudentBySession($id_year, $id_student){
+        
+        $builder = $this->db->table('payment');
+        $builder->select('payment.payment_id, payment.montant, payment.mode_payment,payment.motif_payment,class.name, student.name, session.name_session');
+        $builder->join('school', 'school.school_id=payment.school_id', 'inner');
+        $builder->join('year', 'year.year_id=payment.year_id', 'inner');
+        $builder->join('student', 'student.student_id=payment.student_id', 'inner');
+        $builder->join('class', 'class.class_id=payment.class_id', 'inner');
+        $builder->join('session', 'session.session_id=payment.session_id', 'inner');
+
+        $builder->where('payment.year_id', $id_year);
+        $builder->where('payment.student_id', $id_student);
+
+        $builder->where('payment.status_payment', 0);
+        $builder->where('payment.etat_payment', 'actif');
+
+        $builder->where('school.status_school', 0);
+        $builder->where('school.etat_school', 'actif');
+
+        $builder->where('year.status_year', 0);
+        $builder->where('year.etat_year', 'actif');
 
         $builder->where('class.status_class', 0);
         $builder->where('class.etat_class', 'actif');

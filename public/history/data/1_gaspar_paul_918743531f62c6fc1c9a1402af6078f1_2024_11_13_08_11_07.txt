@@ -1,0 +1,12 @@
+
+1;gaspar_paul;admin;2024-11-13 08-11-07;Authentification;Réussite;Utilisateur;127.0.0.1;inconue;Nouvelle session initialisée;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-23;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-37;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-49;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-05;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-37;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-43;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-30;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-44;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-24;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;admin;2024-11-13 08-11-31;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;

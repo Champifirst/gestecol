@@ -1,0 +1,108 @@
+ERROR - 2024-09-19 05:39:55 --> ErrorException: SQLite3::exec(): no such table: bourse in /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /var/www/html/smartSchool-secondary/app/Controllers/ScolariteController.php(90): CodeIgniter\BaseModel->save()
+#10 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\ScolariteController->enregistrer_bourse()
+#11 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /var/www/html/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+INFO - 2024-09-19 05:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-19 05:46:32 --> ErrorException: SQLite3::exec(): no such table: bourse in /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /var/www/html/smartSchool-secondary/app/Controllers/ScolariteController.php(90): CodeIgniter\BaseModel->save()
+#10 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\ScolariteController->enregistrer_bourse()
+#11 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /var/www/html/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-19 05:46:32 --> SQLite3::exec(): no such table: bourse
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/ScolariteController.php(90): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\ScolariteController->enregistrer_bourse()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/var/www/html/smartSchool-secondary/public/index.php')
+INFO - 2024-09-19 05:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-19 05:53:19 --> ErrorException: SQLite3::exec(): no such table: bourse in /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /var/www/html/smartSchool-secondary/app/Controllers/ScolariteController.php(90): CodeIgniter\BaseModel->save()
+#10 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\ScolariteController->enregistrer_bourse()
+#11 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /var/www/html/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /var/www/html/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-19 05:53:19 --> SQLite3::exec(): no such table: bourse
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/SQLite3/Connection.php(145): SQLite3->exec()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 9 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+10 APPPATH/Controllers/ScolariteController.php(90): CodeIgniter\BaseModel->save()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\ScolariteController->enregistrer_bourse()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/var/www/html/smartSchool-secondary/public/index.php')
+INFO - 2024-09-19 06:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

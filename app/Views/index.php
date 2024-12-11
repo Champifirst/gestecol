@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SM@RTSCHOOL | ACCEUIL</title>
+    <title>DEVCODE | ACCEUIL</title>
     <!-- CSS locate component -->
     <?= $this->include('components/css.php') ?>
   </head>
@@ -23,30 +23,32 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
+          <!-- notice -->
+          <?= $this->include('components/notice.php') ?>
+          <!-- notice -->
+
           <!-- top tiles -->
           <div class="row" style="display: inline-block;" >
             <div class="tile_count">
-              <div class="col-md-2 col-sm-4  tile_stats_count">
+              <div class="col-md-3 col-sm-4  tile_stats_count">
                 <span class="count_top"><i class="fa fa-users"></i> Total Personnel</span>
                 <div class="count" id="all_personnel">...</div>
-                <span class="count_bottom"><i class="green">4 </i> Categorie</span>
               </div>
-              <div class="col-md-2 col-sm-4  tile_stats_count">
+              <div class="col-md-3 col-sm-4  tile_stats_count">
                 <span class="count_top"><i class="fa fa-users"></i> Total élèves</span>
                 <div class="count" id="all_student">...</div>
-                <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>2 </i> Francophone / Anglophone</span>
               </div>
-              <div class="col-md-2 col-sm-4  tile_stats_count">
+              <div class="col-md-3 col-sm-4  tile_stats_count">
                 <span class="count_top"><i class="fa fa-home"></i> Total écoles</span>
                 <div class="count green" id="all_school">...</div>
                 <!-- <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span> -->
               </div>
-              <div class="col-md-2 col-sm-4  tile_stats_count">
+              <div class="col-md-3 col-sm-4  tile_stats_count">
                 <span class="count_top"><i class="fa fa-dollar"></i> Scolarité</span>
                 <div class="count" id="all_scolarite">...</div>
                 <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i> </i> Inscription plus frais scolaire</span>
               </div>
-              <div class="col-md-2 col-sm-4  tile_stats_count">
+              <!--<div class="col-md-2 col-sm-4  tile_stats_count">
                 <span class="count_top"><i class="fa fa-dollar"></i> Salaire</span>
                 <div class="count" id="all_salaire">...</div>
                 <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i> </i> Tout le personnel</span>
@@ -55,7 +57,7 @@
                 <span class="count_top"><i class="fa fa-users"></i> Total Connexion</span>
                 <div class="count" id="all_connexion">...</div>
                 <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i></i> Nombre d'utilisateur connectés</span>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- /top tiles -->
@@ -68,15 +70,15 @@
                   <div class="col-md-6">
                     <h3><small>Effectifs des élèves par salle de classe</small></h3>
                   </div>
-                  <div class="col-md-6 row">
+                  <div class="col-md-6">
                     <div id="reportrange" class="pull-right col-4" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 50%">
                       <select class="form-control" name="ecole_diagramme" id="ecole_diagramme" style="width: 100%" onchange="onChangeDiagramme()">
                           <!-- option -->
                       </select>
                     </div>
-                    <div id="reportrange" class="pull-right col-4" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 50%">
+                    <!--<div id="reportrange" class="pull-right col-4" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 50%">
                       <button type="button" class="btn btn-dark col-12">IMPRIMER</button>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <div class="col-md-12 col-sm-12" style="height: 500px;">
@@ -101,15 +103,15 @@
                   <div class="col-md-6">
                     <h3><small>Effectifs des élèves redoublants par salle de classe</small></h3>
                   </div>
-                  <div class="col-md-6 row">
+                  <div class="col-md-6">
                     <div id="reportrange" class="pull-right col-4" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 50%">
                       <select class="form-control" name="ecole_diagrammeEffectif" id="ecole_diagrammeEffectif" style="width: 100%" onchange="onChangeDiagramme()">
                           <!-- option -->
                       </select>
                     </div>
-                    <div id="reportrange" class="pull-right col-4" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 50%">
+                    <!--<div id="reportrange" class="pull-right col-4" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 50%">
                       <button type="button" class="btn btn-dark col-12">IMPRIMER</button>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
 
@@ -129,7 +131,7 @@
           <div class="row">
 
 
-            <div class="col-md-4 col-sm-4 ">
+            <!-- <div class="col-md-4 col-sm-4 ">
               <div class="x_panel tile">
                 <div class="x_title">
                   <h2>Effectif par année</h2>
@@ -144,7 +146,7 @@
                 <div class="x_content">
                   <div id="reportrange" class="pull-center col-12" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
                     <select class="form-control" name="ecole_achive" id="ecole_achive" style="width: 100%" onchange="getEcoleDiagramme()">
-                        <!-- option -->
+                        
                     </select>
                   </div>
                   <hr>
@@ -168,9 +170,9 @@
 
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-4 col-sm-4 ">
+            <div class="col-md-6 col-sm-6 ">
               <div class="x_panel">
                 <div class="x_title">
                   <h2> Licences activées <small>En cour</small></h2>
@@ -213,8 +215,8 @@
               </div>
             </div>
 
-            <!-- Start to do list -->
-            <div class="col-md-4 col-sm-4 ">
+            
+            <div class="col-md-6 col-sm-6 ">
               <div class="x_panel">
                 <div class="x_title">
                   <h2>Historique de session <small>active</small></h2>
@@ -230,7 +232,7 @@
 
                   <div class="">
                     <ul class="to_do" id="historiques_ativity">
-                      <!-- li content -->
+                      
                     </ul>
                   </div>
                   <hr>
@@ -240,7 +242,7 @@
                 </div>
               </div>
             </div>
-                <!-- End to do list -->
+                
     
           </div>
 

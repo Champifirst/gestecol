@@ -7,7 +7,7 @@
     <meta name="app-url" content="<?php echo base_url('/');?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SM@RTSCHOOL | INSERTION NOTE</title>
+    <title>DEVCODE | INSERTION NOTE</title>
     <!-- Bootstrap -->
    
   </head>

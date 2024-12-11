@@ -140,6 +140,26 @@ class TeacherModel extends Model
         return $res->getResultArray();
     }
 
+    public function getOneTeacherByLoginAndPassword($login, $password){
+        $builder = $this->db->table('teacher');
+        $builder->select('teacher.teacher_id, teacher.name, teacher.surname, teacher.diplome, teacher.email, teacher.tel, teacher.photo, teacher.login, teacher.password, teacher.matricule, teacher.sexe, teacher_school.salaire, teacher_school.type_ens');
+        $builder->join('teacher_school', 'teacher_school.teacher_id=teacher.teacher_id', 'inner');
+        
+        // Conditions pour login et mot de passe
+        $builder->where('teacher.login', $login);
+        $builder->where('teacher.password', $password);
+    
+        // Conditions supplémentaires
+        $builder->where('teacher.status_teacher', 0);
+        $builder->where('teacher.etat_teacher', 'actif');
+        $builder->where('teacher_school.status_teacher_school', 0);
+        $builder->where('teacher_school.etat_teacher_school', 'actif');
+        
+        $res = $builder->get();
+        return $res->getRowArray(); // getRowArray() pour obtenir une seule ligne
+    }
+    
+
     public function getAllTeacherBySchoolTypeEng($school_id, $type_eng){
         $builder = $this->db->table('teacher');
         $builder->select('teacher.teacher_id, teacher.name, teacher.surname, teacher.diplome, teacher.email, teacher.tel, teacher.photo, teacher.login, teacher.password, teacher.matricule, teacher.sexe, teacher_school.salaire, teacher_school.type_ens');

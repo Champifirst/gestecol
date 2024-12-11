@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SM@RTSCHOOL | SCHOOL </title>
+    <title> Dashboard </title>
 
     <!-- CSS locate component -->
     <?= $this->include('components/css.php') ?>
@@ -16,7 +16,7 @@
 
   <body class="nav-md">
     <div class="container body">
-      <div class="main_container">
+      <div class="main_container"> 
 
         <!-- sideBar locate component -->
         <?= $this->include('components/sideBar.php') ?>

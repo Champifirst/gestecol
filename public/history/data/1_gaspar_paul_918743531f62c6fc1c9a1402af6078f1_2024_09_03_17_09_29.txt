@@ -1,0 +1,2 @@
+
+1;gaspar_paul;admin;2024-09-03 17-09-29;Authentification;Réussite;Utilisateur;127.0.0.1;inconue;Nouvelle session initialisée;EOF;

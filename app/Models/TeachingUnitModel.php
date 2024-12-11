@@ -105,8 +105,7 @@ class TeachingUnitModel extends Model
 
     public function getAllTeachingSchoolSessionCycleClass($id_school, $id_session, $id_cycle,$id_class){
         $builder = $this->db->table('teachingunit');
-        $builder->select('teachingunit.teachingunit_id, teachingunit.name, teachingunit.code,
-            teachingunit.coefficient,teachingunit.status_teachingunit,teachingunit.etat_teachingunit, teachingunit.school_id,teachingunit.created_at,teachingunit.updated_at,teachingunit.deleted_at, teachingunit.id_user,teachingunit.cycle_id,teachingunit.session_id,teachingunit.class_id');
+        $builder->select('teachingunit.teachingunit_id, teachingunit.name, teachingunit.code,teachingunit.coefficient,teachingunit.status_teachingunit,teachingunit.etat_teachingunit, teachingunit.school_id,teachingunit.created_at,teachingunit.updated_at,teachingunit.deleted_at, teachingunit.id_user,teachingunit.cycle_id,teachingunit.session_id,teachingunit.class_id');
         $builder->join('school', 'school.school_id=teachinguni.school_id');
         $builder->join('session', 'session.session_id=teachinguni.session_id');
         $builder->join('cycle', 'cycle.cycle_id=teachinguni.cycle_id');
@@ -134,6 +133,46 @@ class TeachingUnitModel extends Model
         $res  = $builder->get();
         return $res->getResultArray();
     }
+
+    public function getAllTeachingSchoolSessionCycleClassOTHER($id_school, $id_session, $id_cycle, $id_class) {
+        $builder = $this->db->table('teachingunit');
+        
+        // Sélection des colonnes nécessaires
+        $builder->select('teachingunit.teachingunit_id, teachingunit.name, teachingunit.code, teachingunit.coefficient, teachingunit.status_teachingunit, teachingunit.etat_teachingunit, teachingunit.school_id, teachingunit.created_at, teachingunit.updated_at, teachingunit.deleted_at, teachingunit.user_id, teachingunit.cycle_id, teachingunit.session_id, teachingunit.class_id');
+        
+        // Jointures avec les autres tables
+        $builder->join('school', 'school.school_id = teachingunit.school_id');
+        $builder->join('session', 'session.session_id = teachingunit.session_id');
+        $builder->join('cycle', 'cycle.cycle_id = teachingunit.cycle_id');
+        $builder->join('class', 'class.class_id = teachingunit.class_id');
+        
+        // Conditions de filtrage
+        $builder->where('teachingunit.school_id', $id_school);
+        $builder->where('teachingunit.session_id', $id_session);
+        $builder->where('teachingunit.cycle_id', $id_cycle);
+        $builder->where('teachingunit.class_id', $id_class);
+        
+        // Statuts et état actifs
+        $builder->where('teachingunit.status_teachingunit', 0);
+        $builder->where('teachingunit.etat_teachingunit', 'actif');
+        
+        $builder->where('class.status_class', 0);
+        $builder->where('class.etat_class', 'actif');
+        
+        $builder->where('session.status_session', 0);
+        $builder->where('session.etat_session', 'actif');
+        
+        $builder->where('school.status_school', 0);
+        $builder->where('school.etat_school', 'actif');
+        
+        $builder->where('cycle.status_cycle', 0);
+        $builder->where('cycle.etat_cycle', 'actif');
+        
+        // Exécution de la requête et récupération des résultats
+        $res = $builder->get();
+        return $res->getResultArray();
+    }
+    
     #@-- 12 --> insertion des matieres
     #- use:
     #-
@@ -197,4 +236,6 @@ class TeachingUnitModel extends Model
         $res  = $builder->get();
         return $res->getResultArray();
     }
+
+
 }

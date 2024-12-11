@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SM@RTSCHOOL | YEAR </title>
+    <title>DEVCODE | YEAR </title>
     <!-- CSS locate component -->
     <?= $this->include('components/css.php') ?>
   </head>

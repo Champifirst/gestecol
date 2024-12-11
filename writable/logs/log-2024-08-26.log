@@ -1,0 +1,483 @@
+CRITICAL - 2024-08-26 13:29:32 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-08-26 14:18:41 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-08-26 14:23:03 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-08-26 14:28:22 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-08-26 15:07:10 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+INFO - 2024-08-26 15:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 17:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 17:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 17:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:32:40 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:32:40 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:33:10 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:33:10 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:35:08 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:35:08 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:38:16 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:38:16 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:38:18 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:38:18 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:38:41 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:38:41 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:38:48 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:38:48 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:38:59 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:38:59 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:49:42 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:49:42 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:50:16 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:50:16 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:53:11 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:53:11 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 18:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 18:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 18:58:22 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 18:58:22 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 20:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 20:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 20:18:52 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 20:18:52 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 20:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 20:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 20:19:26 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 20:19:26 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+INFO - 2024-08-26 20:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-26 20:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-26 20:45:48 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:89
+Stack trace:
+#0 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-08-26 20:45:48 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/AuthController.php(55): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\AuthController->authentification()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')

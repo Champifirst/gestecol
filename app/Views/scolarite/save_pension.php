@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SM@RTSCHOOL | ENSEIGNANT </title>
+    <title>DEVCODE | SCOLARITE </title>
     
     <!-- CSS locate component -->
     <?= $this->include('components/css.php') ?>
@@ -54,15 +54,39 @@
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align">Etablissement<span class="required">*</span></label>
                                             <div class="col-md-6 col-sm-6">
-                                                <select class="form-control" name="school" id="school" onchange="charger_liste_student()"> 
+                                                <select class="form-control" name="name_school" id="name_school" onchange="getSchool()"> 
                                                     <!-- content school -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="field item form-group">
+                                            <label class="col-form-label col-md-3 col-sm-3  label-align">Section<span class="required">*</span></label>
+                                            <div class="col-md-6 col-sm-6">
+                                                <select class="form-control" name="name_session" id="name_session" onchange="getSession()">
+                                                    <option value="0">Selectionner une section</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="field item form-group">
+                                            <label class="col-form-label col-md-3 col-sm-3  label-align">Cycle<span class="required">*</span></label>
+                                            <div class="col-md-6 col-sm-6">
+                                                <select class="form-control" name="name_cycle" id="name_cycle" onchange="getCycle()">
+                                                    <option value="0">Selectionner un cycle</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="field item form-group">
+                                            <label class="col-form-label col-md-3 col-sm-3  label-align">Classe<span class="required">*</span></label>
+                                            <div class="col-md-6 col-sm-6">
+                                                <select class="form-control" name="name_classe" id="name_classe" onchange="getClass()">
+                                                    <option value="0">Selectionner une classe</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="field item form-group">
                                             <label class="col-form-label col-md-3 col-sm-3  label-align">Élèves<span class="required">*</span></label>
                                             <div class="col-md-6 col-sm-6">
-                                                <select class="form-control" name="student" id="student">
+                                                <select class="form-control" name="student" id="student" onchange="getStudent()">
                                                     <!-- content personnel -->
                                                     <option value="0">Choisir un élève</option>
                                                 </select>
@@ -82,6 +106,25 @@
                                                 <span class="fa fa-dollar form-control-feedback right" aria-hidden="true"></span>
                                             </div>
                                         </div>
+                                        <!-- bloc bourse -->
+                                        <hr>
+                                        <div class="p-4">
+                                            <h5>Etat Financier</h5>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>MONTANT</th>
+                                                        <th>AVANCE</th>
+                                                        <th>BOURSE</th>
+                                                        <th>RESTE</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="body_etat">
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+
                                         <input type="number" name="user_id" id="user_id" min="0" hidden>
                                         <div class="ln_solid">
                                             <div class="form-group text-center">
@@ -93,6 +136,7 @@
                                         </div>
                                     </form>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -108,8 +152,11 @@
     <!-- script locate to componenents -->
     <script>
         $("#user_id").val(localStorage.getItem('id_user'));
-        $("#school").select2();
+        $("#name_school").select2();
         $("#student").select2();
+        $("#name_session").select2();
+        $("#name_cycle").select2();
+        $("#name_classe").select2();
     </script>
     <?= $this->include('components/js.php') ?>
     <script src="<?= base_url()?>/function/scolarite/save_scolarite.js"></script>

@@ -11,6 +11,7 @@ use App\Models\SchoolModel;
 use App\Models\ClassModel;
 use App\Models\TeacherSchoolModel;
 use App\Models\TeacherClassModel;
+use App\Models\TeacherUnitClassModel;
 use App\Models\SalaireModel;
 
 use Endroid\QrCode\Color\Color;
@@ -25,8 +26,10 @@ use Endroid\QrCode\Writer\PngWriter;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Reader\Csv;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
+use App\Controllers\History;
 
-include('fpdf/fpdf.php');
+include('History/HistorySession.php');
+include('fpdf/fpdf.php'); 
 include('report/FPDF_LISTING.php');
 include('report/FPDF_CERT.php');
 include('report/FPDF_RECU.php');
@@ -45,6 +48,10 @@ class TeacherController extends ResourcePresenter
 
     public function GiveClass(){
         return view('teacher/giveClass.php');
+    }
+
+    public function GiveSubjet(){
+        return view('teacher/giveSubjet.php');
     }
 
     public function importer(){
@@ -252,9 +259,89 @@ class TeacherController extends ResourcePresenter
                     ];
                     $verdic = $TeacherClassModel->save($data);
                     if (!$verdic) {
-                        $line_error += "[Erreur: ligne ".(i+1)."]";
+                        $line_error += "[Erreur: ligne ".($i+1)."]";
                     }
                 }
+            }
+
+            //validation failed
+            $response = [
+                "success" => true,
+                "status"  => 200,
+                "code"    => "success",
+                "title"   => "Réussite",
+                "error"   => $line_error,
+                "msg"     => "L'opération s'est terminer avec succèss",
+            ];
+
+            return $this->respond($response);
+        }else{
+            //validation failed
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "error"   => $this->validator->getErrors(),
+                "msg"     => "Erreur informations invalides",
+            ];
+
+            return $this->respond($response); 
+        }
+    }
+
+    //attribution subject 
+    public function attribution_subject(){
+        $TeacherClassUnitModel = new TeacherUnitClassModel();
+        $rules = [
+            'name_teacher'      => [ 
+                'rules'             => 'required'
+            ],
+            'id_class'          => [
+                'rules'             => 'required'
+            ],
+            'id_teachingunit'   => [
+                'rules'             => 'required'
+            ],
+            'user_id'           => [
+                'rules'             => 'required'
+            ]
+        ];
+
+        if ($this->validate($rules)) {
+            $id_teachers  = $this->request->getvar('name_teacher');
+            $id_classe   = $this->request->getvar('id_class');
+            $user_id      = $this->request->getvar('user_id');
+            $teaching_ids  = $this->request->getvar('id_teachingunit');
+            $YearModel    = new YearModel();
+            $yearActif    = $YearModel->getYearActif();
+            $year_id      = $yearActif[0]["year_id"];
+            $line_error   = "";
+            for ($i=0; $i < sizeof($teaching_ids); $i++) { 
+                $id_teacher = $id_teachers[$i];
+                $teaching_id = $teaching_ids[$i];
+
+                //-- insert teacher class
+                if ($id_teacher != "0") {
+                    $data = [
+                        'teacher_id'            => $id_teacher,
+                        'teachingunit_id'       => $teaching_id,
+                        'year_id'               => $year_id,
+                        'user_id'               => $user_id,
+                        'class_id'              => $id_classe,
+                        'status_teacher_unit_class'  => 0,
+                        'etat_teacher_unit_class'    => 'actif',
+                        'created_at'            => date("Y-m-d H:m:s"),
+                        'updated_at'            => date("Y-m-d H:m:s"),
+                    ];
+                    // var_dump($data);
+                    $verdic = $TeacherClassUnitModel->save($data);
+                    if (!$verdic) {
+                        // var_dump($TeacherClassUnitModel->errors());
+                        $line_error += "[Erreur: ligne ".($i+1)."]";
+                    }
+                }
+
             }
 
             //validation failed
@@ -370,7 +457,7 @@ class TeacherController extends ResourcePresenter
                     $prenom     = "";
                     $diplome    = "";
                     $phone      = "";
-                    $salaire    = "";
+                    $salaire    = 0;
                     $email      = "";
                     $password   = "";
                     $login      = "";
@@ -527,6 +614,14 @@ class TeacherController extends ResourcePresenter
             ]
         ];
 
+        // session
+        $HistorySession = new HistorySession();
+        $data_session = $HistorySession-> getInfoSession();
+        $id_user   = $data_session['id_user'];
+        $type_user = $data_session['type_user'];
+        $login     = $data_session['login'];
+        $password  = $data_session['password'];
+
         if ($this -> validate($rules)) {
             // validation good
             $matricule  = $this->request->getvar('matricule');
@@ -604,6 +699,9 @@ class TeacherController extends ResourcePresenter
                     // insert teacher_school
                     $teacher_id = $TeacherModel->getId();
                     $TeacherSchoolModel = new TeacherSchoolModel();
+                    if ($salaire == "") {
+                        $salaire = 0;
+                    }
                     $data_teacher_school = [
                         'school_id'             => $school_id,
                         'teacher_id'            => $teacher_id,
@@ -865,6 +963,14 @@ class TeacherController extends ResourcePresenter
             ]
         ];
 
+        // session
+        $HistorySession = new HistorySession();
+        $data_session = $HistorySession-> getInfoSession();
+        $id_user   = $data_session['id_user'];
+        $type_user = $data_session['type_user'];
+        $login     = $data_session['login'];
+        $password  = $data_session['password'];
+
         if ($this -> validate($rules)) {
             // validation good
 
@@ -878,15 +984,7 @@ class TeacherController extends ResourcePresenter
             $user_id            = $this->request->getvar('user_id');
             $teacher_id         = $this->request->getvar('teacher_id');
 
-            // session
-            $HistorySession = new HistorySession();
-            $data_session = $HistorySession-> getInfoSession();
-            $id_user   = $data_session['id_user'];
-            $type_user = $data_session['type_user'];
-            $login     = $data_session['login'];
-            $password  = $data_session['password'];
-
-            if ($name == NULL || $login == NULL || $phone == NULL || $email == NULL || $chool == NULL || $password == NULL || $confirm_password == NULL) {
+            if ($name == NULL || $login == NULL || $phone == NULL || $email == NULL || $school == NULL || $password == NULL || $confirm_password == NULL) {
                 $response = [
                     "success" => false,
                     "status"  => 500,
@@ -928,7 +1026,7 @@ class TeacherController extends ResourcePresenter
 
                 }else{
 
-                   $data_teacher = $TeacherModel->getTeacher($name, $login,$pone,$email,$school);
+                   $data_teacher = $TeacherModel->getTeacher($name, $login,$phone,$email,$school);
 
                     if (sizeof($data_teacher) != 0) {
                         $response = [
@@ -1038,7 +1136,7 @@ class TeacherController extends ResourcePresenter
           'etat_teacher'      => 'inactif',
           'deleted_at'         => date("Y-m-d H:m:s"),
         ];
-            if ($TeacherModel->where('teacher_id', $teacher_id)->set($data)->update() === false) {
+            if ($TeacherModel->where('teacher_id', $id_teacher)->set($data)->update() === false) {
                   // echec de suppression
                   $response = [
                       "success" => false,

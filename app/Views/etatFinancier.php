@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SM@RTSCHOOL | ACCEUIL</title>
+    <title>DEVCODE | ACCEUIL</title>
     <!-- CSS locate component -->
     <?= $this->include('components/css.php') ?>
   </head>

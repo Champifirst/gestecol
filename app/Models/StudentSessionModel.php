@@ -50,6 +50,31 @@ class StudentSessionModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
+     public function getStudentSessionById($student_id, $year_id){
+        $builder = $this->db->table('student_session');
+        $builder->select('*');
+        $builder->join('student', 'student.student_id=student_session.student_id');
+        $builder->join('session', 'session.session_id=student_session.session_id');
+        $builder->join('year', 'year.year_id=student_session.year_id');
+        $builder->where('student_session.student_id', $student_id);
+        $builder->where('student_session.year_id', $year_id);
+        
+        $builder->where('student_session.status_stu_sess', 0);
+        $builder->where('student_session.etat_stu_sess', 'actif');
+
+        $builder->where('year.status_year', 0);
+        $builder->where('year.etat_year', 'actif');
+
+        $builder->where('student.status_student', 0);
+        $builder->where('student.etat_student', 'actif');
+
+        $builder->where('session.status_session', 0);
+        $builder->where('session.etat_session', 'actif');
+        
+        $res  = $builder->get();
+        return $res->getResultArray();
+    }
+    
     public function getStudentSessionExist($student_id, $session_id, $year_id){
         $builder = $this->db->table('student_session');
         $builder->select('*');

@@ -34,8 +34,8 @@
               <h2>Contacter Nous pour Activer Votre Licence</h2>
               </p>
               <div class="mid_center">
-                <h3>(+237) 659 373 726 / 690 857 430</h3>
-                <h3><a href="angeltakam76@gmail.com">angeltakam76@gmail.com</a></h3>
+                <h3>(+237) 659 373 726 / 656 141 969</h3>
+                <h3><a href="angeltakam76@gmail.com">angeltakam76@gmail.com & valdeztakam4@gmail.com</a></h3>
               </div>
             </div>
           </div>

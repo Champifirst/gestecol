@@ -1,0 +1,663 @@
+CRITICAL - 2024-09-06 04:54:50 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 04:55:04 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 04:59:33 --> Cannot use [] for reading
+in APPPATH/Controllers/TeachingUnitController.php on line 451.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 05:12:05 --> Undefined variable $TeacherModel
+in APPPATH/Controllers/TeachingUnitController.php on line 452.
+ 1 APPPATH/Controllers/TeachingUnitController.php(452): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 05:12:42 --> Undefined variable $TeacherModel
+in APPPATH/Controllers/TeachingUnitController.php on line 451.
+ 1 APPPATH/Controllers/TeachingUnitController.php(451): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 06:42:27 --> ErrorException: SQLite3::exec(): table `salaire` already exists in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Database/Migrations/2023-10-18-210132_SalaireMigrate.php(73): CodeIgniter\Database\Forge->createTable()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\SalaireMigrate->up()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#11 /home/takam/Bureau/smartSchool-secondary/spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2024-09-06 06:42:27 --> ErrorException: SQLite3::exec(): table `montant_scolarite` already exists in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Database/Migrations/2024-02-01-152852_MontantScolariteMigration.php(64): CodeIgniter\Database\Forge->createTable()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\MontantScolariteMigration->up()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#11 /home/takam/Bureau/smartSchool-secondary/spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+CRITICAL - 2024-09-06 07:05:36 --> Class "App\Controllers\TeacherUnitClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 361.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 07:07:02 --> Class "App\Controllers\TeacherUnitClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 361.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 07:07:28 --> Class "App\Controllers\TeacherUnitClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 361.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 07:08:01 --> Class "App\Controllers\TeacherUnitClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 362.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 07:09:13 --> Class "App\Controllers\TeacherUnitClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 361.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 07:09:41 --> Class "App\Controllers\TeacherUnitClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 361.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 07:10:39 --> Undefined array key "class_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 439.
+ 1 APPPATH/Controllers/TeachingUnitController.php(439): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 07:11:29 --> Undefined array key "class_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 438.
+ 1 APPPATH/Controllers/TeachingUnitController.php(438): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 07:11:54 --> Undefined array key "class_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 439.
+ 1 APPPATH/Controllers/TeachingUnitController.php(439): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 07:12:43 --> Undefined array key "class_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 438.
+ 1 APPPATH/Controllers/TeachingUnitController.php(438): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 15:24:24 --> Path cannot be empty
+in APPPATH/Controllers/History/HistorySession.php on line 35.
+ 1 APPPATH/Controllers/History/HistorySession.php(35): fopen()
+ 2 APPPATH/Controllers/YearController.php(197): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\YearController->yearActif()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 19:05:24 --> Undefined variable $teacher_id
+in APPPATH/Controllers/TeacherController.php on line 327.
+ 1 APPPATH/Controllers/TeacherController.php(327): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 19:06:29 --> Undefined variable $teacher_id
+in APPPATH/Controllers/TeacherController.php on line 327.
+ 1 APPPATH/Controllers/TeacherController.php(327): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 19:12:17 --> sizeof(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/TeacherController.php on line 319.
+ 1 APPPATH/Controllers/TeacherController.php(319): sizeof()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:14:10 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:14:10 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:15:02 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:15:02 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:15:36 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:15:36 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:16:18 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:16:18 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:17:07 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(335): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:17:07 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 337.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:17:33 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(335): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:17:33 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:18:28 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(335): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:18:28 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:37:46 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:37:46 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:39:22 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:39:22 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:40:36 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:40:36 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:41:56 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:41:56 --> Unsupported operand types: string + string
+in APPPATH/Controllers/TeacherController.php on line 338.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 19:47:02 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2024-09-06 19:47:02 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2024-09-06 19:48:40 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2024-09-06 19:48:40 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2024-09-06 19:54:43 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2024-09-06 19:54:43 --> ErrorException: SQLite3::exec(): NOT NULL constraint failed: teacher_unit_class.user_id in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:145
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(145): SQLite3->exec()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#9 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeacherController.php(336): CodeIgniter\BaseModel->save()
+#10 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeacherController->attribution_subject()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+CRITICAL - 2024-09-06 19:59:01 --> Undefined array key "teacher_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 443.
+ 1 APPPATH/Controllers/TeachingUnitController.php(443): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 19:59:26 --> Undefined array key "teacher_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 443.
+ 1 APPPATH/Controllers/TeachingUnitController.php(443): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 20:00:44 --> Undefined array key "teacher_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 444.
+ 1 APPPATH/Controllers/TeachingUnitController.php(444): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 20:01:50 --> Undefined array key "teacher_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 443.
+ 1 APPPATH/Controllers/TeachingUnitController.php(443): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 20:02:33 --> Undefined array key "teacher_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 442.
+ 1 APPPATH/Controllers/TeachingUnitController.php(442): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 20:03:12 --> Undefined array key "teacher_id"
+in APPPATH/Controllers/TeachingUnitController.php on line 443.
+ 1 APPPATH/Controllers/TeachingUnitController.php(443): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 21:12:36 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeacherUnitClassModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(437): App\Models\TeacherUnitClassModel->getAllTeachersByClassAndYear()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-06 21:12:36 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeacherUnitClassModel.php on line 77.
+ 1 APPPATH/Controllers/TeachingUnitController.php(437): App\Models\TeacherUnitClassModel->getAllTeachersByClassAndYear()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-06 21:19:06 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, near &quot;.&quot;: syntax error in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeacherUnitClassModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(437): App\Models\TeacherUnitClassModel->getAllTeachersByClassAndYear()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-06 21:19:06 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeacherUnitClassModel.php on line 77.
+ 1 APPPATH/Controllers/TeachingUnitController.php(437): App\Models\TeacherUnitClassModel->getAllTeachersByClassAndYear()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-06 21:38:38 --> Call to undefined method App\Models\TeacherUnitClassModel::getAllTeachersByClassAndYear
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(437): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')

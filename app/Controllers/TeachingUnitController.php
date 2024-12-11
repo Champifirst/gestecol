@@ -5,6 +5,9 @@ namespace App\Controllers;
 use CodeIgniter\RESTful\ResourcePresenter;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\TeachingUnitModel;
+use App\Models\TeacherClassModel;
+use App\Models\TeacherUnitClassModel;
+use App\Models\TeacherModel;
 use App\Models\SchoolModel;
 use App\Models\ClassModel;
 use App\Models\SessionModel;
@@ -12,7 +15,6 @@ use App\Models\CycleModel;
 use App\Models\YearModel;
 use App\Controllers\History;
 include('History/HistorySession.php');
-
 class TeachingUnitController extends ResourcePresenter
 {
 
@@ -53,7 +55,7 @@ class TeachingUnitController extends ResourcePresenter
     }
 
     public function allTeachingUnit($id_class){
-        $TeachingUnitModel = new TeachingUnitModel();
+        $TeachingUnitModel = new TeachingUnitModel(); 
         $ClassModel = new ClassModel();
         $YearModel = new YearModel();
 
@@ -74,6 +76,34 @@ class TeachingUnitController extends ResourcePresenter
         $year_id = $yearActif[0]['year_id'];
 
         $teaching_unit = $TeachingUnitModel->getByIDClassByYear($id_class, $year_id);
+        // var_dump($teaching_unit);
+        return $this->respond($teaching_unit);
+    }
+
+    public function allTeachingUnitByTeacher($id_class, $id_teacher){
+        $TeacherUnitClassModel = new TeacherUnitClassModel();
+        $TeachingUnitModel = new TeachingUnitModel(); 
+        $TeacherModel = new TeacherModel();
+        $ClassModel = new ClassModel();
+        $YearModel = new YearModel();
+
+        $yearActif = $YearModel->getYearActif();
+        $year_id = $yearActif[0]['year_id'];
+
+        $class = $ClassModel->getIDClass($id_class);
+        if (sizeof($class) == 0) {
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "msg"     => 'Cette classe n\'existe pas',
+            ];
+            return $this->respond($response);
+        }
+
+        $teaching_unit = $TeacherUnitClassModel->getSubjectsByTeacherClassAndYear($id_teacher, $id_class, $year_id);
+        // var_dump($teaching_unit);
         return $this->respond($teaching_unit);
     }
 
@@ -161,7 +191,7 @@ class TeachingUnitController extends ResourcePresenter
                     "msg"     => 'Cette session n\'existe pas',
                 ];
                 // history
-                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Echec", "Matière", "", "", "cette session n'existe pqs");
+                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Echec", "Matière", "", "", "cette session n'existe pas");
                 return $this->respond($response);
             }
             if (sizeof($data_cycle) == 0) {
@@ -172,7 +202,7 @@ class TeachingUnitController extends ResourcePresenter
                     "title"   => "Erreur",
                     "msg"     => 'Ce cycle n\'existe pas',
                 ];
-                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Echec", "Matière", "", "", "ce cycle n'existe pqs");
+                $HistorySession->ReadOperation($id_user, $login, $type_user, "", "insertion", "Echec", "Matière", "", "", "ce cycle n'existe pas");
                 return $this->respond($response);
             }
             if (sizeof($data_classe) == 0) {
@@ -346,7 +376,149 @@ class TeachingUnitController extends ResourcePresenter
         $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", $data_organize);
         return $this->respond($response);
 
+    }
+
+
+    #@-- 1 --> other get all teaching unit classe 
+    #- use:
+    #-
+    public function allteachingOther($id_school, $id_session, $id_cycle, $id_class){
+        
+        $TeachingUnitModel      = new TeachingUnitModel();
+        $TeacherClassModel      = new TeacherClassModel();
+        $teacherUnitClassModel  = new TeacherUnitClassModel();
+        $TeacherModel           = new TeacherModel();
+        $ClassModel             = new ClassModel();
+        $SessionModel           = new SessionModel();
+        $CycleModel             = new CycleModel();
+        $YearModel              = new YearModel();
+        $SchoolModel            = new SchoolModel();
+        $school                 = $SchoolModel->findAllSchoolByidSchool($id_school);
+        $session                = $SessionModel->getSessionById($id_session);
+        $cycle                  = $CycleModel->getCycleById($id_cycle);
+        $class                  = $ClassModel->getOneClass($id_class);
+        // session
+        $HistorySession         = new HistorySession();
+        $data_session           = $HistorySession-> getInfoSession();
+        $id_user                = $data_session['id_user'];
+        $type_user              = $data_session['type_user'];
+        $login                  = $data_session['login'];
+        $password               = $data_session['password'];
+        $yearActif              = $YearModel->getYearActif();
+        $year_id                = $yearActif[0]['year_id']; 
+        
+        
+        if (sizeof($school) == 0) {
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "msg"     => 'Désoler nous n\'avons pas pu trouver cette école',
+            ];
+            //history
+            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", "cette ecole n'existe pas");
+            return $this->respond($response);
         }
+        if (sizeof($session) == 0) {
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "msg"     => 'Désoler nous n\'qvons pas pu trouver cette session',
+            ];
+            //history
+            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", "cette session n'existe pas");
+            return $this->respond($response);
+        }
+        if (sizeof($cycle) == 0) {
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "msg"     => 'Désoler nous n\'qvons pas pu trouver ce cycle',
+            ];
+            //history
+            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", "ce cycle n'existe pas");
+            return $this->respond($response);
+        }
+        if (sizeof($class) == 0) {
+            $response = [
+                "success" => false,
+                "status"  => 500,
+                "code"    => "error",
+                "title"   => "Erreur",
+                "msg"     => 'Désoler nous n\'qvons pas pu trouver cette classe',
+            ];
+           //history
+            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", "cette classe n'existe pas");
+            return $this->respond($response);
+        }
+        
+        $data_teaching = $TeachingUnitModel->getAllTeachingSchoolSessionCycleClassOTHER($id_school, $id_session, $id_cycle,$id_class);
+        $data_final = array();
+        $enseignants = array();
+        
+        foreach ($data_teaching as $row) {
+            $teacher = $teacherUnitClassModel->getTeachersByTeachingUnitClassAndYear($row['teachingunit_id'], $row['class_id'], $year_id);
+            // var_dump($teacher);
+            $name_teacher = "";
+            $id_teacher = "";
+            if (sizeof($teacher) != 0) {
+                $name_teacher = $teacher[0]["name"]." ".$teacher[0]["surname"];
+                $id_teacher = $teacher[0]["teacher_id"];
+            }
+            $data_final[] = [
+                "teachingunit_id"       => $row["teachingunit_id"],
+                "code"                  => $row["code"],
+                "name"                  => $row["name"],
+                "id_enseignant"         => $id_teacher,
+                "name_enseignant"       => $name_teacher,
+            ];
+            // var_dump($data_final);
+            $enseignants = $TeacherModel->getAllTeacherBySchool($id_school);
+
+        }
+
+        // echo sizeof($data_teaching) == 0 ;
+        if (!empty($data_teaching)) {
+            $response = [
+                "success"           => true,
+                "status"            => 200,
+                "code"              => "success",
+                "title"             => "Réussite",
+                "msg"               => 'Opération reussir',
+                "data"              => $data_final,
+                "enseignants"       => $enseignants,
+            ];
+            //history
+            $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", "Opération reussir");
+            return $this->respond($response);
+        }
+        //-- restaure data
+        $data_organize = array();
+        foreach ($class as $row) {
+            $explode_name = explode("#", $row['name']);
+            $new_name = $explode_name[0]." ".$explode_name[1]." ".$explode_name[2];
+            $row['name'] = $new_name;
+            $data_organize[] = $row;
+        }
+
+        $response = [
+            "success" => true,
+            "status"  => 200,
+            "code"    => "success",
+            "title"   => "Réussite",
+            "msg"     => 'Opération reussir',
+            "data"    => $data_organize,
+        ];
+        //history
+        $HistorySession->ReadOperation($id_user, $login, $type_user, "", "Selection", "Echec", "Matiere", "", "", 'Opération reussir');
+        return $this->respond($response);
+
+    }
 
     #@-- 1 --> modification des matieres
     #- use:

@@ -1,6 +1,6 @@
 <footer>
     <div class="pull-right">
-    Sm@rtSchool - Ecole intelligente. Contactez-Nous: +237 690 857 430 Power By <a href="https://sm@rtdiso.com">Sm@rtDiso</a>
+    devCode - Ecole intelligente. Contactez-Nous: +237 659 373 726 & 656 141 969 Power By <a href="#">devCode</a>
     </div>
     <div class="clearfix"></div>
 </footer>

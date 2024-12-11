@@ -305,7 +305,7 @@
 			$this->SetXY($postx+56,$posty+1);
 			$this->Cell(86,5,utf8_decode('REÇU DE PAIEMENT'),0,0,'R');
 			$this->SetXY($postx+56,$posty+1+4);
-	        $this->Cell(86,5,utf8_decode('DE SALAIRE'),0,0,'R');
+	        $this->Cell(86,5,utf8_decode('DE SCOLARITE'),0,0,'R');
 			$this->SetFont('arial', '','7');
 			$this->SetXY($postx+56,$posty+1+4+4);
 	        $this->Cell(86,5,utf8_decode('Date : '.$data["date"]),0,0,'R');
@@ -321,7 +321,7 @@
 			/*--- PHOTO ------*/
 			$this->SetXY($postx,$posty+25);
 			$this->Cell($posty+13,$posty+13,"",1,0,'C');
-			$this->Image(getenv("FILE_PHOTO_TEACHER")."/".$data["photo"], $postx,$posty+25,$posty+13,$posty+13);
+			$this->Image(getenv("FILE_PHOTO_STUDENT")."/".$data["photo"], $postx,$posty+25,$posty+13,$posty+13);
 			// matricule
 			$this->SetFont('arial', 'B','7');
 			$this->SetXY($postx,$posty+25+4+4+4+3+5);

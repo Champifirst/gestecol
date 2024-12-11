@@ -16,6 +16,7 @@ class StudentClassModel extends Model
     protected $allowedFields    = [
         'student_class_id',
         'class_id',
+        'matieres',
         'student_id',
         'year_id',
         'id_user',
@@ -73,6 +74,20 @@ class StudentClassModel extends Model
         return $res->getResultArray();
     }
 
+
+    public function getStudentCountByClassAndYear($class_id, $year_id) {
+        $builder = $this->db->table('student_class');
+        
+        $builder->where('class_id', $class_id);
+        $builder->where('year_id', $year_id);
+        
+        $builder->where('etat_stu_class', 'actif');
+        $builder->where('status_stu_class', 0);  
+        
+        $count = $builder->countAllResults();
+        
+        return $count;
+    }
 
     public function getStudentClassExist($student_id, $class_id, $year_id){
         $builder = $this->db->table('student_class');

@@ -1,0 +1,696 @@
+ERROR - 2024-09-05 07:42:26 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 07:42:26 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 135.
+ 1 APPPATH/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 07:43:12 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 07:43:12 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 135.
+ 1 APPPATH/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 07:44:54 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 07:44:54 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 135.
+ 1 APPPATH/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 08:15:43 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 08:15:43 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 135.
+ 1 APPPATH/Controllers/TeachingUnitController.php(313): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 08:16:53 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(315): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 08:16:53 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 135.
+ 1 APPPATH/Controllers/TeachingUnitController.php(315): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 08:17:55 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(314): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 08:17:55 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 135.
+ 1 APPPATH/Controllers/TeachingUnitController.php(314): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 08:18:29 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(315): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 08:18:29 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 135.
+ 1 APPPATH/Controllers/TeachingUnitController.php(315): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 08:22:15 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(133): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(315): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 08:22:15 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 134.
+ 1 APPPATH/Controllers/TeachingUnitController.php(315): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 08:23:21 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(133): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(314): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 08:23:21 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 134.
+ 1 APPPATH/Controllers/TeachingUnitController.php(314): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 08:28:08 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(133): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(316): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 08:28:08 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 134.
+ 1 APPPATH/Controllers/TeachingUnitController.php(316): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 08:29:29 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(133): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(318): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 08:29:29 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 134.
+ 1 APPPATH/Controllers/TeachingUnitController.php(318): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+ERROR - 2024-09-05 08:30:39 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such column: teachingunit.id_user in /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /home/takam/Bureau/smartSchool-secondary/app/Models/TeachingUnitModel.php(133): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/takam/Bureau/smartSchool-secondary/app/Controllers/TeachingUnitController.php(318): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+#7 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+#8 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/takam/Bureau/smartSchool-secondary/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/takam/Bureau/smartSchool-secondary/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-09-05 08:30:39 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/TeachingUnitModel.php on line 134.
+ 1 APPPATH/Controllers/TeachingUnitController.php(318): App\Models\TeachingUnitModel->getAllTeachingSchoolSessionCycleClass()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 08:39:53 --> Array to string conversion
+in APPPATH/Controllers/History/HistorySession.php on line 36.
+ 1 APPPATH/Controllers/History/HistorySession.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/TeachingUnitController.php(348): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 08:46:12 --> Array to string conversion
+in APPPATH/Controllers/History/HistorySession.php on line 36.
+ 1 APPPATH/Controllers/History/HistorySession.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/TeachingUnitController.php(348): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 08:46:40 --> Array to string conversion
+in APPPATH/Controllers/History/HistorySession.php on line 36.
+ 1 APPPATH/Controllers/History/HistorySession.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/TeachingUnitController.php(348): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteaching()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:25:42 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 358.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:27:32 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 358.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:28:33 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 358.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:29:11 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 359.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:29:53 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 357.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:30:34 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 357.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:31:17 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 359.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:31:58 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 358.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:32:28 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 358.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:32:57 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 359.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:33:20 --> Class "App\Controllers\TeacherClassModel" not found
+in APPPATH/Controllers/TeachingUnitController.php on line 358.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:35:10 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 435.
+ 1 APPPATH/Controllers/TeachingUnitController.php(435): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:35:43 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 435.
+ 1 APPPATH/Controllers/TeachingUnitController.php(435): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:36:09 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 435.
+ 1 APPPATH/Controllers/TeachingUnitController.php(435): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:36:34 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 436.
+ 1 APPPATH/Controllers/TeachingUnitController.php(436): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:39:03 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 434.
+ 1 APPPATH/Controllers/TeachingUnitController.php(434): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:39:32 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 434.
+ 1 APPPATH/Controllers/TeachingUnitController.php(434): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:41:50 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 435.
+ 1 APPPATH/Controllers/TeachingUnitController.php(435): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:43:10 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 434.
+ 1 APPPATH/Controllers/TeachingUnitController.php(434): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:44:10 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 435.
+ 1 APPPATH/Controllers/TeachingUnitController.php(435): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:45:04 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 435.
+ 1 APPPATH/Controllers/TeachingUnitController.php(435): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 11:47:11 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 434.
+ 1 APPPATH/Controllers/TeachingUnitController.php(434): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 18:18:55 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 434.
+ 1 APPPATH/Controllers/TeachingUnitController.php(434): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 18:27:45 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 434.
+ 1 APPPATH/Controllers/TeachingUnitController.php(434): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 18:53:01 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 434.
+ 1 APPPATH/Controllers/TeachingUnitController.php(434): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 18:53:40 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 434.
+ 1 APPPATH/Controllers/TeachingUnitController.php(434): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 18:54:12 --> Undefined variable $year_id
+in APPPATH/Controllers/TeachingUnitController.php on line 435.
+ 1 APPPATH/Controllers/TeachingUnitController.php(435): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 18:57:00 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(449): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:03:31 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(446): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:04:12 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(447): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:05:09 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(446): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:05:39 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(446): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:06:22 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(447): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:07:25 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(446): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:19:02 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(446): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:21:31 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(447): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:24:53 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(446): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:26:09 --> Undefined array key 1
+in APPPATH/Controllers/TeachingUnitController.php on line 443.
+ 1 APPPATH/Controllers/TeachingUnitController.php(443): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:31:57 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(447): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:32:32 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(447): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:33:16 --> Call to undefined method App\Models\TeachingUnitModel::format_name_class
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/TeachingUnitController.php(443): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:37:54 --> Undefined variable $TeacherModel
+in APPPATH/Controllers/TeachingUnitController.php on line 452.
+ 1 APPPATH/Controllers/TeachingUnitController.php(452): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:38:25 --> Undefined variable $TeacherModel
+in APPPATH/Controllers/TeachingUnitController.php on line 452.
+ 1 APPPATH/Controllers/TeachingUnitController.php(452): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:38:48 --> Undefined variable $TeacherModel
+in APPPATH/Controllers/TeachingUnitController.php on line 452.
+ 1 APPPATH/Controllers/TeachingUnitController.php(452): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:39:20 --> Undefined variable $TeacherModel
+in APPPATH/Controllers/TeachingUnitController.php on line 451.
+ 1 APPPATH/Controllers/TeachingUnitController.php(451): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 19:40:02 --> Undefined variable $TeacherModel
+in APPPATH/Controllers/TeachingUnitController.php on line 452.
+ 1 APPPATH/Controllers/TeachingUnitController.php(452): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 20:23:35 --> Array to string conversion
+in APPPATH/Controllers/History/HistorySession.php on line 36.
+ 1 APPPATH/Controllers/History/HistorySession.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/TeachingUnitController.php(485): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 20:24:26 --> Array to string conversion
+in APPPATH/Controllers/History/HistorySession.php on line 36.
+ 1 APPPATH/Controllers/History/HistorySession.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/TeachingUnitController.php(487): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 20:24:59 --> Array to string conversion
+in APPPATH/Controllers/History/HistorySession.php on line 36.
+ 1 APPPATH/Controllers/History/HistorySession.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/TeachingUnitController.php(487): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-05 20:26:32 --> Array to string conversion
+in APPPATH/Controllers/History/HistorySession.php on line 36.
+ 1 APPPATH/Controllers/History/HistorySession.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/TeachingUnitController.php(487): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/smartSchool-secondary/public/index.php')

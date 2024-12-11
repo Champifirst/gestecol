@@ -50,6 +50,31 @@ class StudentCycleModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
+     public function getStudentCycleById($student_id, $year_id){
+        $builder = $this->db->table('student_cycle');
+        $builder->select('*');
+        $builder->join('student', 'student.student_id=student_cycle.student_id');
+        $builder->join('cycle', 'cycle.cycle_id=student_cycle.cycle_id');
+        $builder->join('year', 'year.year_id=student_cycle.year_id');
+        $builder->where('student_cycle.student_id', $student_id);
+        $builder->where('student_cycle.year_id', $year_id);
+        
+        $builder->where('student_cycle.status_stu_cycle', 0);
+        $builder->where('student_cycle.etat_stu_cycle', 'actif');
+
+        $builder->where('year.status_year', 0);
+        $builder->where('year.etat_year', 'actif');
+
+        $builder->where('student.status_student', 0);
+        $builder->where('student.etat_student', 'actif');
+
+        $builder->where('cycle.status_cycle', 0);
+        $builder->where('cycle.etat_cycle', 'actif');
+        
+        $res  = $builder->get();
+        return $res->getResultArray();
+    }
+    
     public function getStudentCycleExist($student_id, $cycle_id, $year_id){
         $builder = $this->db->table('student_cycle');
         $builder->select('*');

@@ -1,0 +1,57 @@
+CRITICAL - 2024-09-08 14:13:06 --> Array to string conversion
+in APPPATH/Controllers/History/HistorySession.php on line 36.
+ 1 APPPATH/Controllers/History/HistorySession.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/TeachingUnitController.php(490): App\Controllers\HistorySession->ReadOperation()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TeachingUnitController->allteachingOther()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/var/www/html/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-08 14:28:08 --> Undefined array key "id_user"
+in APPPATH/Views/components/sideBar.php on line 14.
+ 1 APPPATH/Views/components/sideBar.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/html/smartSchool-secondary/app/Views/components/sideBar.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(452): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/student/save.php(135): CodeIgniter\View\View->include()
+ 6 SYSTEMPATH/View/View.php(224): include('/var/www/html/smartSchool-secondary/app/Views/student/save.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/StudentController.php(49): view()
+10 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->save()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/var/www/html/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-08 14:28:11 --> Undefined array key "id_user"
+in APPPATH/Views/components/sideBar.php on line 14.
+ 1 APPPATH/Views/components/sideBar.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/html/smartSchool-secondary/app/Views/components/sideBar.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(452): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/student/save.php(135): CodeIgniter\View\View->include()
+ 6 SYSTEMPATH/View/View.php(224): include('/var/www/html/smartSchool-secondary/app/Views/student/save.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/StudentController.php(49): view()
+10 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->save()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/var/www/html/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-08 17:50:26 --> Undefined array key 0
+in APPPATH/Controllers/TrimestreController.php on line 226.
+ 1 APPPATH/Controllers/TrimestreController.php(226): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TrimestreController->alltrimestre()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/var/www/html/smartSchool-secondary/public/index.php')
+CRITICAL - 2024-09-08 17:50:31 --> Undefined array key 0
+in APPPATH/Controllers/SequenceController.php on line 192.
+ 1 APPPATH/Controllers/SequenceController.php(192): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\SequenceController->allsequence()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/var/www/html/smartSchool-secondary/public/index.php')

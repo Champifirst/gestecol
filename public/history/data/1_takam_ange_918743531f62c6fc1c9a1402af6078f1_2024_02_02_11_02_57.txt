@@ -1,0 +1,14 @@
+
+1;takam_ange;admin;2024-02-02 11-02-57;Authentification;Réussite;Utilisateur;::1;Default Browser;Nouvelle session initialisée;EOF;
+1;takam ange;admin;2024-02-02 11-02-12;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-02-02 11-02-21;Selection;Echec;Classe;::1;Default Browser;Opération reussir;EOF;
+1;takam ange;admin;2024-02-02 11-02-00;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-02-02 11-02-08;Selection;Echec;Classe;::1;Default Browser;Opération reussir;EOF;
+1;takam ange;admin;2024-02-02 11-02-47;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-02-02 11-02-56;Selection;Echec;Classe;::1;Default Browser;Opération reussir;EOF;
+1;takam ange;admin;2024-02-02 11-02-46;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-02-02 11-02-50;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-02-02 11-02-59;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-02-02 11-02-06;Selection;Echec;Classe;::1;Default Browser;Opération reussir;EOF;
+1;takam ange;admin;2024-02-02 11-02-20;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;takam ange;admin;2024-02-02 11-02-28;Année active;Reussite;Année;::1;Default Browser;Année Scolaire 2023 / 2024,2023-09-29,2024-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;

@@ -32,7 +32,7 @@ $('#from_login').on('submit', function(e) {
                 localStorage.setItem('autorisation', data.autorisation);
                 localStorage.setItem('fonctionnality', data.data.fonctionnality);
                 
-                if (data.data.type_user == "admin") {
+                if (data.data.type_user == "admin" || data.data.type_user == "SuperUser") {
                     window.location.href = "shool-choice-user";
                 }else{
                     window.location.href = "Home";

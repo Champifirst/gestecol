@@ -14,7 +14,7 @@
 <div class="col-md-3 left_col">
     <div class="left_col scroll-view">
     <div class="navbar nav_title" style="border: 0;">
-        <img src="<?= base_url() ?>/components/images/logo.png" alt="Logo Sm@rtDiso" style="width: 50px" class="img-circle profile_img">
+        <img src="<?= base_url() ?>/components/images/logo.png" alt="Logo devCode" style="width: 50px" class="img-circle profile_img">
         <!-- <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>ERP</span></a> -->
     </div>
 
@@ -23,7 +23,7 @@
     <!-- menu profile quick info -->
     <div class="profile clearfix">
         <div class="profile_pic">
-        <img src="<?= base_url() ?>components/images/logo_reduit.png" alt="Logo Etablissement" class="img-circle profile_img">
+        <img src="<?= base_url() ?>components/images/logo.jpg" alt="Logo Etablissement" class="img-circle profile_img">
         </div>
         <div class="profile_info">
         <span>Bienvenue,</span>
@@ -43,32 +43,39 @@
                 <a><i class="fa fa-home"></i> Acceuil <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                 <li><a href="<?= base_url()?>/Home">Vue global</a></li>
-                <li><a href="<?= base_url()?>/Home2">Etat Financier</a></li>
+               <!-- <li><a href="<?= base_url()?>/Home2">Etat Financier</a></li> -->
                 </ul>
             </li>
             <!-- <li><a href="<?= base_url()?>/Home"><i class="fa fa-home"></i> Acceuil </a></li> -->
             
-            <li><a><i class="fa fa-users"></i> Elèves <span class="fa fa-chevron-down"></span></a>
+            <li class="hibeTeach"><a><i class="fa fa-users"></i> Elèves <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<?= base_url()?>/student/save">Enregister</a></li>
                     <li><a href="<?= base_url()?>/student/list">Lister</a></li>
                     <li><a href="<?= base_url()?>/student/ChangePhoto">Photos</a></li>
                     <li><a href="<?= base_url()?>/student/Importer">Importer</a></li>
+                    <li><a href="<?= base_url()?>/student/GiveMatiere">Attribuer les matières</a></li>
+                    <li><a href="<?= base_url()?>/student/GiveBourses">Attribuer les bourses</a></li>
                 </ul>
             </li>
-            <li><a><i class="fa fa-money"></i> Scolarité <span class="fa fa-chevron-down"></span></a>
+            <li class="hibeTeach"><a><i class="fa fa-money"></i> Scolarité <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<?= base_url()?>/scolarite/save_inscription">Inscription</a></li>
                     <li><a href="<?= base_url()?>/scolarite/save_pension">Pension</a></li>
+                    <li><a href="<?= base_url()?>/scolarite/Montant_scolarite">Montant Scolarité</a></li>
+                    <li><a href="<?= base_url()?>/scolarite/Statistique_scolarite">Statistiques</a></li>
+                    <li><a href="<?= base_url()?>/scolarite/historique_paiement">Historique paiement</a></li>
+                    <li><a href="<?= base_url()?>/scolarite/save_bourse">Bourses</a></li>
                 </ul>
             </li>
-            <li><a><i class="fa fa-users"></i> Enseignants <span class="fa fa-chevron-down"></span></a>
+            <li class="hibeTeach"><a><i class="fa fa-users"></i> Enseignants <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<?= base_url()?>/teacher/save">Enregistrer les enseignants</a></li>
                     <li><a href="<?= base_url()?>/teacher/Importer">Importer</a></li>
                     <li><a href="<?= base_url()?>/teacher/list">Lister les enseignants</a></li>
                     <li><a href="<?= base_url()?>/teacher/giveClass">Attribuer une classe</a></li>
-                    <li><a href="<?= base_url()?>/teacher/salary">Salaires</a></li>
+                    <li><a href="<?= base_url()?>/teacher/giveSubjet">Attribuer les matières</a></li>
+                    <!-- <li><a href="<?= base_url()?>/teacher/salary">Salaires</a></li> -->
                     <!-- <li><a href="<?= base_url()?>/teacher/HistoriqueSalaire">Historique de paiement</a></li> -->
                     <!-- <li><a href="<?= base_url()?>/teacher/readRapport">Ecrire mon rapport</a></li> -->
                 </ul>
@@ -77,13 +84,18 @@
                 <ul class="nav child_menu">
                     <li><a href="<?= base_url()?>/note/save">Enregister les notes</a></li>
                     <li><a href="<?= base_url()?>/note/list">Lister les notes</a></li>
-                    <li><a href="<?= base_url()?>/trimestre/save">Enregistrer les Trimestres</a></li>
-                    <li><a href="<?= base_url()?>/trimestre/list">Lister les Trimestres</a></li>
-                    <li><a href="<?= base_url()?>/sequence/save">Enregistrer les Séquences</a></li>
-                    <li><a href="<?= base_url()?>/sequence/list">Lister les Séquences</a></li>
+                    <li class="noteAccess"><a href="<?= base_url()?>/trimestre/save">Enregistrer les Trimestres</a></li>
+                    <li class="noteAccess"><a href="<?= base_url()?>/trimestre/list">Lister les Trimestres</a></li>
+                    <li class="noteAccess"><a href="<?= base_url()?>/sequence/save">Enregistrer les Séquences</a></li>
+                    <li class="noteAccess"><a href="<?= base_url()?>/sequence/list">Lister les Séquences</a></li>
                 </ul>
             </li>
-            <li><a><i class="fa fa-users"></i> Matières <span class="fa fa-chevron-down"></span></a>
+            <li class="hibeTeach"><a><i class="fa fa-list"></i> Bulletin <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="<?= base_url()?>/note/imprimer_bulletin">Imprimer les bulletins</a></li>
+                </ul>
+            </li>
+            <li class="hibeTeach"><a><i class="fa fa-users"></i> Matières <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<?= base_url()?>/teaching_unit/save">Enregister</a></li>
                     <li><a href="<?= base_url()?>/teaching_unit/list">Lister</a></li>
@@ -128,12 +140,17 @@
         <div class="menu_section">
         <h3>Configurations</h3>
         <ul class="nav side-menu">
-            <li class="" id="001"><a><i class="fa fa-bank"></i> Ecole <span class="fa fa-chevron-down"></span></a>
+            <li class="" id="001E"><a><i class="fa fa-bank"></i> Ecole <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<?= base_url()?>/school/save">Enregistrer</a></li>
                     <li><a href="<?= base_url()?>/school/list">Lister</a></li>
                 </ul>
             </li>
+            <script>
+                if (localStorage.getItem('type_user') == "teacher") {
+                    $('#001E').hide();
+                }
+            </script>
             <li class="" id="001"><a><i class="fa fa-institution"></i> Classe <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="<?= base_url()?>/serie/save">Enregistrer les Séries</a></li>
@@ -143,9 +160,20 @@
                     <li><a href="<?= base_url()?>/class/list">Lister les Classes</a></li>
                 </ul>
             </li>
-            <li class="" id="001"><a><i class="fa fa-table"></i> Année Académique <span class="fa fa-chevron-down"></span></a>
+            <li class="" id="close_year"><a><i class="fa fa-close"></i> Cloturer l'année <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?= base_url()?>/years/save">Enregistrer</a></li>
+                    <li><a href="<?= base_url()?>/student/deliberation">Délibération</a></li>
+                    <li><a href="<?= base_url()?>/student/basculeNextYear">Basculer à l'année suivante.</a></li>
+                </ul>
+            </li>
+            <script>
+                if (localStorage.getItem('type_user') == "admin" && localStorage.getItem('type_user') == "super_admin") {
+                    $('#close_year').hide();
+                }
+            </script>
+            <li class="" id="001A"><a><i class="fa fa-table"></i> Année Académique <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a id="addyear" href="<?= base_url()?>/years/save">Enregistrer</a></li>
                     <li><a href="<?= base_url()?>/years/list">Lister</a></li>
                 </ul>
             </li>
@@ -209,7 +237,7 @@
 
     <!-- /menu footer buttons -->
     <div class="sidebar-footer hidden-small">
-        <a data-toggle="tooltip" data-placement="top" title="Paramètre">
+        <!-- <a data-toggle="tooltip" data-placement="top" title="Paramètre">
         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
         </a>
         <a data-toggle="tooltip" data-placement="top" title="FullScreen">
@@ -217,7 +245,7 @@
         </a>
         <a data-toggle="tooltip" data-placement="top" title="Lock">
         <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-        </a>
+        </a> -->
         <a data-toggle="tooltip" data-placement="top" title="Déconnexion" href="<?= base_url() ?>log-out-user">
             <span class="fa fa-sign-out" aria-hidden="true"></span>
         </a>
@@ -235,19 +263,42 @@
     let fonctionnality = localStorage.getItem('fonctionnality');
     
     $("#login").html(localStorage.getItem('login'));
-
+    if (type_user == "teacher"){
+        $('.hibeTeach').hide(); 
+        $('#001E').hide();
+        $('#close_year').hide();
+        $('#001A').hide();
+        $('#001').hide();
+        $('.noteAccess').hide();
+    }
     if (fonctionnality != "") {
         // Management of rigts
         // data_fonctionnality = 
         alert(fonctionnality);
         if (type_user == "admin") {
-            $("#users").removeClass("hide-option").addClass("show-option"); 
+            $("#users").removeClass("hide-option").addClass("show-option");
+            document.getElementById('addyear').classList.add("hide-option");
+            //document.getElementById('addyear').classList.add("show-option");
+            // $("#addyear").removeClass("show-option");
+        } else if (type_user == "SuperUser") {
+            $("#users").removeClass("hide-option").addClass("show-option");
+        } else if (type_user == "teacher"){
+            $('.hibeTeach').hide(); 
+            alert('rr');
+
         }
     }else{
+        /*if (type_user == "admin") {
+            document.getElementById('addyear').classList.add("hide-option");
+            document.getElementById('001E').classList.add("hide-option");
+        } else if (type_user == "SuperUser") {
+            $("#users").removeClass("hide-option").addClass("show-option");
+            $("#001E").removeClass("hide-option").addClass("show-option");
+        }*/
         // sorry no authorisation
         $(document).ready(function(){
             function show_toast(){
-                toastr["warning"]("Cher "+login+" vous n'avez auccun droit actif", "Alerte");
+                //toastr["warning"]("Cher "+login+" vous n'avez auccun droit actif", "Alerte");
             }
             setInterval(show_toast(), 5000);
         })

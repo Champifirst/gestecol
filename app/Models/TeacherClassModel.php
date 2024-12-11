@@ -73,14 +73,19 @@ class TeacherClassModel extends Model
 
     public function getClassOneTeacher($id_teacher, $year_id){
         $builder = $this->db->table('teacher_class');
-        $builder->select('class.class_id, class.name');
+        $builder->select('class.class_id, class.name, teacher_school.type_ens, teacher_school.salaire');
         $builder->join('class', 'class.class_id=teacher_class.class_id');
         $builder->join('teacher', 'teacher.teacher_id=teacher_class.teacher_id');
+        $builder->join('teacher_school', 'teacher_school.teacher_id=teacher.teacher_id');
+        $builder->join('school', 'school.school_id=teacher_school.school_id');
 
         $builder->where('teacher_class.teacher_id', $id_teacher);
         $builder->where('teacher_class.year_id', $year_id);
         $builder->where('teacher_class.etat_teacher_class', 'actif');
         $builder->where('teacher_class.status_teacher_class', 0);
+
+        $builder->where('teacher_school.etat_teacher_school', 'actif');
+        $builder->where('teacher_school.status_teacher_school', 0);
 
         $builder->where('class.status_class', 0);
         $builder->where('class.etat_class', 'actif');
@@ -114,6 +119,36 @@ class TeacherClassModel extends Model
         $res  = $builder->get();
         return $res->getResultArray();
     }
+
+
+    public function getTeachersBySchoolAndYear($id_school, $year_id)
+    {
+        $builder = $this->db->table('teacher');
+        
+        $builder->select('teacher.teacher_id, teacher.matricule, teacher.name, teacher.surname, teacher.diplome, teacher.tel, teacher.sexe, teacher.email, teacher.type_ens, teacher_school.salaire');
+        
+        // Jointure avec la table teacher_school pour récupérer l'école et l'année
+        $builder->join('teacher_school', 'teacher_school.teacher_id = teacher.teacher_id', 'inner');
+        
+        // Conditions pour filtrer par école et année
+        $builder->where('teacher_school.school_id', $id_school);
+        $builder->where('teacher_school.year_id', $year_id);
+        
+        // Conditions pour s'assurer que l'enseignant et sa relation avec l'école sont actifs
+        $builder->where('teacher.status_teacher', 0);
+        $builder->where('teacher.etat_teacher', 'actif');
+        $builder->where('teacher_school.status_teacher_school', 0);
+        $builder->where('teacher_school.etat_teacher_school', 'actif');
+        
+        // Exécution de la requête et récupération des résultats
+        $res = $builder->get();
+        
+        // Retourne les résultats sous forme de tableau associatif
+        return $res->getResultArray();
+    }
+
+    
+
     
 
     // public function getClassTeacher($id_school, $id_session, $id_cycle, $year_id){

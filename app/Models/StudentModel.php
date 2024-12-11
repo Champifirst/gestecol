@@ -57,6 +57,37 @@ class StudentModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
+    public function getstudentById($id_student){
+        $builder = $this->db->table('student');
+        $builder->select('*');
+        $builder->where('status_student', 0);
+        $builder->where('student_id', $id_student);
+        $builder->where('etat_student', 'actif');
+        
+        $res  = $builder->get();
+        return $res->getResultArray();
+    }
+    
+    public function getStudentBySectionYear($year_id){
+        $builder = $this->db->table('student');
+        $builder->select('student.student_id, student.surname, student.name, student.birth_place, student.date_of_birth, student.photo, student.nationality, student.sexe, student.matricule, student.status_student, student.etat_student, student.year_id, student.parent_id, student.created_at, student.updated_at, student.deleted_at');
+        $builder->join("student_session", "student_session.student_id = student.student_id", "inner");
+        $builder->join("session", "session.session_id = student_session.session_id", "inner");
+        $builder->join("year", "year.year_id = student_session.year_id", "inner");
+
+        $builder->where('student_session.year_id', $year_id);
+        $builder->where('student_session.status_stu_sess', 0);
+        $builder->where('student_session.etat_stu_sess', 'actif');
+        $builder->where('student.status_student', 0);
+        $builder->where('student.etat_student', 'actif');
+        $builder->where('session.status_session', 0);
+        $builder->where('session.etat_session', 'actif');
+        $builder->orderBy('student.name', 'ASC');
+        
+        $res  = $builder->get();
+        return $res->getResultArray();
+    }
+
     public function getAllStudent(){
         $builder = $this->db->table('student');
         $builder->select('*');
@@ -293,6 +324,7 @@ class StudentModel extends Model
         $res  = $builder->get();
         return $res->getResultArray();
     }
+    
 
     public function getStudentByClassYear($id_class, $year_id){
         $builder = $this->db->table('student');

@@ -1,0 +1,129 @@
+INFO - 2024-11-05 09:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-05 10:26:43 --> FPDF error: The document is closed
+in APPPATH/Controllers/fpdf/fpdf.php on line 274.
+ 1 APPPATH/Controllers/fpdf/fpdf.php(1453): App\Controllers\FPDF->Error()
+ 2 APPPATH/Controllers/fpdf/fpdf.php(522): App\Controllers\FPDF->_out()
+ 3 APPPATH/Controllers/report/FPDF_BULLETIN.php(781): App\Controllers\FPDF->SetFont()
+ 4 APPPATH/Controllers/StudentController.php(2454): App\Controllers\BulletinPremierTrimestre->listingAnnuel()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-05 10:26:59 --> FPDF error: The document is closed
+in APPPATH/Controllers/fpdf/fpdf.php on line 274.
+ 1 APPPATH/Controllers/fpdf/fpdf.php(1453): App\Controllers\FPDF->Error()
+ 2 APPPATH/Controllers/fpdf/fpdf.php(522): App\Controllers\FPDF->_out()
+ 3 APPPATH/Controllers/report/FPDF_BULLETIN.php(781): App\Controllers\FPDF->SetFont()
+ 4 APPPATH/Controllers/StudentController.php(2454): App\Controllers\BulletinPremierTrimestre->listingAnnuel()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-05 10:27:17 --> FPDF error: The document is closed
+in APPPATH/Controllers/fpdf/fpdf.php on line 274.
+ 1 APPPATH/Controllers/fpdf/fpdf.php(1453): App\Controllers\FPDF->Error()
+ 2 APPPATH/Controllers/fpdf/fpdf.php(522): App\Controllers\FPDF->_out()
+ 3 APPPATH/Controllers/report/FPDF_BULLETIN.php(781): App\Controllers\FPDF->SetFont()
+ 4 APPPATH/Controllers/StudentController.php(2454): App\Controllers\BulletinPremierTrimestre->listingAnnuel()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-05 10:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-05 10:29:40 --> FPDF error: The document is closed
+in APPPATH/Controllers/fpdf/fpdf.php on line 274.
+ 1 APPPATH/Controllers/fpdf/fpdf.php(1453): App\Controllers\FPDF->Error()
+ 2 APPPATH/Controllers/fpdf/fpdf.php(522): App\Controllers\FPDF->_out()
+ 3 APPPATH/Controllers/report/FPDF_BULLETIN.php(781): App\Controllers\FPDF->SetFont()
+ 4 APPPATH/Controllers/StudentController.php(2454): App\Controllers\BulletinPremierTrimestre->listingAnnuel()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-05 10:30:05 --> FPDF error: The document is closed
+in APPPATH/Controllers/fpdf/fpdf.php on line 274.
+ 1 APPPATH/Controllers/fpdf/fpdf.php(1453): App\Controllers\FPDF->Error()
+ 2 APPPATH/Controllers/fpdf/fpdf.php(522): App\Controllers\FPDF->_out()
+ 3 APPPATH/Controllers/report/FPDF_BULLETIN.php(781): App\Controllers\FPDF->SetFont()
+ 4 APPPATH/Controllers/StudentController.php(2454): App\Controllers\BulletinPremierTrimestre->listingAnnuel()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-05 10:54:12 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::AddHeaderStudent()
+in APPPATH/Controllers/StudentController.php on line 2453.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-05 11:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 11:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-05 11:08:20 --> Undefined variable $postx
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 483.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(483): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/StudentController.php(2453): App\Controllers\BulletinPremierTrimestre->AddHeaderStudent()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-05 11:09:31 --> Call to a member function SetXY() on null
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 489.
+ 1 APPPATH/Controllers/StudentController.php(2453): App\Controllers\BulletinPremierTrimestre->AddHeaderStudent()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-05 11:10:28 --> Call to a member function Cell() on null
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 490.
+ 1 APPPATH/Controllers/StudentController.php(2453): App\Controllers\BulletinPremierTrimestre->AddHeaderStudent()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-05 12:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 12:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-05 12:03:07 --> Undefined variable $posty
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 660.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(660): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/StudentController.php(2465): App\Controllers\BulletinPremierTrimestre->footerBulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-05 12:03:22 --> Undefined variable $posty
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 660.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(660): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/StudentController.php(2465): App\Controllers\BulletinPremierTrimestre->footerBulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-05 12:04:36 --> Undefined variable $posty
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 660.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(660): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/StudentController.php(2465): App\Controllers\BulletinPremierTrimestre->footerBulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-05 13:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

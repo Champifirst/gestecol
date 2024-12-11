@@ -107,6 +107,14 @@ class SchoolController extends ResourcePresenter
                 'rules'                 => 'required'
             ]
         ];
+
+        // session
+        $HistorySession = new HistorySession();
+        $data_session = $HistorySession-> getInfoSession();
+        $id_user   = $data_session['id_user'];
+        $type_user = $data_session['type_user'];
+        $login     = $data_session['login'];
+        $password  = $data_session['password'];
        
         if ($this->validate($rules)) {
             $name_school        = $this->request->getvar('name_school');
@@ -122,14 +130,6 @@ class SchoolController extends ResourcePresenter
             $logo               = $this->request->getFile('logo');
             $matricule          = $this->request->getvar('matricule');
 
-
-            // session
-            $HistorySession = new HistorySession();
-            $data_session = $HistorySession-> getInfoSession();
-            $id_user   = $data_session['id_user'];
-            $type_user = $data_session['type_user'];
-            $login     = $data_session['login'];
-            $password  = $data_session['password'];
             //-- if school exists
             $data_school = $SchoolModel->getSchool($name_school, $coded_school,$create_at_school,$responsable,$email);
 
@@ -278,6 +278,14 @@ class SchoolController extends ResourcePresenter
                 'rules'                 => 'required'
             ]
         ];
+
+        // session
+        $HistorySession = new HistorySession();
+        $data_session = $HistorySession-> getInfoSession();
+        $id_user   = $data_session['id_user'];
+        $type_user = $data_session['type_user'];
+        $login     = $data_session['login'];
+        $password  = $data_session['password'];
        
         if ($this->validate($rules)) {
             $name_school        = $this->request->getvar('name_school');
@@ -294,14 +302,6 @@ class SchoolController extends ResourcePresenter
             $school_id          = $this->request->getvar('school_id');
             $color = $color1.",".$color2;
             $phone = $phone1.",".$phone2;
-
-            // session
-            $HistorySession = new HistorySession();
-            $data_session = $HistorySession-> getInfoSession();
-            $id_user   = $data_session['id_user'];
-            $type_user = $data_session['type_user'];
-            $login     = $data_session['login'];
-            $password  = $data_session['password'];
 
             /*====================== IMPORT PHOTO ======================*/
             $name_logo = $logo->getName();

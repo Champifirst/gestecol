@@ -573,7 +573,7 @@
 	        $posty = 12;
 
 	        /*-------------------*/ // entete
-			$this->SetFont('times', 'B', 9);
+			$this->SetFont('times', 'B', 11);
 			$this->SetDrawColor(71, 151, 45);
 	        $this->SetFillColor(71, 151, 45);
 	        $this->SetTextColor(255, 255, 255);
@@ -613,7 +613,7 @@
 
 			$postx = 12;
 
-			$this->SetFont('times', 'B', 7);
+			$this->SetFont('times', 'B', 9);
 			$this->SetDrawColor(0, 0, 0);
 	        $this->SetFillColor(164, 227, 136);
 	        $this->SetTextColor(0, 0, 0);
@@ -636,7 +636,7 @@
 
 	        $posty = $posty+45+9+6+6+10+5;
 	        $count = 0;
-	        $this->SetFont('times', '','7');
+	        $this->SetFont('times', '','9');
 	        for ($i=0; $i < sizeof($data); $i++) { 
 	            
 	            if ($count >= 20) {
@@ -650,26 +650,26 @@
 	                $count = 0;
 
 	            }else{
-					$this->SetFont('times', 'B', 6);
+					$this->SetFont('times', 'B', 9);
 					$this->SetDrawColor(0, 0, 0);
 					$this->SetFillColor(164, 227, 136);
 					$this->SetTextColor(0, 0, 0);
 					$this->SetXY($postx+1,$posty+45-45);
-					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'C', false);
+					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'L', false);
 					$this->SetXY($postx+9,$posty+45-45);
-					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'C', false);
+					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'L', false);
 					$this->SetXY($postx+8+6+27,$posty+45-45);
-					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'C', false);
+					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'L', false);
 					$this->SetXY($postx+8+45+62,$posty+45-45);
-					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+2,$posty+45-45);
-					$this->Cell(26,4,utf8_decode($data[$i]['classe']),1,1,'C', false);
+					$this->Cell(26,4,utf8_decode($data[$i]['classe']),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+28,$posty+45-45);
-					$this->Cell(61,4,utf8_decode($data[$i]['parent']),1,1,'C', false);
+					$this->Cell(61,4,utf8_decode($data[$i]['parent']),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+25+19+45,$posty+45-45);
-					$this->Cell(26,4,utf8_decode($data[$i]['phone']),1,1,'C', false);
+					$this->Cell(26,4,utf8_decode($data[$i]['phone']),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+25+19+39+32,$posty+45-45);
-					$this->Cell(26,4,utf8_decode($data[$i]['redouble']),1,1,'C', false);
+					$this->Cell(26,4,utf8_decode($data[$i]['redouble']),1,1,'L', false);
 
 	                $posty = $posty +4;
 	                $count++;
@@ -678,13 +678,142 @@
 	        }
     	}
 
+
+		function fiche_notes($title, $classe, $session, $cycle, $data, $garcon, $fille, $enseignant, $year, $school, $contact, $matricule, $msg){
+
+	        $postx = 12;
+	        $posty = 12;
+
+	        /*-------------------*/ // entete
+			$this->SetFont('times', 'B', 11);
+			$this->SetDrawColor(71, 151, 45);
+	        $this->SetFillColor(71, 151, 45);
+	        $this->SetTextColor(255, 255, 255);
+			$this->SetXY($postx+45,$posty+45);
+	        $this->Cell(175,6,utf8_decode($title),1,1,'C', true);
+			$postx = 12+30;
+			$this->SetXY($postx+14,$posty+45+9);
+			$this->SetTextColor(0, 0, 0);	
+			$this->SetFont('times', '', 9);
+			$this->Cell(120,5,utf8_decode("Classe: "),0,1,'L', false);
+			$this->SetXY($postx+14+10,$posty+45+9);
+			$this->SetFont('times', 'B', 9);
+			$this->Cell(120,5,utf8_decode($classe),0,1,'L', false);
+			$this->SetXY($postx+14+10+30,$posty+45+9);
+			$this->Cell(120,5,utf8_decode("[ Session ".$session." ]"),0,1,'L', false);
+			$this->SetXY($postx+14+10+30+50,$posty+45+9);
+			$this->Cell(120,5,utf8_decode("[ ".$cycle." ]"),0,1,'L', false);
+			$this->SetFont('times', '', 9);
+			$this->SetXY($postx+14,$posty+45+9+6+3);
+			$this->Cell(120,5,utf8_decode("Enseignant(e): .........................................................................................................................."),0,1,'L', false);
+			$this->SetXY($postx+14+125,$posty+45+9+6+3);
+			$this->SetFont('times', '', 9);
+			$this->Cell(120,5,utf8_decode("Matière : ....................................................................................................."),0,1,'L', false);
+
+			$postx = 12;
+
+			$this->SetFont('times', 'B', 9);
+			$this->SetDrawColor(0, 0, 0);
+			$this->SetFillColor(164, 227, 136);
+			$this->SetTextColor(0, 0, 0);
+
+			// Positionnement des en-têtes de colonnes avec des largeurs ajustées
+			$this->SetXY($postx+1, $posty+45+9+6+6+10);
+			$this->Cell(8, 5, utf8_decode('N°'), 1, 1, 'C', true);
+
+			$this->SetXY($postx+9, $posty+45+9+6+6+10);
+			$this->Cell(32, 5, utf8_decode('MATRICULE'), 1, 1, 'C', true);
+
+			$this->SetXY($postx+41, $posty+45+9+6+6+10);
+			$this->Cell(74, 5, utf8_decode('NOMS ET PRENOMS'), 1, 1, 'C', true);
+
+			$this->SetXY($postx+115, $posty+45+9+6+6+10);
+			$this->Cell(10, 5, utf8_decode('coef'), 1, 1, 'C', true);
+
+			$this->SetXY($postx+125, $posty+45+9+6+6+5);
+			$this->Cell(50, 5, utf8_decode('TRIMESTRE 1'), 1, 1, 'C', true);
+
+			$this->SetXY($postx+125, $posty+45+9+6+6+10);
+			$this->Cell(25, 5, utf8_decode('Seq 1'), 1, 1, 'C', true);
+			$this->SetXY($postx+150, $posty+45+9+6+6+10);
+			$this->Cell(25, 5, utf8_decode('Seq 2'), 1, 1, 'C', true);
+
+			$this->SetXY($postx+175, $posty+45+9+6+6+5);
+			$this->Cell(50, 5, utf8_decode('TRIMESTRE 2'), 1, 1, 'C', true);
+
+			$this->SetXY($postx+175, $posty+45+9+6+6+10);
+			$this->Cell(25, 5, utf8_decode('Seq 3'), 1, 1, 'C', true);
+			$this->SetXY($postx+200, $posty+45+9+6+6+10);
+			$this->Cell(25, 5, utf8_decode('Seq 4'), 1, 1, 'C', true);
+
+
+			$this->SetXY($postx+225, $posty+45+9+6+6+5);
+			$this->Cell(50, 5, utf8_decode('TRIMESTRE 3'), 1, 1, 'C', true);
+
+			$this->SetXY($postx+225, $posty+45+9+6+6+10);
+			$this->Cell(25, 5, utf8_decode('Seq 5'), 1, 1, 'C', true);
+			$this->SetXY($postx+250, $posty+45+9+6+6+10);
+			$this->Cell(25, 5, utf8_decode('Seq 6'), 1, 1, 'C', true);
+
+			// Mise à jour de $posty pour la ligne suivante
+			$posty = $posty + 45 + 9 + 6 + 6 + 10 + 5;
+
+	        $count = 0;
+	        $this->SetFont('times', '','9');
+	        for ($i=0; $i < sizeof($data); $i++) { 
+	            
+	            if ($count >= 17) {
+	                $this->AddPage(); 
+	                $this->Filigramme("School");
+	                $this->header_p($year, $school, $contact, $matricule);
+					$this->footer_listing(38, $msg);
+					
+	                $postx = 12;
+	        		$posty = 12+45;
+	                $count = 0;
+
+	            }else{
+					$this->SetFont('times', 'B', 9);
+					$this->SetDrawColor(0, 0, 0);
+					$this->SetFillColor(164, 227, 136);
+					$this->SetTextColor(0, 0, 0);
+					$this->SetXY($postx+1,$posty+45-45);
+					$this->Cell(8,6,utf8_decode($data[$i]['num']),1,1,'L', false);
+					$this->SetXY($postx+9,$posty+45-45);
+					$this->Cell(32,6,utf8_decode($data[$i]['mat']),1,1,'L', false);
+					$this->SetXY($postx+8+6+27,$posty+45-45);
+					$this->Cell(74,6,utf8_decode($data[$i]['nom']),1,1,'L', false);
+					$this->SetXY($postx+8+45+62,$posty+45-45);
+					$this->Cell(10,6,utf8_decode(''),1,1,'L', false);
+					$this->SetXY($postx+8+45+70+2,$posty+45-45);
+					$this->Cell(25,6,utf8_decode(''),1,1,'L', false);
+					$this->SetXY($postx+150,$posty+45-45);
+					$this->Cell(25,6,utf8_decode(''),1,1,'L', false);
+					$this->SetXY($postx+175,$posty+45-45);
+					$this->Cell(25,6,utf8_decode(''),1,1,'L', false);
+					$this->SetXY($postx+200,$posty+45-45);
+					$this->Cell(25,6,utf8_decode(''),1,1,'L', false);
+					$this->SetXY($postx+225,$posty+45-45);
+					$this->Cell(25,6,utf8_decode(''),1,1,'L', false);
+					$this->SetXY($postx+250,$posty+45-45);
+					$this->Cell(25,6,utf8_decode(''),1,1,'L', false);
+					// $this->SetXY($postx+8+45+70+25+19+45,$posty+45-45);
+
+	                $posty = $posty +6;
+	                $count++;
+	            }
+	            
+	        }
+    	}
+
+
 		function fiche_presence($title, $classe, $session, $cycle, $data, $garcon, $fille, $enseignant, $year, $school, $contact, $matricule, $msg){
 
 	        $postx = 12;
 	        $posty = 12;
 
 	        /*-------------------*/ // entete
-			$this->SetFont('times', 'B', 9);
+			$this->SetFont('times', 'B', 11);
 			$this->SetDrawColor(71, 151, 45);
 	        $this->SetFillColor(71, 151, 45);
 	        $this->SetTextColor(255, 255, 255);
@@ -721,7 +850,7 @@
 			// QrCode
 			$this->Image('images.png', $postx+160,45+9+12,25,20);
 
-			$this->SetFont('times', 'B', 7);
+			$this->SetFont('times', 'B', 9);
 			$this->SetDrawColor(0, 0, 0);
 	        $this->SetFillColor(164, 227, 136);
 	        $this->SetTextColor(0, 0, 0);
@@ -742,7 +871,7 @@
 
 	        $posty = $posty+45+9+6+6+10+5;
 	        $count = 0;
-	        $this->SetFont('times', '','7');
+	        $this->SetFont('times', '','11');
 	        for ($i=0; $i < sizeof($data); $i++) { 
 	            
 	            if ($count >= 40) {
@@ -757,24 +886,24 @@
 	                $count = 0;
 
 	            }else{
-					$this->SetFont('times', 'B', 6);
+					$this->SetFont('times', 'B', 9);
 					$this->SetDrawColor(0, 0, 0);
 					$this->SetFillColor(164, 227, 136);
 					$this->SetTextColor(0, 0, 0);
 					$this->SetXY($postx+1,$posty+45-45);
-					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'C', false);
+					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'L', false);
 					$this->SetXY($postx+9,$posty+45-45);
-					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'C', false);
+					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'L', false);
 					$this->SetXY($postx+8+6+27,$posty+45-45);
-					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'C', false);
+					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'L', false);
 					$this->SetXY($postx+8+45+62,$posty+45-45);
-					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+2,$posty+45-45);
-					$this->Cell(24,4,utf8_decode(""),1,1,'C', false);
+					$this->Cell(24,4,utf8_decode(""),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+26,$posty+45-45);
-					$this->Cell(18,4,utf8_decode(""),1,1,'C', false);
+					$this->Cell(18,4,utf8_decode(""),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+25+19,$posty+45-45);
-					$this->Cell(18,4,utf8_decode(""),1,1,'C', false);
+					$this->Cell(18,4,utf8_decode(""),1,1,'L', false);
 
 	                $posty = $posty +4;
 	                $count++;
@@ -789,7 +918,7 @@
 	        $posty = 12;
 
 	        /*-------------------*/ // entete
-			$this->SetFont('times', 'B', 9);
+			$this->SetFont('times', 'B', 11);
 			$this->SetDrawColor(71, 151, 45);
 	        $this->SetFillColor(71, 151, 45);
 	        $this->SetTextColor(255, 255, 255);
@@ -818,7 +947,7 @@
 			// QrCode
 			$this->Image('images.png', $postx+160,45+9+12,25,20);
 
-			$this->SetFont('times', 'B', 7);
+			$this->SetFont('times', 'B', 11);
 			$this->SetDrawColor(0, 0, 0);
 	        $this->SetFillColor(164, 227, 136);
 	        $this->SetTextColor(0, 0, 0);
@@ -837,7 +966,7 @@
 
 	        $posty = $posty+45+9+6+6+10+5;
 	        $count = 0;
-	        $this->SetFont('times', '','7');
+	        $this->SetFont('times', '','11');
 	        for ($i=0; $i < sizeof($data); $i++) { 
 	            
 	            if ($count >= 40) {
@@ -852,18 +981,18 @@
 	                $count = 0;
 
 	            }else{
-					$this->SetFont('times', 'B', 6);
+					$this->SetFont('times', 'B', 9);
 					$this->SetDrawColor(0, 0, 0);
 					$this->SetFillColor(164, 227, 136);
 					$this->SetTextColor(0, 0, 0);
 					$this->SetXY($postx+1,$posty+45-45);
-					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'C', false);
+					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'L', false);
 					$this->SetXY($postx+9,$posty+45-45);
-					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'C', false);
+					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'L', false);
 					$this->SetXY($postx+8+6+27,$posty+45-45);
-					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'C', false);
+					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'L', false);
 					$this->SetXY($postx+8+45+62,$posty+45-45);
-					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+2,$posty+45-45);
 					$this->Cell(26,4,utf8_decode(""),1,1,'C', false);
 					$this->SetXY($postx+8+45+70+28,$posty+45-45);
@@ -881,7 +1010,7 @@
 	        $postx = 12;
 	        $posty = 12;
 
-	        $this->SetFont('times', 'B', 9);
+	        $this->SetFont('times', 'B', 11);
 			$this->SetDrawColor(71, 151, 45);
 	        $this->SetFillColor(71, 151, 45);
 	        $this->SetTextColor(255, 255, 255);
@@ -918,7 +1047,7 @@
 			// QrCode
 			$this->Image('images.png', $postx+160,45+9+12,25,20);
 
-			$this->SetFont('times', 'B', 7);
+			$this->SetFont('times', 'B', 9);
 			$this->SetDrawColor(0, 0, 0);
 	        $this->SetFillColor(164, 227, 136);
 	        $this->SetTextColor(0, 0, 0);
@@ -937,7 +1066,7 @@
 
 	        $posty = $posty+45+9+6+6+10+5;
 	        $count = 0;
-	        $this->SetFont('times', '','7');
+	        $this->SetFont('times', '','9');
 	        for ($i=0; $i < sizeof($data); $i++) { 
 	            
 	            if ($count >= 40) {
@@ -952,22 +1081,22 @@
 	                $count = 0;
 
 	            }else{
-					$this->SetFont('times', 'B', 6);
+					$this->SetFont('times', 'B', 9);
 					$this->SetDrawColor(0, 0, 0);
 					$this->SetFillColor(164, 227, 136);
 					$this->SetTextColor(0, 0, 0);
 					$this->SetXY($postx+1,$posty+45-45);
-					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'C', false);
+					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'L', false);
 					$this->SetXY($postx+9,$posty+45-45);
-					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'C', false);
+					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'L', false);
 					$this->SetXY($postx+8+6+27,$posty+45-45);
-					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'C', false);
+					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'L', false);
 					$this->SetXY($postx+8+45+62,$posty+45-45);
-					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+2,$posty+45-45);
-					$this->Cell(26,4,utf8_decode($data[$i]['amount'].' Fcfa'),1,1,'C', false);
+					$this->Cell(26,4,utf8_decode($data[$i]['amount'].' Fcfa'),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+28,$posty+45-45);
-					$this->Cell(16+18,4,utf8_decode($data[$i]['date']),1,1,'C', false);
+					$this->Cell(16+18,4,utf8_decode($data[$i]['date']),1,1,'L', false);
 
 	                $posty = $posty +4;
 	                $count++;
@@ -980,7 +1109,7 @@
 	        $postx = 12;
 	        $posty = 12;
 
-	        $this->SetFont('times', 'B', 9);
+	        $this->SetFont('times', 'B', 11);
 			$this->SetDrawColor(71, 151, 45);
 	        $this->SetFillColor(71, 151, 45);
 	        $this->SetTextColor(255, 255, 255);
@@ -1017,7 +1146,7 @@
 			// QrCode
 			$this->Image('images.png', $postx+160,45+9+12,25,20);
 
-			$this->SetFont('times', 'B', 7);
+			$this->SetFont('times', 'B', 9);
 			$this->SetDrawColor(0, 0, 0);
 	        $this->SetFillColor(164, 227, 136);
 	        $this->SetTextColor(0, 0, 0);
@@ -1036,7 +1165,7 @@
 
 	        $posty = $posty+45+9+6+6+10+5;
 	        $count = 0;
-	        $this->SetFont('times', '','7');
+	        $this->SetFont('times', '','9');
 	        for ($i=0; $i < sizeof($data); $i++) { 
 	            
 	            if ($count >= 40) {
@@ -1051,28 +1180,583 @@
 	                $count = 0;
 
 	            }else{
-					$this->SetFont('times', 'B', 6);
+					$this->SetFont('times', 'B', 9);
 					$this->SetDrawColor(0, 0, 0);
 					$this->SetFillColor(164, 227, 136);
 					$this->SetTextColor(0, 0, 0);
 					$this->SetXY($postx+1,$posty+45-45);
-					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'C', false);
+					$this->Cell(8,4,utf8_decode($data[$i]['num']),1,1,'L', false);
 					$this->SetXY($postx+9,$posty+45-45);
-					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'C', false);
+					$this->Cell(32,4,utf8_decode($data[$i]['mat']),1,1,'L', false);
 					$this->SetXY($postx+8+6+27,$posty+45-45);
-					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'C', false);
+					$this->Cell(74,4,utf8_decode($data[$i]['nom']),1,1,'L', false);
 					$this->SetXY($postx+8+45+62,$posty+45-45);
-					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+2,$posty+45-45);
-					$this->Cell(26,4,utf8_decode($data[$i]['amount'].' '),1,1,'C', false);
+					$this->Cell(26,4,utf8_decode($data[$i]['amount'].' '),1,1,'L', false);
 					$this->SetXY($postx+8+45+70+28,$posty+45-45);
-					$this->Cell(16+18,4,utf8_decode($data[$i]['date']),1,1,'C', false);
+					$this->Cell(16+18,4,utf8_decode($data[$i]['date']),1,1,'L', false);
 
 	                $posty = $posty +4;
 	                $count++;
 	            }
 	        }
     	}
+
+		/*----------------------------------------------------------------
+		* LISTING STATISTIQUE DE PAYEMENT
+		*----------------------------------------------------------------*/
+		function listing_stat_payement($data, $garcon, $fille, $year, $montant_verser, $scolarite, $classe, $school, $contact, $matricule, $type_liste){
+			
+	        $postx = 12;
+	        $posty = 12;
+
+	        /*-------------------*/ // entete
+			$this->SetFont('times', 'B', 11);
+			$this->SetDrawColor(71, 151, 45);
+	        $this->SetFillColor(71, 151, 45);
+	        $this->SetTextColor(255, 255, 255);
+			$this->SetXY($postx+45,$posty+45);
+	        $this->Cell(100,6,utf8_decode("STATISTIQUE DE SCOLARITE "),1,1,'C', true);
+			$this->SetTextColor(0, 0, 0);
+			$this->SetFont('times', '', 9);
+			$this->SetXY($postx+14,$posty+45+9);
+			$this->Cell(120,5,utf8_decode("Effectif: "),0,1,'L', false);
+			$this->SetXY($postx+14+13,$posty+45+9);
+			$this->SetFont('times', 'B', 9);
+			$this->Cell(120,5,utf8_decode(($garcon+$fille)),0,1,'L', false);
+			$this->SetXY($postx+14+10+30,$posty+45+9);
+			$this->Cell(120,5,utf8_decode("[ Garçons: ".$garcon." ]"),0,1,'L', false);
+			$this->SetXY($postx+14+10+30+50,$posty+45+9);
+			$this->Cell(120,5,utf8_decode("[ Fille: ".$fille." ]"),0,1,'L', false);
+			$this->SetXY($postx+14+10+30+50+20,$posty+45+9);
+			$this->Cell(120,5,utf8_decode("[ Classe: ".mb_strtoupper($classe)." ]"),0,1,'L', false);
+			$this->SetXY($postx+14+20,$posty+45+9+6+3);
+			$this->SetFont('times', 'B', 9);
+			$this->Cell(120,5,utf8_decode("ANNÉE SCOLAIRE ".$year),0,1,'C', false);
+
+			// QrCode
+			$this->Image('images.png', $postx+160,45+9+12,25,10);
+
+			// QrCode
+
+			$this->SetDrawColor(0, 0, 0);
+	        $this->SetFillColor(164, 227, 136);
+	        $this->SetTextColor(0, 0, 0);
+			//-- TOTAL VERSER SUR
+			$mt_verser = 0;
+			$mt_scolar = 0;
+			$mt_reste  = 0;
+			$mt_reduction = 0;
+			for ($i=0; $i < sizeof($data); $i++) {
+				if ($type_liste == "insolvable" && ($data[$i]['montant_verser'] < $scolarite)) {
+					$mt_verser += $data[$i]['montant_verser'];
+					$mt_scolar += $data[$i]['montant_scolar'];
+					$mt_reduction += $data[$i]['reduction_bourse'];
+				} else if($type_liste == "solvable" && ($data[$i]['montant_verser'] >= $scolarite)){
+					$mt_verser += $data[$i]['montant_verser'];
+					$mt_scolar += $data[$i]['montant_scolar'];
+					$mt_reduction += $data[$i]['reduction_bourse'];
+				}else if($type_liste == "insolvable_solvable"){
+					$mt_verser += $data[$i]['montant_verser'];
+					$mt_scolar += $data[$i]['montant_scolar'];
+					$mt_reduction += $data[$i]['reduction_bourse'];
+				}		
+			}	
+
+			//CALCUL DU RESTE A PAYER
+			$mt_reste = $mt_scolar - $mt_verser - $mt_reduction;
+
+			$this->SetXY($postx+1,$posty+45+9+6+6+5);
+			$this->Cell(46,5,utf8_decode('TOTAL SCOLARITE'),1,1,'C', true);
+			$this->SetXY($postx+47,$posty+45+9+6+6+5);
+			$this->Cell(46,5,utf8_decode('TOTAL REDUCTION'),1,1,'C', true);
+			$this->SetXY($postx+93,$posty+45+9+6+6+5);
+			$this->Cell(46,5,utf8_decode('DEJA VERSER'),1,1,'C', true);
+			$this->SetXY($postx+139,$posty+45+9+6+6+5);
+			$this->Cell(46,5,utf8_decode('RESTER A VERSER'),1,1,'C', true);
+
+
+			$this->SetXY($postx+1,$posty+45+9+6+6+10);
+			$this->Cell(46,5,utf8_decode(number_format($mt_scolar, 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+			$this->SetXY($postx+47,$posty+45+9+6+6+10);
+			$this->Cell(46,5,utf8_decode(number_format($mt_reduction, 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+			$this->SetXY($postx+93,$posty+45+9+6+6+10);
+			$this->Cell(46,5,utf8_decode(number_format($mt_verser, 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+			$this->SetXY($postx+139,$posty+45+9+6+6+10);
+			$this->Cell(46,5,utf8_decode(number_format($mt_reste, 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+			// $this->SetXY($postx+1,$posty+45+9+6+6+10);
+			// $this->Cell(184,5,utf8_decode('TOTAL : '.number_format($mt_scolar, 2, ',', ' ').' FCFA' .' / DEJA VERSER : '.number_format($mt_verser, 2, ',', ' ').' FCFA' .' / RESTE : '.number_format($mt_reste, 2, ',', ' ').' FCFA'),1,1,'C', true);
+			$posty += 5;
+
+			$this->SetFont('times', 'B', 9);
+	        $this->SetXY($postx+1,$posty+45+9+6+6+10);
+	        $this->Cell(8,5,utf8_decode('N°'),1,1,'C', true);
+			$this->SetXY($postx+9,$posty+45+9+6+6+10);
+	        $this->Cell(32,5,utf8_decode('MATRICULE'),1,1,'C', true);
+	        $this->SetXY($postx+8+6+27,$posty+45+9+6+6+10);
+	        $this->Cell(74-25,5,utf8_decode('NOMS ET PRENOMS '),1,1,'C', true);
+	        $this->SetXY($postx+90,$posty+45+9+6+6+10);
+	        $this->Cell(10,5,utf8_decode('SEXE'),1,1,'C', true);
+			$this->SetXY($postx+100,$posty+45+9+6+6+10);
+	        $this->Cell(15,5,utf8_decode('Réduction'),1,1,'C', true);
+			$this->SetXY($postx+8+45+70+2-10,$posty+45+9+6+6+10);
+	        $this->Cell(26,5,utf8_decode('MT V'),1,1,'C', true);
+			$this->SetXY($postx+8+45+70+2+16,$posty+45+9+6+6+10);
+	        $this->Cell(18,5,utf8_decode('MT R'),1,1,'C', true);
+	        $this->SetXY($postx+8+45+70+28+8,$posty+45+9+6+6+10);
+	        $this->Cell(16+18-8,5,utf8_decode('SCOLARITE '),1,1,'C', true);
+
+	        $posty = $posty+45+9+6+6+10+5;
+	        $count = 0;
+	        $this->SetFont('times', '','9');
+	        for ($i=0; $i < sizeof($data); $i++) {
+				if ($type_liste == "insolvable" && ($data[$i]['montant_verser'] < $scolarite)) {
+					$this->SetDrawColor(0, 0, 0);
+					$this->SetFillColor(164, 227, 136);
+					$this->SetTextColor(0, 0, 0); 
+					$this->SetFont('times', 'B', 8);
+					$this->SetXY($postx+1,$posty+45-45);
+					$this->Cell(8,4,($i+1),1,1,'C', false);
+					$this->SetXY($postx+9,$posty+45-45);
+					$this->Cell(32,4,utf8_decode(mb_strtoupper($data[$i]['matricule'])),1,1,'C', false);
+					$this->SetXY($postx+8+6+27,$posty+45-45);
+					$this->Cell(74-25,4,utf8_decode(mb_strtoupper($data[$i]['name']." ".$data[$i]['surname'])),1,1,'L', false);
+					$this->SetXY($postx+90,$posty+45-45);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+					$this->SetXY($postx+100,$posty+45-45);
+					$this->Cell(15, 4, utf8_decode($data[$i]['reduction_bourse'] != 0.00 ? number_format($data[$i]['reduction_bourse'], 2, ',', ' ') . ' FCFA' : ''), 1, 1, 'C', true);
+
+					$this->SetXY($postx+8+45+70+2-10,$posty+45-45);
+
+					if ($data[$i]['montant_verser'] >= $scolarite) {
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(255, 255, 255);
+						$this->SetTextColor(0, 0, 0);
+					}else{
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(197, 197, 197);
+						$this->SetTextColor(0, 0, 0);
+					}
+					$this->Cell(26,4,utf8_decode(number_format($data[$i]['montant_verser'], 2, ',', ' ').' FCFA'),1,1,'C', true);
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+
+					$this->SetXY($postx+8+45+70+2+16,$posty+45-45);
+					$this->Cell(18,4,utf8_decode(number_format(($data[$i]['montant_scolar'] - $data[$i]['montant_verser'] - $data[$i]["reduction_bourse"]), 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+
+					$this->Cell(16+18-8,4,utf8_decode(number_format($data[$i]["montant_scolar"], 2, ',', ' ')),1,1,'C', true);
+
+					$posty = $posty +4;
+					$count++;
+
+					if ($count >= 40) {
+						// $this->footer_listing_stat_pay(38, $classe);
+						$this->AddPage(); 
+						$this->Filigramme("School");
+						$this->header_portrait($year, $school, $contact, $matricule);
+						$this->footer_listing_stat_pay(38, $classe);
+						
+						$postx = 12;
+						$posty = 12+45;
+						$count = 0;
+
+					}
+				} else if($type_liste == "solvable" && ($data[$i]['montant_verser'] >= $scolarite)){
+					$this->SetDrawColor(0, 0, 0);
+					$this->SetFillColor(164, 227, 136);
+					$this->SetTextColor(0, 0, 0);
+					$this->SetFont('times', 'B', 8);
+					$this->SetXY($postx+1,$posty+45-45);
+					$this->Cell(8,4,($i+1),1,1,'C', false);
+					$this->SetXY($postx+9,$posty+45-45);
+					$this->Cell(32,4,utf8_decode(mb_strtoupper($data[$i]['matricule'])),1,1,'C', false);
+					$this->SetXY($postx+8+6+27,$posty+45-45);
+					$this->Cell(74-25,4,utf8_decode(mb_strtoupper($data[$i]['name']." ".$data[$i]['surname'])),1,1,'L', false);
+					$this->SetXY($postx+90,$posty+45-45);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+					$this->SetXY($postx+100,$posty+45-45);
+					$this->Cell(15, 4, utf8_decode($data[$i]['reduction_bourse'] != 0.00 ? number_format($data[$i]['reduction_bourse'], 2, ',', ' ') . ' FCFA' : ''), 1, 1, 'C', true);
+
+
+					$this->SetXY($postx+8+45+70+2-10,$posty+45-45);
+					if ($data[$i]['montant_verser'] >= $scolarite) {
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(255, 255, 255);
+						$this->SetTextColor(0, 0, 0);
+					}else{
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(197, 197, 197);
+						$this->SetTextColor(0, 0, 0);
+					}
+					$this->Cell(26,4,utf8_decode(number_format($data[$i]['montant_verser'], 2, ',', ' ').' FCFA'),1,1,'C', true);
+					
+					$this->SetXY($postx+8+45+70+2+16,$posty+45-45);
+					$this->Cell(18,4,utf8_decode(number_format(($data[$i]['montant_scolar'] - $data[$i]['montant_verser'] - $data[$i]["reduction_bourse"]), 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+
+					$this->Cell(16+18-8,4,utf8_decode(number_format($data[$i]["montant_scolar"], 2, ',', ' ')),1,1,'C', true);
+
+					$posty = $posty +4;
+					$count++;
+
+					if ($count >= 40) {
+						// $this->footer_listing_stat_pay(38, $classe);
+						$this->AddPage(); 
+						$this->Filigramme("School");
+						$this->header_portrait($year, $school, $contact, $matricule);
+						$this->footer_listing_stat_pay(38, $classe);
+						
+						$postx = 12;
+						$posty = 12+45;
+						$count = 0;
+
+					}
+				}else if($type_liste == "insolvable_solvable"){
+					$this->SetDrawColor(0, 0, 0);
+					$this->SetFillColor(164, 227, 136);
+					$this->SetTextColor(0, 0, 0);
+					$this->SetFont('times', 'B', 8);
+					$this->SetXY($postx+1,$posty+45-45);
+					$this->Cell(8,4,($i+1),1,1,'C', false);
+					$this->SetXY($postx+9,$posty+45-45);
+					$this->Cell(32,4,utf8_decode(mb_strtoupper($data[$i]['matricule'])),1,1,'C', false);
+					$this->SetXY($postx+8+6+27,$posty+45-45);
+					$this->Cell(74-25,4,utf8_decode(mb_strtoupper($data[$i]['name']." ".$data[$i]['surname'])),1,1,'L', false);
+					$this->SetXY($postx+90,$posty+45-45);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+					$this->SetXY($postx+100,$posty+45-45);
+					$this->Cell(15, 4, utf8_decode($data[$i]['reduction_bourse'] != 0.00 ? number_format($data[$i]['reduction_bourse'], 2, ',', ' ') . ' FCFA' : ''), 1, 1, 'C', true);
+
+					$this->SetXY($postx+8+45+70+2-10,$posty+45-45);
+					if ($data[$i]['montant_verser'] >= $scolarite) {
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(255, 255, 255);
+						$this->SetTextColor(0, 0, 0);
+					}else{
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(197, 197, 197);
+						$this->SetTextColor(0, 0, 0);
+					}
+					$this->Cell(26,4,utf8_decode(number_format($data[$i]['montant_verser'], 2, ',', ' ').' FCFA'),1,1,'C', true);
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+
+					$this->SetXY($postx+8+45+70+2+16,$posty+45-45);
+					$this->Cell(18,4,utf8_decode(number_format(($data[$i]['montant_scolar'] - $data[$i]['montant_verser'] - $data[$i]["reduction_bourse"]), 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+					$chaine_reduct = "";
+
+					$this->Cell(16+18-8,4,utf8_decode(number_format($data[$i]["montant_scolar"], 2, ',', ' ')),1,1,'C', true);
+
+					$posty = $posty +4;
+					$count++;
+
+					if ($count >= 40) {
+						// $this->footer_listing_stat_pay(38, $classe);
+						$this->AddPage(); 
+						$this->Filigramme("School");
+						$this->header_portrait($year, $school, $contact, $matricule);
+						$this->footer_listing_stat_pay(38, $classe);
+						
+						$postx = 12;
+						$posty = 12+45;
+						$count = 0;
+
+					}
+				}	
+				
+				
+	        }
+    	}
+
+		function listing_stat_payement2($data, $garcon, $fille, $year, $montant_verser, $scolarite, $classe, $school, $contact, $matricule, $type_liste){
+			
+	        $postx = 12;
+	        $posty = 12;
+
+	        /*-------------------*/ // entete
+			$this->SetFont('times', 'B', 9);
+			$this->SetDrawColor(71, 151, 45);
+	        $this->SetFillColor(71, 151, 45);
+	        $this->SetTextColor(255, 255, 255);
+			$this->SetXY($postx+45,$posty+45);
+	        $this->Cell(100,6,utf8_decode("STATISTIQUE DE SCOLARITE "),1,1,'C', true);
+			$this->SetTextColor(0, 0, 0);	
+			$this->SetFont('times', '', 9);
+			$this->SetXY($postx+14,$posty+45+9);
+			$this->Cell(120,5,utf8_decode("Effectif: "),0,1,'L', false);
+			$this->SetXY($postx+14+13,$posty+45+9);
+			$this->SetFont('times', 'B', 9);
+			$this->Cell(120,5,utf8_decode(($garcon+$fille)),0,1,'L', false);
+			$this->SetXY($postx+14+10+30,$posty+45+9);
+			$this->Cell(120,5,utf8_decode("[ Garçons: ".$garcon." ]"),0,1,'L', false);
+			$this->SetXY($postx+14+10+30+50,$posty+45+9);
+			$this->Cell(120,5,utf8_decode("[ Fille: ".$fille." ]"),0,1,'L', false);
+			//$this->SetXY($postx+14+10+30+50+20,$posty+45+9+6);
+			//$this->Cell(120,5,utf8_decode("[ Classe: ".mb_strtoupper($classe)." ]"),0,1,'L', false);
+			$this->SetXY($postx+14+20,$posty+45+9+6+3);
+			$this->SetFont('times', 'B', 9);
+			$this->Cell(120,5,utf8_decode("ANNÉE SCOLAIRE ".$year),0,1,'C', false);
+
+			// QrCode
+			$this->Image('images.png', $postx+160,45+9+12,25,10);
+			// QrCode
+
+			$this->SetDrawColor(0, 0, 0);
+	        $this->SetFillColor(164, 227, 136);
+	        $this->SetTextColor(0, 0, 0);
+			//-- TOTAL VERSER SUR 
+			$mt_verser = 0;
+			$mt_scolar = 0;
+			$mt_reste  = 0;
+			$mt_reduction = 0;
+			for ($i=0; $i < sizeof($data); $i++) {
+				if ($type_liste == "insolvable" && ($data[$i]['montant_verser'] < $scolarite)) {
+					$mt_verser += $data[$i]['montant_verser'];
+					$mt_scolar += $data[$i]['montant_scolar'];
+					$mt_reduction += $data[$i]['reduction_bourse'];
+				} else if($type_liste == "solvable" && ($data[$i]['montant_verser'] >= $scolarite)){
+					$mt_verser += $data[$i]['montant_verser'];
+					$mt_scolar += $data[$i]['montant_scolar'];
+					$mt_reduction += $data[$i]['reduction_bourse'];
+				}else if($type_liste == "insolvable_solvable"){
+					$mt_verser += $data[$i]['montant_verser'];
+					$mt_scolar += $data[$i]['montant_scolar'];
+					$mt_reduction += $data[$i]['reduction_bourse'];
+				}		
+			}	
+
+			//CALCUL DU RESTE A PAYER
+			$mt_reste = $mt_scolar - $mt_verser - $mt_reduction;
+
+			$this->SetXY($postx+1,$posty+45+9+6+6+5);
+			$this->Cell(46,5,utf8_decode('TOTAL SCOLARITE'),1,1,'C', true);
+			$this->SetXY($postx+47,$posty+45+9+6+6+5);
+			$this->Cell(46,5,utf8_decode('TOTAL REDUCTION'),1,1,'C', true);
+			$this->SetXY($postx+93,$posty+45+9+6+6+5);
+			$this->Cell(46,5,utf8_decode('DEJA VERSER'),1,1,'C', true);
+			$this->SetXY($postx+139,$posty+45+9+6+6+5);
+			$this->Cell(46,5,utf8_decode('RESTER A VERSER'),1,1,'C', true);
+
+
+			$this->SetXY($postx+1,$posty+45+9+6+6+10);
+			$this->Cell(46,5,utf8_decode(number_format($mt_scolar, 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+			$this->SetXY($postx+47,$posty+45+9+6+6+10);
+			$this->Cell(46,5,utf8_decode(number_format($mt_reduction, 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+			$this->SetXY($postx+93,$posty+45+9+6+6+10);
+			$this->Cell(46,5,utf8_decode(number_format($mt_verser, 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+			$this->SetXY($postx+139,$posty+45+9+6+6+10);
+			$this->Cell(46,5,utf8_decode(number_format($mt_reste, 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+			// $this->SetXY($postx+1,$posty+45+9+6+6+10);
+			// $this->Cell(184,5,utf8_decode('TOTAL REDUCTION: '.number_format($mt_reduction, 2, ',', ' ').' FCFA' .' / DEJA VERSER : '.number_format($mt_verser, 2, ',', ' ').' FCFA' .' / RESTE : '.number_format($mt_reste, 2, ',', ' ').' FCFA'),1,1,'C', true);
+			
+			$posty += 5;
+
+			$this->SetFont('times', 'B', 9);
+	        $this->SetXY($postx+1,$posty+45+9+6+6+10);
+	        $this->Cell(8,5,utf8_decode('N°'),1,1,'C', true);
+			$this->SetXY($postx+9,$posty+45+9+6+6+10);
+	        $this->Cell(32,5,utf8_decode('MATRICULE'),1,1,'C', true);
+	        $this->SetXY($postx+8+6+27,$posty+45+9+6+6+10);
+	        $this->Cell(74-25,5,utf8_decode('NOMS ET PRENOMS '),1,1,'C', true);
+	        $this->SetXY($postx+90,$posty+45+9+6+6+10);
+	        $this->Cell(10,5,utf8_decode('SEXE'),1,1,'C', true);
+			$this->SetXY($postx+100,$posty+45+9+6+6+10);
+	        $this->Cell(15,5,utf8_decode('Réduction'),1,1,'C', true);
+			$this->SetXY($postx+8+45+70+2-10,$posty+45+9+6+6+10);
+	        $this->Cell(26,5,utf8_decode('MT V'),1,1,'C', true);
+			$this->SetXY($postx+8+45+70+2+16,$posty+45+9+6+6+10);
+	        $this->Cell(18,5,utf8_decode('MT R'),1,1,'C', true);
+	        $this->SetXY($postx+8+45+70+28+8,$posty+45+9+6+6+10);
+	        $this->Cell(16+18-8,5,utf8_decode('SCOLARITE '),1,1,'C', true);
+
+	        $posty = $posty+45+9+6+6+10+5;
+	        $count = 0;
+	        $this->SetFont('times', '','8');
+	        for ($i=0; $i < sizeof($data); $i++) {
+				if ($type_liste == "insolvable" && ($data[$i]['montant_verser'] < $scolarite)) {
+					$this->SetDrawColor(0, 0, 0);
+					$this->SetFillColor(164, 227, 136);
+					$this->SetTextColor(0, 0, 0);
+					$this->SetFont('times', 'B', 9);
+					$this->SetXY($postx+1,$posty+45-45);
+					$this->Cell(8,4,($i+1),1,1,'C', false);
+					$this->SetXY($postx+9,$posty+45-45);
+					$this->Cell(32,4,utf8_decode(mb_strtoupper($data[$i]['matricule'])),1,1,'C', false);
+					$this->SetXY($postx+8+6+27,$posty+45-45);
+					$this->Cell(74-25,4,utf8_decode(mb_strtoupper($data[$i]['name']." ".$data[$i]['surname'])),1,1,'L', false);
+					$this->SetXY($postx+90,$posty+45-45);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+
+					$this->SetXY($postx+100,$posty+45-45);
+					// $this->Cell(15,4,utf8_decode(number_format($data[$i]['reduction_bourse'], 2, ',', ' ').' FCFA'),1,1,'C', true);
+					$this->Cell(15,4,utf8_decode("500FCFA"),1,1,'C', true);
+
+					$this->SetXY($postx+8+45+70+2-10,$posty+45-45);
+					if ($data[$i]['montant_verser'] >= $scolarite) {
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(255, 255, 255);
+						$this->SetTextColor(0, 0, 0);
+					}else{
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(197, 197, 197);
+						$this->SetTextColor(0, 0, 0);
+					}
+					$this->Cell(26,4,utf8_decode(number_format($data[$i]['montant_verser'], 2, ',', ' ').' FCFA'),1,1,'C', true);
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+
+					$this->SetXY($postx+8+45+70+2+16,$posty+45-45);
+					$this->Cell(18,4,utf8_decode(number_format(($data[$i]['montant_scolar'] - $data[$i]['montant_verser'] - $data[$i]["reduction_bourse"]), 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+
+					
+					$this->Cell(16+18-8,4,utf8_decode(number_format($data[$i]["montant_scolar"], 2, ',', ' ')),1,1,'C', true);
+
+					$posty = $posty +4;
+					$count++;
+
+					if ($count >= 40) {
+						// $this->footer_listing_stat_pay(38, $classe);
+						$this->AddPage(); 
+						$this->Filigramme("School");
+						$this->header_portrait($year, $school, $contact, $matricule);
+						$this->footer_listing_stat_pay(38, $classe);
+						
+						$postx = 12;
+						$posty = 12+45;
+						$count = 0;
+
+					}
+				} else if($type_liste == "solvable" && ($data[$i]['montant_verser'] >= $scolarite)){
+					$this->SetDrawColor(0, 0, 0);
+					$this->SetFillColor(164, 227, 136);
+					$this->SetTextColor(0, 0, 0);
+					$this->SetFont('times', 'B', 8);
+					$this->SetXY($postx+1,$posty+45-45);
+					$this->Cell(8,4,($i+1),1,1,'C', false);
+					$this->SetXY($postx+9,$posty+45-45);
+					$this->Cell(32,4,utf8_decode(mb_strtoupper($data[$i]['matricule'])),1,1,'C', false);
+					$this->SetXY($postx+8+6+27,$posty+45-45);
+					$this->Cell(74-25,4,utf8_decode(mb_strtoupper($data[$i]['name']." ".$data[$i]['surname'])),1,1,'L', false);
+					$this->SetXY($postx+90,$posty+45-45);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+					$this->SetXY($postx+100,$posty+45-45);
+					// $this->Cell(15,4,utf8_decode(number_format($data[$i]['reduction_bourse'], 2, ',', ' ').' FCFA'),1,1,'C', true);
+					$this->Cell(15,4,utf8_decode("500FCFA"),1,1,'C', true);
+					
+					// $this->Cell(15,4,utf8_decode(number_format(isset($data[$i]['reduction_bourse']) ? $data[$i]['reduction_bourse'] : 0.00, 2, ',', ' ') . ' FCFA'),1,1,'C', true);
+					$this->SetXY($postx+8+45+70+2-10,$posty+45-45);
+					if ($data[$i]['montant_verser'] >= $scolarite) {
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(255, 255, 255);
+						$this->SetTextColor(0, 0, 0);
+					}else{
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(197, 197, 197);
+						$this->SetTextColor(0, 0, 0);
+					}
+					$this->Cell(26,4,utf8_decode(number_format($data[$i]['montant_verser'], 2, ',', ' ').' FCFA'),1,1,'C', true);
+					
+					$this->SetXY($postx+8+45+70+2+16,$posty+45-45);
+					$this->Cell(18,4,utf8_decode(number_format(($data[$i]['montant_scolar'] - $data[$i]['montant_verser'] - $data[$i]["reduction_bourse"]), 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+					$chaine_reduct = "";
+					
+					$this->Cell(16+18-8,4,utf8_decode(number_format($data[$i]["montant_scolar"], 2, ',', ' ')),1,1,'C', true);
+
+					$posty = $posty +4;
+					$count++;
+
+					if ($count >= 40) {
+						// $this->footer_listing_stat_pay(38, $classe);
+						$this->AddPage(); 
+						$this->Filigramme("School");
+						$this->header_portrait($year, $school, $contact, $matricule);
+						$this->footer_listing_stat_pay(38, $classe);
+						
+						$postx = 12;
+						$posty = 12+45;
+						$count = 0;
+
+					}
+				}else if($type_liste == "insolvable_solvable"){
+					$this->SetDrawColor(0, 0, 0);
+					$this->SetFillColor(164, 227, 136);
+					$this->SetTextColor(0, 0, 0);
+					$this->SetFont('times', 'B', 8);
+					$this->SetXY($postx+1,$posty+45-45);
+					$this->Cell(8,4,($i+1),1,1,'C', false);
+					$this->SetXY($postx+9,$posty+45-45);
+					$this->Cell(32,4,utf8_decode(mb_strtoupper($data[$i]['matricule'])),1,1,'C', false);
+					$this->SetXY($postx+8+6+27,$posty+45-45);
+					$this->Cell(74-25,4,utf8_decode(mb_strtoupper($data[$i]['name']." ".$data[$i]['surname'])),1,1,'L', false);
+					$this->SetXY($postx+90,$posty+45-45);
+					$this->Cell(10,4,utf8_decode($data[$i]['sexe']),1,1,'C', false);
+
+					$this->SetXY($postx+100,$posty+45-45);
+					// $this->Cell(15,4,utf8_decode(number_format($data[$i]['reduction_bourse'], 2, ',', ' ').' FCFA'),1,1,'C', true);
+					$this->Cell(15, 4, utf8_decode($data[$i]['reduction_bourse'] != 0.00 ? number_format($data[$i]['reduction_bourse'], 2, ',', ' ') . ' FCFA' : ''), 1, 1, 'C', true);
+
+					// $this->Cell(15,4,utf8_decode("500FCFA"),1,1,'C', true);
+
+
+					$this->SetXY($postx+8+45+70+2-10,$posty+45-45);
+					if ($data[$i]['montant_verser'] >= $scolarite) {
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(255, 255, 255);
+						$this->SetTextColor(0, 0, 0);
+					}else{
+						$this->SetDrawColor(0, 0, 0);
+						$this->SetFillColor(197, 197, 197);
+						$this->SetTextColor(0, 0, 0);
+					}
+					$this->Cell(26,4,utf8_decode(number_format($data[$i]['montant_verser'], 2, ',', ' ').' FCFA'),1,1,'C', true);
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+
+					$this->SetXY($postx+8+45+70+2+16,$posty+45-45);
+					$this->Cell(18,4,utf8_decode(number_format(($data[$i]['montant_scolar'] - $data[$i]['montant_verser'] - $data[$i]["reduction_bourse"]), 2, ',', ' ').' FCFA'),1,1,'C', true);
+
+					$this->SetXY($postx+8+45+70+28+8,$posty+45-45);
+					
+					$this->Cell(16+18-8,4,utf8_decode(number_format($data[$i]["montant_scolar"], 2, ',', ' ')),1,1,'C', true);
+
+					$posty = $posty +4;
+					$count++;
+
+					if ($count >= 40) {
+						// $this->footer_listing_stat_pay(38, $classe);
+						$this->AddPage(); 
+						$this->Filigramme("School");
+						$this->header_portrait($year, $school, $contact, $matricule);
+						$this->footer_listing_stat_pay(38, $classe);
+						
+						$postx = 12;
+						$posty = 12+45;
+						$count = 0;
+
+					}
+				}	
+	        }
+    	}
+
+
 
 		/*----------------------------------------------------------------
 		* LISTING DES ENSEIGNANTS
@@ -1272,7 +1956,7 @@
 	        $this->Cell(0,10,utf8_decode($msg),0,0,'C');
 	        
 	        $this->SetXY(10,-$y);
-	        $this->Cell(0,10,utf8_decode("Le directeur" ),0,0,'R');
+	        $this->Cell(0,10,utf8_decode("Le Principal" ),0,0,'R');
 
 	    }
 
@@ -1289,9 +1973,29 @@
 	        $this->Cell(0,10,utf8_decode($msg),0,0,'C');
 	        
 	        $this->SetXY(10,-$y);
-	        $this->Cell(0,10,utf8_decode("Le directeur" ),0,0,'R');
+	        $this->Cell(0,10,utf8_decode("Le Principal" ),0,0,'R');
 			$this->SetXY(10,-$y);
 	        $this->Cell(0,10,utf8_decode("Journée du ".date("Y-m-d") ),0,0,'L');
+
+	    }
+
+		/*----------------------------------------------------------------
+		* FOOTER STAT PAYEMENT
+		*----------------------------------------------------------------*/
+	    function footer_listing_stat_pay($y, $classe) {
+			$this->SetXY(10,-20);
+			$this->Cell(0,10,utf8_decode("_______________________________________________________________________________________________________________________________________________"),0,0,'C');
+			$this->SetXY(10,-19);
+			$this->Cell(0,10,utf8_decode("____________________________________________________________________________________________________________________________"),0,0,'C');
+	        $this->SetXY(10,-15);
+			$page = $this->PageNo();
+			$this->Cell(0,10,utf8_decode($page.'/{nb}' ),0,0,'R');
+			$this->SetXY(10,-15);
+	        $this->SetFont('Times', 'B' ,7);
+	        $this->Cell(0,10,utf8_decode("Statistique de scolarite, classe : ".mb_strtoupper($classe)),0,0,'C');
+	        
+	        $this->SetXY(10,-$y);
+	        $this->Cell(0,10,utf8_decode("Le Principal" ),0,0,'R');
 
 	    }
 

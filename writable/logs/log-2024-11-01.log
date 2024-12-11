@@ -1,0 +1,293 @@
+INFO - 2024-11-01 09:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 09:15:05 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:15:05 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 09:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 09:15:17 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:15:18 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 09:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 09:15:24 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:15:24 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 09:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 09:15:39 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:15:39 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 09:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 09:16:15 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:16:15 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 09:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 09:16:28 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:16:28 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 09:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 09:16:37 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:16:37 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 09:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 09:16:53 --> Class "FPDF" not found
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 3.
+ 1 APPPATH/Controllers/StudentController.php(44): include()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/takam/Bureau/ecole-negou-new/app/Controllers/StudentController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 7 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 09:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 09:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 09:18:02 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::GetStringHeight()
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 95.
+ 1 APPPATH/Controllers/StudentController.php(2495): App\Controllers\BulletinPremierTrimestre->LigneMatiere()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:18:19 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::GetStringHeight()
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 95.
+ 1 APPPATH/Controllers/StudentController.php(2495): App\Controllers\BulletinPremierTrimestre->LigneMatiere()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:34:06 --> FPDF error: Incorrect output destination: O
+in APPPATH/Controllers/fpdf/fpdf.php on line 274.
+ 1 APPPATH/Controllers/fpdf/fpdf.php(1031): App\Controllers\FPDF->Error()
+ 2 APPPATH/Controllers/StudentController.php(2506): App\Controllers\FPDF->Output()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 09:59:52 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::header_portrait()
+in APPPATH/Controllers/StudentController.php on line 2423.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 10:00:09 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::header_portrait()
+in APPPATH/Controllers/StudentController.php on line 2423.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 10:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 10:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 10:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 10:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 10:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 10:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-01 10:30:30 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::TableauNotes()
+in APPPATH/Controllers/StudentController.php on line 2440.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 10:30:47 --> Call to undefined method App\Controllers\BulletinPremierTrimestre::TableauNotes()
+in APPPATH/Controllers/StudentController.php on line 2440.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 10:31:19 --> Undefined variable $fpdf
+in APPPATH/Controllers/StudentController.php on line 2455.
+ 1 APPPATH/Controllers/StudentController.php(2455): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+CRITICAL - 2024-11-01 10:46:05 --> utf8_decode() expects exactly 1 argument, 0 given
+in APPPATH/Controllers/report/FPDF_BULLETIN.php on line 528.
+ 1 APPPATH/Controllers/report/FPDF_BULLETIN.php(528): utf8_decode()
+ 2 APPPATH/Controllers/StudentController.php(2455): App\Controllers\BulletinPremierTrimestre->listing()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\StudentController->print_all_bulletin()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/takam/Bureau/ecole-negou-new/public/index.php')
+INFO - 2024-11-01 11:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 11:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 11:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 11:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 11:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 11:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 13:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 14:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 14:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 14:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 14:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 14:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 14:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 14:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-01 16:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

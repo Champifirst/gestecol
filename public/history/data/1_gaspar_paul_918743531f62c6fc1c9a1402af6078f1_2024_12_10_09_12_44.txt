@@ -1,0 +1,13 @@
+
+1;gaspar_paul;user;2024-12-10 09-12-44;Authentification;Réussite;Utilisateur;127.0.0.1;inconue;Nouvelle session initialisée;EOF;
+1;gaspar paul;user;2024-12-10 09-12-44;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;user;2024-12-10 09-12-55;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;user;2024-12-10 09-12-06;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;user;2024-12-10 09-12-09;insertion;Réussite;Trimestre;127.0.0.1;inconue;TRIMESTRE 1,TRI 1,0,actif,1,2,1,74,1,2024-12-10 09:12:09,2024-12-10 09:12:09;EOF;
+1;gaspar paul;user;2024-12-10 09-12-14;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;user;2024-12-10 09-12-14;affichage;Réussite;Séquence;127.0.0.1;inconue;Opération réussir;EOF;
+1;gaspar paul;user;2024-12-10 09-12-19;Année active;Reussite;Année;127.0.0.1;inconue;Année Scolaire 2024 / 2025,2024-09-29,2025-07-02,0,actif,2023-09-29 14:09:44,2023-09-29 14:09:44;EOF;
+1;gaspar paul;user;2024-12-10 09-12-26;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;user;2024-12-10 09-12-30;Selection;Echec;Classe;127.0.0.1;inconue;Opération reussir;EOF;
+1;gaspar paul;user;2024-12-10 09-12-32;insertion;Echec;Trimestre;127.0.0.1;inconue;Echec de validation ;EOF;
+1;gaspar paul;user;2024-12-10 09-12-34;insertion;Réussite;Séquence;127.0.0.1;inconue;SEQUENCE 1SEQ 1121741320actif2024-12-10 09:12:342024-12-10 09:12:34;EOF;
